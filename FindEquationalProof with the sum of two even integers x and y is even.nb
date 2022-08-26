@@ -1,0 +1,3291 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    129623,       3281]
+NotebookOptionsPosition[    125248,       3200]
+NotebookOutlinePosition[    125649,       3216]
+CellTagsIndexPosition[    125606,       3213]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Exists", "[", 
+  RowBox[{",", 
+   TagBox[
+    FrameBox["expr"],
+    "Placeholder"]}], "]"}]], "Input",
+ CellChangeTimes->{{3.870441165987996*^9, 
+  3.870441175525821*^9}},ExpressionUUID->"0c21027b-b218-423e-a656-\
+5bd58df08663"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Exists", "[", 
+  RowBox[{"k", ",", 
+   RowBox[{"k", "\[Element]", "Integers"}], ",", 
+   RowBox[{"x", "==", 
+    RowBox[{"2", "k"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.870441199149619*^9, 3.8704412128989377`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"5812e4c1-3d36-4a8f-9eaa-c226c87c3085"],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["\[Exists]", 
+   RowBox[{"k", ",", 
+    RowBox[{"k", "\[Element]", 
+     TemplateBox[{},
+      "Integers"]}]}]], 
+  RowBox[{"x", "\[Equal]", 
+   RowBox[{"2", " ", "k"}]}]}]], "Output",
+ CellChangeTimes->{3.870441216144576*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"6e48c988-2451-42d3-a167-d1a122b92773"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Exists", "[", 
+   RowBox[{"k", ",", 
+    RowBox[{"k", "\[Element]", "Integers"}], ",", 
+    RowBox[{"x", "==", 
+     RowBox[{"2", "k"}]}]}], "]"}], "[", "3", "]"}]], "Input",
+ CellChangeTimes->{{3.870441199149619*^9, 3.870441218635394*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"8152dd30-db33-4315-86a6-dd08e65d99b0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"k", ",", 
+      RowBox[{"k", "\[Element]", 
+       TemplateBox[{},
+        "Integers"]}]}]], 
+    RowBox[{"x", "\[Equal]", 
+     RowBox[{"2", " ", "k"}]}]}], ")"}], "[", "3", "]"}]], "Output",
+ CellChangeTimes->{3.8704412190345435`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"8086f320-06f4-43c4-a519-9da5c6d55662"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Exists", "[", 
+    RowBox[{"k", ",", 
+     RowBox[{"k", "\[Element]", "Integers"}], ",", 
+     RowBox[{"#", "==", 
+      RowBox[{"2", "k"}]}]}], "]"}], "&"}], "[", "3", "]"}]], "Input",
+ CellChangeTimes->{{3.870441199149619*^9, 3.8704412259498634`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"6d351848-fc37-4290-8cb9-96419c4185da"],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["\[Exists]", 
+   RowBox[{"k", ",", 
+    RowBox[{"k", "\[Element]", 
+     TemplateBox[{},
+      "Integers"]}]}]], 
+  RowBox[{"3", "\[Equal]", 
+   RowBox[{"2", " ", "k"}]}]}]], "Output",
+ CellChangeTimes->{3.870441226375646*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"37ac1f2d-20f6-4246-b132-87764d89129f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Resolve", "[", 
+  RowBox[{
+   SubscriptBox["\[Exists]", 
+    RowBox[{"k", ",", 
+     RowBox[{"k", "\[Element]", 
+      TemplateBox[{},
+       "Integers"]}]}]], 
+   RowBox[{"3", "\[Equal]", 
+    RowBox[{"2", " ", "k"}]}]}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[7]:=",ExpressionUUID->"213c0512-56e1-4742-bd62-50c5a3f1502d"],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{3.870441228698116*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"78d80254-a956-475e-9ec8-70d620e4c496"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AxiomaticEvenQ", "[", "n_", "]"}], ":=", 
+  RowBox[{"Resolve", "[", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Exists]", 
+      RowBox[{"k", ",", 
+       RowBox[{"k", "\[Element]", "Integers"}]}]], 
+     RowBox[{"n", "==", 
+      RowBox[{"2", "k"}]}]}], "\[And]", 
+    RowBox[{"n", "\[Element]", "Integers"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8704412326238575`*^9, 3.8704412682975397`*^9}, {
+  3.870441344045272*^9, 3.8704413453142376`*^9}, {3.8704413909518757`*^9, 
+  3.870441400528693*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"caad8053-76f6-4345-9e31-9bc8a4652771"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AxiomaticEvenQ", "[", "5", "]"}]], "Input",
+ CellChangeTimes->{{3.8704412698658276`*^9, 3.870441278515298*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"92b1f102-b5e0-4149-a66f-2fca5ba85660"],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{3.8704412789135723`*^9, 3.870441402001218*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"68349749-21b9-4dbe-adfc-f2de4e6b85d6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AxiomaticEvenQ", "[", "4", "]"}]], "Input",
+ CellChangeTimes->{{3.8704412698658276`*^9, 3.8704412803917694`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"33c0bd2e-3132-484d-97e2-af28d473fd3c"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.87044128070487*^9, 3.870441402875267*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"e4e10fe6-9378-440e-9053-2e341a3332b3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AxiomaticEvenQ", "[", "4.4", "]"}]], "Input",
+ CellChangeTimes->{{3.8704413055791364`*^9, 3.8704413059657755`*^9}, {
+  3.870441350433385*^9, 3.870441353708788*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"a96ac4d6-22cd-4f98-b892-303b19b1c954"],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{3.8704413542053576`*^9, 3.8704414036887827`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"9164d8b6-8d9a-43e8-8f63-e45c3bc09131"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ForAll", "[", 
+   RowBox[{"x", ",", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{"k", ",", 
+        RowBox[{"k", "\[Element]", "Integers"}]}]], 
+      RowBox[{"x", "==", 
+       RowBox[{"2", "k"}]}]}], "\[And]", 
+     RowBox[{"x", "\[Element]", "Integers"}]}]}], "]"}], "\[And]", 
+  RowBox[{"ForAll", "[", 
+   RowBox[{"y", ",", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{"k", ",", 
+        RowBox[{"k", "\[Element]", "Integers"}]}]], 
+      RowBox[{"y", "==", 
+       RowBox[{"2", "k"}]}]}], "\[And]", 
+     RowBox[{"y", "\[Element]", "Integers"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.870441414800726*^9, 3.8704415008570013`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"33e71d2e-70f3-4a32-9eee-f12acd94e68f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[ForAll]", "x"], 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{"k", ",", 
+        RowBox[{"k", "\[Element]", 
+         TemplateBox[{},
+          "Integers"]}]}]], 
+      RowBox[{"x", "\[Equal]", 
+       RowBox[{"2", " ", "k"}]}]}], "&&", 
+     RowBox[{"x", "\[Element]", 
+      TemplateBox[{},
+       "Integers"]}]}], ")"}]}], "&&", 
+  RowBox[{
+   SubscriptBox["\[ForAll]", "y"], 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{"k", ",", 
+        RowBox[{"k", "\[Element]", 
+         TemplateBox[{},
+          "Integers"]}]}]], 
+      RowBox[{"y", "\[Equal]", 
+       RowBox[{"2", " ", "k"}]}]}], "&&", 
+     RowBox[{"y", "\[Element]", 
+      TemplateBox[{},
+       "Integers"]}]}], ")"}]}]}]], "Output",
+ CellChangeTimes->{3.8704415020021267`*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"4013efdb-bbf7-4563-b5ca-d06ae924f32d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"k", ",", 
+      RowBox[{"k", "\[Element]", "Integers"}]}]], 
+    RowBox[{
+     RowBox[{"x", "+", "y"}], "==", 
+     RowBox[{"2", "k"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"ForAll", "[", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"k", ",", 
+           RowBox[{"k", "\[Element]", "Integers"}]}]], 
+         RowBox[{"x", "==", 
+          RowBox[{"2", "k"}]}]}], "\[And]", 
+        RowBox[{"x", "\[Element]", "Integers"}]}]}], "]"}], ",", 
+     RowBox[{"ForAll", "[", 
+      RowBox[{"y", ",", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"k", ",", 
+           RowBox[{"k", "\[Element]", "Integers"}]}]], 
+         RowBox[{"y", "==", 
+          RowBox[{"2", "k"}]}]}], "\[And]", 
+        RowBox[{"y", "\[Element]", "Integers"}]}]}], "]"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8704415136004457`*^9, 3.87044155578477*^9}, {
+  3.870441633249773*^9, 3.8704416371383057`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"e9104e7d-bf58-464d-b8ea-6c05dcf0e5a9"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "FindEquationalProof", "invs", 
+   "\"Invalid specification of propositions \
+\\!\\(\\*RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\"k\\\", \
+\\\",\\\", RowBox[{\\\"k\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}]], RowBox[{RowBox[{\\\"x\\\", \\\"+\\\", \\\"y\\\"}], \\\
+\"\[Equal]\\\", RowBox[{\\\"2\\\", \\\" \\\", \\\"k\\\"}]}]}]\\) and axioms \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{SubscriptBox[\\\"\[ForAll]\\\", \
+\\\"x\\\"], RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\"k\\\", \\\",\\\", \
+RowBox[{\\\"k\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}]], RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \
+RowBox[{\\\"2\\\", \\\" \\\", \\\"k\\\"}]}]}], \\\"&&\\\", RowBox[{\\\"x\\\", \
+\\\"\[Element]\\\", TemplateBox[List[], \\\"Integers\\\"]}]}], \\\")\\\"}]}], \
+\\\",\\\", RowBox[{SubscriptBox[\\\"\[ForAll]\\\", \\\"y\\\"], \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\
+\"k\\\", \\\",\\\", RowBox[{\\\"k\\\", \\\"\[Element]\\\", \
+TemplateBox[List[], \\\"Integers\\\"]}]}]], RowBox[{\\\"y\\\", \\\"\[Equal]\\\
+\", RowBox[{\\\"2\\\", \\\" \\\", \\\"k\\\"}]}]}], \\\"&&\\\", \
+RowBox[{\\\"y\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}], \\\")\\\"}]}]}], \\\"}\\\"}]\\).\"", 2, 21, 4, 
+   19468526766476998443, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8704415562838817`*^9, 3.8704416375100307`*^9},
+ CellLabel->
+  "During evaluation of \
+In[21]:=",ExpressionUUID->"89525bc0-710b-42e0-a799-f9ddfd653864"],
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"k", ",", 
+      RowBox[{"k", "\[Element]", 
+       TemplateBox[{},
+        "Integers"]}]}]], 
+    RowBox[{
+     RowBox[{"x", "+", "y"}], "\[Equal]", 
+     RowBox[{"2", " ", "k"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[ForAll]", "x"], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"k", ",", 
+           RowBox[{"k", "\[Element]", 
+            TemplateBox[{},
+             "Integers"]}]}]], 
+         RowBox[{"x", "\[Equal]", 
+          RowBox[{"2", " ", "k"}]}]}], "&&", 
+        RowBox[{"x", "\[Element]", 
+         TemplateBox[{},
+          "Integers"]}]}], ")"}]}], ",", 
+     RowBox[{
+      SubscriptBox["\[ForAll]", "y"], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"k", ",", 
+           RowBox[{"k", "\[Element]", 
+            TemplateBox[{},
+             "Integers"]}]}]], 
+         RowBox[{"y", "\[Equal]", 
+          RowBox[{"2", " ", "k"}]}]}], "&&", 
+        RowBox[{"y", "\[Element]", 
+         TemplateBox[{},
+          "Integers"]}]}], ")"}]}]}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.8704415563188887`*^9, 3.870441637545044*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"43b99290-4c5c-4c88-b0b2-de46a1907c21"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"k", ",", 
+      RowBox[{"k", "\[Element]", "Integers"}]}]], 
+    RowBox[{
+     RowBox[{"x", "+", "y"}], "==", 
+     RowBox[{"2", "k"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"ForAll", "[", 
+     RowBox[{"x", ",", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Exists]", 
+         RowBox[{"k", ",", 
+          RowBox[{"k", "\[Element]", "Integers"}]}]], 
+        RowBox[{"x", "==", 
+         RowBox[{"2", "k"}]}]}], "\[And]", 
+       RowBox[{"x", "\[Element]", "Integers"}]}]}], "]"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8704415136004457`*^9, 3.87044155578477*^9}, {
+  3.870441633249773*^9, 3.8704416442161703`*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"44986205-d5f8-4409-a6ff-05224e9178e7"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "FindEquationalProof", "invs", 
+   "\"Invalid specification of propositions \
+\\!\\(\\*RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\"k\\\", \
+\\\",\\\", RowBox[{\\\"k\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}]], RowBox[{RowBox[{\\\"x\\\", \\\"+\\\", \\\"y\\\"}], \\\
+\"\[Equal]\\\", RowBox[{\\\"2\\\", \\\" \\\", \\\"k\\\"}]}]}]\\) and axioms \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{SubscriptBox[\\\"\[ForAll]\\\", \
+\\\"x\\\"], RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\"k\\\", \\\",\\\", \
+RowBox[{\\\"k\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}]], RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \
+RowBox[{\\\"2\\\", \\\" \\\", \\\"k\\\"}]}]}], \\\"&&\\\", RowBox[{\\\"x\\\", \
+\\\"\[Element]\\\", TemplateBox[List[], \\\"Integers\\\"]}]}], \\\")\\\"}]}], \
+\\\"}\\\"}]\\).\"", 2, 22, 5, 19468526766476998443, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8704416446843624`*^9},
+ CellLabel->
+  "During evaluation of \
+In[22]:=",ExpressionUUID->"c0c737e5-ffa8-4529-b234-57b294048623"],
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"k", ",", 
+      RowBox[{"k", "\[Element]", 
+       TemplateBox[{},
+        "Integers"]}]}]], 
+    RowBox[{
+     RowBox[{"x", "+", "y"}], "\[Equal]", 
+     RowBox[{"2", " ", "k"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[ForAll]", "x"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Exists]", 
+         RowBox[{"k", ",", 
+          RowBox[{"k", "\[Element]", 
+           TemplateBox[{},
+            "Integers"]}]}]], 
+        RowBox[{"x", "\[Equal]", 
+         RowBox[{"2", " ", "k"}]}]}], "&&", 
+       RowBox[{"x", "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]}], ")"}]}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.8704416447093725`*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"3f96efd5-b1af-4588-9641-f1ce4640a6f7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"n", ",", 
+      RowBox[{"n", "\[Element]", "Integers"}]}]], 
+    RowBox[{
+     RowBox[{"x", "+", "y"}], "==", 
+     RowBox[{"2", "n"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"ForAll", "[", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"k", ",", 
+           RowBox[{"k", "\[Element]", "Integers"}]}]], 
+         RowBox[{"x", "==", 
+          RowBox[{"2", "k"}]}]}], "\[And]", 
+        RowBox[{"x", "\[Element]", "Integers"}]}]}], "]"}], ",", 
+     RowBox[{"ForAll", "[", 
+      RowBox[{"y", ",", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"m", ",", 
+           RowBox[{"m", "\[Element]", "Integers"}]}]], 
+         RowBox[{"y", "==", 
+          RowBox[{"2", "m"}]}]}], "\[And]", 
+        RowBox[{"y", "\[Element]", "Integers"}]}]}], "]"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8704417496025095`*^9, 3.870441770290288*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"ad890f74-3488-449f-8b76-21cd0eaee9f5"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "FindEquationalProof", "invs", 
+   "\"Invalid specification of propositions \
+\\!\\(\\*RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\"n\\\", \
+\\\",\\\", RowBox[{\\\"n\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}]], RowBox[{RowBox[{\\\"x\\\", \\\"+\\\", \\\"y\\\"}], \\\
+\"\[Equal]\\\", RowBox[{\\\"2\\\", \\\" \\\", \\\"n\\\"}]}]}]\\) and axioms \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{SubscriptBox[\\\"\[ForAll]\\\", \
+\\\"x\\\"], RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\"k\\\", \\\",\\\", \
+RowBox[{\\\"k\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}]], RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \
+RowBox[{\\\"2\\\", \\\" \\\", \\\"k\\\"}]}]}], \\\"&&\\\", RowBox[{\\\"x\\\", \
+\\\"\[Element]\\\", TemplateBox[List[], \\\"Integers\\\"]}]}], \\\")\\\"}]}], \
+\\\",\\\", RowBox[{SubscriptBox[\\\"\[ForAll]\\\", \\\"y\\\"], \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\
+\"m\\\", \\\",\\\", RowBox[{\\\"m\\\", \\\"\[Element]\\\", \
+TemplateBox[List[], \\\"Integers\\\"]}]}]], RowBox[{\\\"y\\\", \\\"\[Equal]\\\
+\", RowBox[{\\\"2\\\", \\\" \\\", \\\"m\\\"}]}]}], \\\"&&\\\", \
+RowBox[{\\\"y\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}], \\\")\\\"}]}]}], \\\"}\\\"}]\\).\"", 2, 24, 7, 
+   19468526766476998443, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8704417553615637`*^9, 3.8704417706671143`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[24]:=",ExpressionUUID->"44fca2a4-e837-40c6-ab58-7ac01b166ae5"],
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"n", ",", 
+      RowBox[{"n", "\[Element]", 
+       TemplateBox[{},
+        "Integers"]}]}]], 
+    RowBox[{
+     RowBox[{"x", "+", "y"}], "\[Equal]", 
+     RowBox[{"2", " ", "n"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[ForAll]", "x"], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"k", ",", 
+           RowBox[{"k", "\[Element]", 
+            TemplateBox[{},
+             "Integers"]}]}]], 
+         RowBox[{"x", "\[Equal]", 
+          RowBox[{"2", " ", "k"}]}]}], "&&", 
+        RowBox[{"x", "\[Element]", 
+         TemplateBox[{},
+          "Integers"]}]}], ")"}]}], ",", 
+     RowBox[{
+      SubscriptBox["\[ForAll]", "y"], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"m", ",", 
+           RowBox[{"m", "\[Element]", 
+            TemplateBox[{},
+             "Integers"]}]}]], 
+         RowBox[{"y", "\[Equal]", 
+          RowBox[{"2", " ", "m"}]}]}], "&&", 
+        RowBox[{"y", "\[Element]", 
+         TemplateBox[{},
+          "Integers"]}]}], ")"}]}]}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.8704417553905582`*^9, 3.870441770694119*^9}},
+ CellLabel->"Out[24]=",ExpressionUUID->"12d86027-c94d-43f9-9617-b181912205d4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"n", ",", 
+      RowBox[{"n", "\[Element]", "Integers"}]}]], 
+    RowBox[{
+     RowBox[{"x", "+", "y"}], "==", 
+     RowBox[{"2", "n"}]}]}], ",", 
+   RowBox[{
+    RowBox[{"ForAll", "[", 
+     RowBox[{"x", ",", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Exists]", 
+         RowBox[{"k", ",", 
+          RowBox[{"k", "\[Element]", "Integers"}]}]], 
+        RowBox[{"x", "==", 
+         RowBox[{"2", "k"}]}]}], "\[And]", 
+       RowBox[{"x", "\[Element]", "Integers"}]}]}], "]"}], "\[And]", 
+    RowBox[{"ForAll", "[", 
+     RowBox[{"y", ",", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Exists]", 
+         RowBox[{"m", ",", 
+          RowBox[{"m", "\[Element]", "Integers"}]}]], 
+        RowBox[{"y", "==", 
+         RowBox[{"2", "m"}]}]}], "\[And]", 
+       RowBox[{"y", "\[Element]", "Integers"}]}]}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8704417496025095`*^9, 3.8704417806211505`*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"9d06a5ee-529c-47a2-9b34-3d3b5573219d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "FindEquationalProof", "invs", 
+   "\"Invalid specification of propositions \
+\\!\\(\\*RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\"n\\\", \
+\\\",\\\", RowBox[{\\\"n\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}]], RowBox[{RowBox[{\\\"x\\\", \\\"+\\\", \\\"y\\\"}], \\\
+\"\[Equal]\\\", RowBox[{\\\"2\\\", \\\" \\\", \\\"n\\\"}]}]}]\\) and axioms \
+\\!\\(\\*RowBox[{RowBox[{SubscriptBox[\\\"\[ForAll]\\\", \\\"x\\\"], RowBox[{\
+\\\"(\\\", RowBox[{RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\"k\\\", \
+\\\",\\\", RowBox[{\\\"k\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}]], RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \
+RowBox[{\\\"2\\\", \\\" \\\", \\\"k\\\"}]}]}], \\\"&&\\\", RowBox[{\\\"x\\\", \
+\\\"\[Element]\\\", TemplateBox[List[], \\\"Integers\\\"]}]}], \\\")\\\"}]}], \
+\\\"&&\\\", RowBox[{SubscriptBox[\\\"\[ForAll]\\\", \\\"y\\\"], RowBox[{\\\"(\
+\\\", RowBox[{RowBox[{SubscriptBox[\\\"\[Exists]\\\", RowBox[{\\\"m\\\", \
+\\\",\\\", RowBox[{\\\"m\\\", \\\"\[Element]\\\", TemplateBox[List[], \
+\\\"Integers\\\"]}]}]], RowBox[{\\\"y\\\", \\\"\[Equal]\\\", \
+RowBox[{\\\"2\\\", \\\" \\\", \\\"m\\\"}]}]}], \\\"&&\\\", RowBox[{\\\"y\\\", \
+\\\"\[Element]\\\", TemplateBox[List[], \\\"Integers\\\"]}]}], \
+\\\")\\\"}]}]}]\\).\"", 2, 25, 8, 19468526766476998443, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8704417810542*^9},
+ CellLabel->
+  "During evaluation of \
+In[25]:=",ExpressionUUID->"cf38f6b3-d1d4-4b50-9c92-d73816364450"],
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"n", ",", 
+      RowBox[{"n", "\[Element]", 
+       TemplateBox[{},
+        "Integers"]}]}]], 
+    RowBox[{
+     RowBox[{"x", "+", "y"}], "\[Equal]", 
+     RowBox[{"2", " ", "n"}]}]}], ",", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[ForAll]", "x"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Exists]", 
+         RowBox[{"k", ",", 
+          RowBox[{"k", "\[Element]", 
+           TemplateBox[{},
+            "Integers"]}]}]], 
+        RowBox[{"x", "\[Equal]", 
+         RowBox[{"2", " ", "k"}]}]}], "&&", 
+       RowBox[{"x", "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]}], ")"}]}], "&&", 
+    RowBox[{
+     SubscriptBox["\[ForAll]", "y"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Exists]", 
+         RowBox[{"m", ",", 
+          RowBox[{"m", "\[Element]", 
+           TemplateBox[{},
+            "Integers"]}]}]], 
+        RowBox[{"y", "\[Equal]", 
+         RowBox[{"2", " ", "m"}]}]}], "&&", 
+       RowBox[{"y", "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]}], ")"}]}]}]}], "]"}]], "Output",
+ CellChangeTimes->{3.870441781079218*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"c52a272b-f184-4124-b557-970761e9c0cf"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Exists]", 
+     RowBox[{"n", ",", 
+      RowBox[{"n", "\[Element]", "Integers"}]}]], 
+    RowBox[{
+     RowBox[{"x", "+", "y"}], "==", 
+     RowBox[{"2", "n"}]}]}], ",", 
+   RowBox[{
+    RowBox[{"ForAll", "[", 
+     RowBox[{"x", ",", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Exists]", 
+         RowBox[{"k", ",", 
+          RowBox[{"k", "\[Element]", "Integers"}]}]], 
+        RowBox[{"x", "==", 
+         RowBox[{"2", "k"}]}]}], "\[And]", 
+       RowBox[{"x", "\[Element]", "Integers"}]}]}], "]"}], "\[And]", 
+    RowBox[{"ForAll", "[", 
+     RowBox[{"y", ",", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Exists]", 
+         RowBox[{"m", ",", 
+          RowBox[{"m", "\[Element]", "Integers"}]}]], 
+        RowBox[{"y", "==", 
+         RowBox[{"2", "m"}]}]}], "\[And]", 
+       RowBox[{"y", "\[Element]", "Integers"}]}]}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8704417496025095`*^9, 3.8704417806211505`*^9}, 
+   3.8704418132477245`*^9},ExpressionUUID->"4047f695-c119-4564-a29c-\
+5df0bb6cc4ff"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{"mortal", "[", "socrates", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"ForAll", "[", 
+      RowBox[{"x", ",", 
+       RowBox[{"Implies", "[", 
+        RowBox[{
+         RowBox[{"man", "[", "x", "]"}], ",", 
+         RowBox[{"mortal", "[", "x", "]"}]}], "]"}]}], "]"}], ",", 
+     RowBox[{"man", "[", "socrates", "]"}]}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[29]:=",ExpressionUUID->"383096f1-bace-4eec-a435-3bd163239bcc"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ProofObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[
+             
+             GraphicsComplexBox[{{0., 4.}, {1., 5.}, {-1., 5.}, {-2., 1.}, {
+              1., 4.}, {0., 3.}, {-1., 2.}, {0., 2.}, {-1., 1.}, {-1., 0.}}, {{
+                GrayLevel[0.55], 
+                LineBox[{1, 6}], 
+                LineBox[{2, 5}], 
+                LineBox[{3, 5}], 
+                LineBox[{4, 10}], 
+                LineBox[{5, 6}], 
+                LineBox[{6, 7}], 
+                LineBox[{6, 8}], 
+                LineBox[{7, 9}], 
+                LineBox[{8, 9}], 
+                LineBox[{9, 10}], 
+                LineBox[{3, 7}]}, {
+                PointBox[1], 
+                PointBox[2], 
+                PointBox[3], 
+                PointBox[4], 
+                PointBox[5], 
+                PointBox[6], 
+                PointBox[7], 
+                PointBox[8], 
+                PointBox[9], 
+                PointBox[10]}}], FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]], PlotRange -> All, PlotRangeClipping -> True, 
+             PlotRangePadding -> Scaled[0.1], Background -> GrayLevel[0.93], 
+             Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Opacity[0.5], 
+               Thickness[Tiny], 
+               RGBColor[0.368417, 0.506779, 0.709798]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Logic: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Predicate/EquationalLogic\"", "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Steps: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["53", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Theorem: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"mortal", "[", "socrates", "]"}], Short[#, 1]& ], 
+                  "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[
+             
+             GraphicsComplexBox[{{0., 4.}, {1., 5.}, {-1., 5.}, {-2., 1.}, {
+              1., 4.}, {0., 3.}, {-1., 2.}, {0., 2.}, {-1., 1.}, {-1., 0.}}, {{
+                GrayLevel[0.55], 
+                LineBox[{1, 6}], 
+                LineBox[{2, 5}], 
+                LineBox[{3, 5}], 
+                LineBox[{4, 10}], 
+                LineBox[{5, 6}], 
+                LineBox[{6, 7}], 
+                LineBox[{6, 8}], 
+                LineBox[{7, 9}], 
+                LineBox[{8, 9}], 
+                LineBox[{9, 10}], 
+                LineBox[{3, 7}]}, {
+                PointBox[1], 
+                PointBox[2], 
+                PointBox[3], 
+                PointBox[4], 
+                PointBox[5], 
+                PointBox[6], 
+                PointBox[7], 
+                PointBox[8], 
+                PointBox[9], 
+                PointBox[10]}}], FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]], PlotRange -> All, PlotRangeClipping -> True, 
+             PlotRangePadding -> Scaled[0.1], Background -> GrayLevel[0.93], 
+             Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Opacity[0.5], 
+               Thickness[Tiny], 
+               RGBColor[0.368417, 0.506779, 0.709798]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Logic: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Predicate/EquationalLogic\"", "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Steps: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["53", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Theorem: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"mortal", "[", "socrates", "]"}], Short[#, 1]& ], 
+                  "SummaryItem"]}], "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"Axioms: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["\[ForAll]", "x"], 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"man", "[", "x", "]"}], "\[Implies]", 
+                    RowBox[{"mortal", "[", "x", "]"}]}], ")"}]}], ",", 
+                    RowBox[{"man", "[", "socrates", "]"}]}], "}"}], 
+                   Short[#, 1]& ], "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ProofObject["Predicate/EquationalLogic", 
+   $CellContext`mortal[$CellContext`socrates], {
+    ForAll[$CellContext`x, 
+     Implies[
+      $CellContext`man[$CellContext`x], 
+      $CellContext`mortal[$CellContext`x]]], 
+    $CellContext`man[$CellContext`socrates]}, {{"Axiom", 1} -> <|
+     "Statement" -> ForAll[$CellContext`x, 
+        Implies[
+         $CellContext`man[$CellContext`x], 
+         $CellContext`mortal[$CellContext`x]]], "Proof" -> <||>|>, {
+     "Axiom", 2} -> <|
+     "Statement" -> $CellContext`man[$CellContext`socrates], 
+      "Proof" -> <||>|>, {"Hypothesis", 1} -> <|
+     "Statement" -> $CellContext`mortal[$CellContext`socrates], 
+      "Proof" -> <||>|>, {"EquationalizedAxiom", 1} -> <|
+     "Statement" -> $CellContext`x1 == Or[$CellContext`x1, 
+         And[$CellContext`x2, 
+          Not[$CellContext`x2]]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 2} -> <|
+     "Statement" -> $CellContext`x1 == And[$CellContext`x1, 
+         Or[$CellContext`x2, 
+          Not[$CellContext`x2]]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 3} -> <|
+     "Statement" -> 
+      Or[$CellContext`x1, $CellContext`x2] == 
+       Or[$CellContext`x2, $CellContext`x1], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 4} -> <|"Statement" -> Or[$CellContext`x1, 
+         And[$CellContext`x2, $CellContext`x3]] == And[
+         Or[$CellContext`x1, $CellContext`x2], 
+         Or[$CellContext`x1, $CellContext`x3]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 5} -> <|"Statement" -> Or[
+         And[$CellContext`x1, $CellContext`x2], 
+         And[$CellContext`x1, $CellContext`x3]] == And[$CellContext`x1, 
+         Or[$CellContext`x2, $CellContext`x3]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 6} -> <|"Statement" -> Or[
+         Not[
+          $CellContext`man[$CellContext`x1]], 
+         $CellContext`mortal[$CellContext`x1]] == Or[
+         Subscript[\[FormalA], 0], 
+         Not[
+          Subscript[\[FormalA], 0]]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 7} -> <|"Statement" -> Or[
+         Subscript[\[FormalA], 0], 
+         Not[
+          
+          Subscript[\[FormalA], 
+           0]]] == $CellContext`man[$CellContext`socrates], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 8} -> <|
+     "Statement" -> 
+      And[$CellContext`x1, $CellContext`x2] == 
+       And[$CellContext`x2, $CellContext`x1], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedHypothesis", 1} -> <|"Statement" -> Or[
+         Subscript[\[FormalA], 0], 
+         Not[
+          
+          Subscript[\[FormalA], 
+           0]]] == $CellContext`mortal[$CellContext`socrates], 
+      "Proof" -> <|"Input" -> {{"Hypothesis", 1}}|>|>, {
+     "CriticalPairLemma", 1} -> <|"Statement" -> Or[
+         And[$CellContext`x1, 
+          Not[$CellContext`x1]], $CellContext`x2] == $CellContext`x2, 
+      "Proof" -> <|
+       "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> TwoWayRule[
+          Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]], 
+          Or[
+           Pattern[$CellContext`x2, 
+            Blank[]], 
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "Side" -> 1, "Subpattern" -> Or[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 1}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           And[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 2} -> <|"Statement" -> And[$CellContext`x1, 
+         Or[$CellContext`x2, 
+          Not[$CellContext`x1]]] == And[$CellContext`x1, $CellContext`x2], 
+      "Proof" -> <|
+       "Construct" -> {"EquationalizedAxiom", 5}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x3, 
+             Blank[]]]] -> And[$CellContext`x1, 
+           Or[$CellContext`x2, $CellContext`x3]]), "Side" -> 1, "Subpattern" -> 
+        Or[
+          And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]], 
+          And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x3, 
+            Blank[]]]], "MatchingConstruct" -> {"EquationalizedAxiom", 1}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           And[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "SubstitutionLemma", 1} -> <|"Statement" -> Or[
+         $CellContext`mortal[$CellContext`x1], 
+         Not[
+          $CellContext`man[$CellContext`x1]]] == Or[
+         Subscript[\[FormalA], 0], 
+         Not[
+          Subscript[\[FormalA], 0]]], 
+      "Proof" -> <|
+       "Input" -> {"EquationalizedAxiom", 6}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> Or[
+           $CellContext`mortal[$CellContext`x1], 
+           Not[
+            $CellContext`man[$CellContext`x1]]] == Or[
+           Subscript[\[FormalA], 0], 
+           Not[
+            Subscript[\[FormalA], 0]]]|>|>, {"SubstitutionLemma", 2} -> <|
+     "Statement" -> Or[
+         $CellContext`mortal[ELProver`Const2], 
+         Not[
+          $CellContext`man[
+          ELProver`Const2]]] == $CellContext`man[$CellContext`socrates], 
+      "Proof" -> <|
+       "Input" -> {"EquationalizedAxiom", 7}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 1}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           Subscript[\[FormalA], 0], 
+           Not[
+            Subscript[\[FormalA], 0]]] -> Or[
+           $CellContext`mortal[ELProver`Const2], 
+           Not[
+            $CellContext`man[ELProver`Const2]]]), "OutputExpression" -> Or[
+           $CellContext`mortal[ELProver`Const2], 
+           Not[
+            $CellContext`man[
+            ELProver`Const2]]] == \
+$CellContext`man[$CellContext`socrates]|>|>, {"CriticalPairLemma", 3} -> <|
+     "Statement" -> And[
+         Or[$CellContext`x1, 
+          Not[$CellContext`x1]], $CellContext`x2] == $CellContext`x2, 
+      "Proof" -> <|
+       "Construct" -> {"EquationalizedAxiom", 8}, "Orientation" -> {-1, 1}, 
+        "Rule" -> TwoWayRule[
+          And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]], 
+          And[
+           Pattern[$CellContext`x2, 
+            Blank[]], 
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "Side" -> 1, "Subpattern" -> And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 2}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 4} -> <|
+     "Statement" -> 
+      And[$CellContext`x1, $CellContext`x2] == And[$CellContext`x1, 
+         Or[
+          Not[$CellContext`x1], $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 1}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> $CellContext`x2), "Side" -> 1, "Subpattern" -> Or[
+          And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 5}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (Or[
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x3, 
+             Blank[]]]] -> And[$CellContext`x1, 
+           Or[$CellContext`x2, $CellContext`x3]]), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 5} -> <|
+     "Statement" -> 
+      Or[$CellContext`x1, $CellContext`x2] == Or[$CellContext`x1, 
+         And[
+          Not[$CellContext`x1], $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 3}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> $CellContext`x2), "Side" -> 1, "Subpattern" -> And[
+          Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 4}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]], 
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x3, 
+             Blank[]]]] -> Or[$CellContext`x1, 
+           And[$CellContext`x2, $CellContext`x3]]), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 6} -> <|"Statement" -> Or[$CellContext`x1, 
+         Not[$CellContext`x1]] == Or[$CellContext`x2, 
+         Not[$CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 3}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> $CellContext`x2), "Side" -> 1, "Subpattern" -> And[
+          Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 2}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 7} -> <|"Statement" -> And[
+         $CellContext`man[ELProver`Const2], 
+         $CellContext`mortal[ELProver`Const2]] == And[
+         $CellContext`man[ELProver`Const2], 
+         $CellContext`man[$CellContext`socrates]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Not[
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "MatchingConstruct" -> {"SubstitutionLemma", 2}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (Or[
+           $CellContext`mortal[EquationalProof`const2], 
+           Not[
+            $CellContext`man[
+            EquationalProof`const2]]] -> \
+$CellContext`man[$CellContext`socrates]), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 8} -> <|"Statement" -> And[
+         $CellContext`man[$CellContext`x1], 
+         $CellContext`mortal[$CellContext`x1]] == And[
+         $CellContext`man[$CellContext`x1], 
+         Or[
+          Subscript[\[FormalA], 0], 
+          Not[
+           Subscript[\[FormalA], 0]]]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Not[
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "MatchingConstruct" -> {"SubstitutionLemma", 1}, 
+        "MatchingOrientation" -> {-1, 1}, "MatchingRule" -> 0, "MatchingSide" -> 
+        1|>|>, {"SubstitutionLemma", 3} -> <|"Statement" -> And[
+         $CellContext`man[$CellContext`x1], 
+         $CellContext`mortal[$CellContext`x1]] == \
+$CellContext`man[$CellContext`x1], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 8}, "Position" -> 2, 
+        "Construct" -> {"EquationalizedAxiom", 2}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "OutputExpression" -> And[
+           $CellContext`man[$CellContext`x1], 
+           $CellContext`mortal[$CellContext`x1]] == \
+$CellContext`man[$CellContext`x1]|>|>, {"SubstitutionLemma", 4} -> <|
+     "Statement" -> And[
+         $CellContext`mortal[$CellContext`x1], 
+         $CellContext`man[$CellContext`x1]] == \
+$CellContext`man[$CellContext`x1], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 3}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 8}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> And[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> And[
+           $CellContext`mortal[$CellContext`x1], 
+           $CellContext`man[$CellContext`x1]] == \
+$CellContext`man[$CellContext`x1]|>|>, {"SubstitutionLemma", 5} -> <|
+     "Statement" -> And[
+         $CellContext`mortal[ELProver`Const2], 
+         $CellContext`man[ELProver`Const2]] == And[
+         $CellContext`man[ELProver`Const2], 
+         $CellContext`man[$CellContext`socrates]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 7}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 8}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> And[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> And[
+           $CellContext`mortal[ELProver`Const2], 
+           $CellContext`man[ELProver`Const2]] == And[
+           $CellContext`man[ELProver`Const2], 
+           $CellContext`man[$CellContext`socrates]]|>|>, {
+     "SubstitutionLemma", 6} -> <|
+     "Statement" -> $CellContext`man[ELProver`Const2] == And[
+         $CellContext`man[ELProver`Const2], 
+         $CellContext`man[$CellContext`socrates]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 5}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 4}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           $CellContext`mortal[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           $CellContext`man[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`man[$CellContext`x1]), 
+        "OutputExpression" -> $CellContext`man[ELProver`Const2] == And[
+           $CellContext`man[ELProver`Const2], 
+           $CellContext`man[$CellContext`socrates]]|>|>, {
+     "CriticalPairLemma", 9} -> <|"Statement" -> And[$CellContext`x1, 
+         Not[
+          Not[$CellContext`x1]]] == $CellContext`x1, 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 4}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Or[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]]], "MatchingConstruct" -> {"EquationalizedAxiom", 2}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 10} -> <|"Statement" -> Or[$CellContext`x1, 
+         Not[
+          Not[
+           Not[$CellContext`x1]]]] == Or[$CellContext`x1, 
+         Not[$CellContext`x1]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 5}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           And[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[$CellContext`x1, $CellContext`x2]), "Side" -> 1,
+         "Subpattern" -> And[
+          Not[
+           Pattern[$CellContext`x1, 
+            Blank[]]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"CriticalPairLemma", 9}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 11} -> <|"Statement" -> And[
+         Not[
+          Not[$CellContext`x1]], $CellContext`x1] == And[
+         Not[
+          Not[$CellContext`x1]], 
+         Or[$CellContext`x1, 
+          Not[$CellContext`x1]]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Not[
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "MatchingConstruct" -> {"CriticalPairLemma", 10}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Not[
+             Not[
+              Pattern[$CellContext`x1, 
+               Blank[]]]]]] -> Or[$CellContext`x1, 
+           Not[$CellContext`x1]]), "MatchingSide" -> 1|>|>, {
+     "SubstitutionLemma", 7} -> <|"Statement" -> And[
+         Not[
+          Not[$CellContext`x1]], $CellContext`x1] == Not[
+         Not[$CellContext`x1]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 11}, "Position" -> 2, 
+        "Construct" -> {"EquationalizedAxiom", 2}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "OutputExpression" -> And[
+           Not[
+            Not[$CellContext`x1]], $CellContext`x1] == Not[
+           Not[$CellContext`x1]]|>|>, {"SubstitutionLemma", 8} -> <|
+     "Statement" -> And[$CellContext`x1, 
+         Not[
+          Not[$CellContext`x1]]] == Not[
+         Not[$CellContext`x1]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 7}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 8}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> And[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> And[$CellContext`x1, 
+           Not[
+            Not[$CellContext`x1]]] == Not[
+           Not[$CellContext`x1]]|>|>, {"SubstitutionLemma", 9} -> <|
+     "Statement" -> $CellContext`x1 == Not[
+         Not[$CellContext`x1]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 8}, "Position" -> 1, 
+        "Construct" -> {"CriticalPairLemma", 9}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> $CellContext`x1), 
+        "OutputExpression" -> $CellContext`x1 == Not[
+           Not[$CellContext`x1]]|>|>, {"CriticalPairLemma", 12} -> <|
+     "Statement" -> Or[
+         Not[$CellContext`x1], $CellContext`x2] == Or[
+         Not[$CellContext`x1], 
+         And[$CellContext`x1, $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 5}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           And[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[$CellContext`x1, $CellContext`x2]), "Side" -> 1,
+         "Subpattern" -> Not[
+          Pattern[$CellContext`x1, 
+           Blank[]]], "MatchingConstruct" -> {"SubstitutionLemma", 9}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (Not[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 13} -> <|"Statement" -> And[
+         Not[$CellContext`x1], $CellContext`x2] == And[
+         Not[$CellContext`x1], 
+         Or[$CellContext`x1, $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 4}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> Not[
+          Pattern[$CellContext`x1, 
+           Blank[]]], "MatchingConstruct" -> {"SubstitutionLemma", 9}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (Not[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 14} -> <|"Statement" -> Or[
+         Not[
+          $CellContext`man[ELProver`Const2]], 
+         $CellContext`man[$CellContext`socrates]] == Or[
+         Not[
+          $CellContext`man[ELProver`Const2]], 
+         $CellContext`man[ELProver`Const2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 12}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[
+           Not[$CellContext`x1], $CellContext`x2]), "Side" -> 1, "Subpattern" -> 
+        And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"SubstitutionLemma", 6}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           $CellContext`man[EquationalProof`const2], 
+           $CellContext`man[$CellContext`socrates]] -> $CellContext`man[
+          ELProver`Const2]), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 15} -> <|"Statement" -> Or[
+         Not[
+          Not[$CellContext`x1]], 
+         Or[$CellContext`x1, $CellContext`x2]] == Or[
+         Not[
+          Not[$CellContext`x1]], 
+         And[
+          Not[$CellContext`x1], $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 12}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[
+           Not[$CellContext`x1], $CellContext`x2]), "Side" -> 1, "Subpattern" -> 
+        And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"CriticalPairLemma", 13}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> And[
+           Not[$CellContext`x1], $CellContext`x2]), "MatchingSide" -> 1|>|>, {
+     "SubstitutionLemma", 10} -> <|"Statement" -> Or[$CellContext`x1, 
+         Or[$CellContext`x1, $CellContext`x2]] == Or[
+         Not[
+          Not[$CellContext`x1]], 
+         And[
+          Not[$CellContext`x1], $CellContext`x2]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 15}, "Position" -> {1, 1}, 
+        "Construct" -> {"SubstitutionLemma", 9}, "Orientation" -> -1, 
+        "Rule" -> (Not[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`x1), "OutputExpression" -> 
+        Or[$CellContext`x1, 
+           Or[$CellContext`x1, $CellContext`x2]] == Or[
+           Not[
+            Not[$CellContext`x1]], 
+           And[
+            Not[$CellContext`x1], $CellContext`x2]]|>|>, {
+     "SubstitutionLemma", 11} -> <|"Statement" -> Or[$CellContext`x1, 
+         Or[$CellContext`x1, $CellContext`x2]] == Or[
+         Not[
+          Not[$CellContext`x1]], $CellContext`x2], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 10}, "Position" -> 2, 
+        "Construct" -> {"CriticalPairLemma", 12}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[
+           Not[$CellContext`x1], $CellContext`x2]), "OutputExpression" -> 
+        Or[$CellContext`x1, 
+           Or[$CellContext`x1, $CellContext`x2]] == Or[
+           Not[
+            Not[$CellContext`x1]], $CellContext`x2]|>|>, {
+     "SubstitutionLemma", 12} -> <|"Statement" -> Or[$CellContext`x1, 
+         Or[$CellContext`x1, $CellContext`x2]] == 
+       Or[$CellContext`x1, $CellContext`x2], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 11}, "Position" -> {2, 1}, 
+        "Construct" -> {"SubstitutionLemma", 9}, "Orientation" -> -1, 
+        "Rule" -> (Not[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`x1), "OutputExpression" -> 
+        Or[$CellContext`x1, 
+           Or[$CellContext`x1, $CellContext`x2]] == 
+         Or[$CellContext`x1, $CellContext`x2]|>|>, {
+     "CriticalPairLemma", 16} -> <|
+     "Statement" -> 
+      Or[$CellContext`x1, $CellContext`x2] == Or[$CellContext`x1, 
+         Or[$CellContext`x2, $CellContext`x1]], 
+      "Proof" -> <|
+       "Construct" -> {"SubstitutionLemma", 12}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[$CellContext`x1, $CellContext`x2]), "Side" -> 1,
+         "Subpattern" -> Or[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 3}, 
+        "MatchingOrientation" -> {-1, 1}, "MatchingRule" -> TwoWayRule[
+          Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]], 
+          Or[
+           Pattern[$CellContext`x2, 
+            Blank[]], 
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 17} -> <|"Statement" -> Or[
+         Not[
+          $CellContext`man[ELProver`Const2]], 
+         $CellContext`mortal[ELProver`Const2]] == Or[
+         Not[
+          $CellContext`man[ELProver`Const2]], 
+         $CellContext`man[$CellContext`socrates]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 16}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> Or[$CellContext`x1, $CellContext`x2]), "Side" -> 1,
+         "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Pattern[$CellContext`x1, 
+           Blank[]]], "MatchingConstruct" -> {"SubstitutionLemma", 2}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (Or[
+           $CellContext`mortal[EquationalProof`const2], 
+           Not[
+            $CellContext`man[
+            EquationalProof`const2]]] -> \
+$CellContext`man[$CellContext`socrates]), "MatchingSide" -> 1|>|>, {
+     "SubstitutionLemma", 13} -> <|"Statement" -> Or[
+         $CellContext`man[$CellContext`socrates], 
+         Not[
+          $CellContext`man[ELProver`Const2]]] == Or[
+         Not[
+          $CellContext`man[ELProver`Const2]], 
+         $CellContext`man[ELProver`Const2]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 14}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> Or[
+           $CellContext`man[$CellContext`socrates], 
+           Not[
+            $CellContext`man[ELProver`Const2]]] == Or[
+           Not[
+            $CellContext`man[ELProver`Const2]], 
+           $CellContext`man[ELProver`Const2]]|>|>, {
+     "SubstitutionLemma", 14} -> <|"Statement" -> Or[
+         $CellContext`man[$CellContext`socrates], 
+         Not[
+          $CellContext`man[ELProver`Const2]]] == Or[
+         $CellContext`man[ELProver`Const2], 
+         Not[
+          $CellContext`man[ELProver`Const2]]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 13}, "Position" -> 2, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> Or[
+           $CellContext`man[$CellContext`socrates], 
+           Not[
+            $CellContext`man[ELProver`Const2]]] == Or[
+           $CellContext`man[ELProver`Const2], 
+           Not[
+            $CellContext`man[ELProver`Const2]]]|>|>, {
+     "SubstitutionLemma", 15} -> <|"Statement" -> Or[
+         $CellContext`man[$CellContext`socrates], 
+         Not[
+          $CellContext`man[ELProver`Const2]]] == Or[ELProver`Const2, 
+         Not[ELProver`Const2]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 14}, "Position" -> 2, 
+        "Construct" -> {"CriticalPairLemma", 6}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> Or[ELProver`Const2, 
+           Not[ELProver`Const2]]), "OutputExpression" -> Or[
+           $CellContext`man[$CellContext`socrates], 
+           Not[
+            $CellContext`man[ELProver`Const2]]] == Or[ELProver`Const2, 
+           Not[ELProver`Const2]]|>|>, {"SubstitutionLemma", 16} -> <|
+     "Statement" -> Or[
+         $CellContext`mortal[ELProver`Const2], 
+         Not[
+          $CellContext`man[ELProver`Const2]]] == Or[
+         Not[
+          $CellContext`man[ELProver`Const2]], 
+         $CellContext`man[$CellContext`socrates]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 17}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> Or[
+           $CellContext`mortal[ELProver`Const2], 
+           Not[
+            $CellContext`man[ELProver`Const2]]] == Or[
+           Not[
+            $CellContext`man[ELProver`Const2]], 
+           $CellContext`man[$CellContext`socrates]]|>|>, {
+     "SubstitutionLemma", 17} -> <|
+     "Statement" -> $CellContext`man[$CellContext`socrates] == Or[
+         Not[
+          $CellContext`man[ELProver`Const2]], 
+         $CellContext`man[$CellContext`socrates]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 16}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           $CellContext`mortal[EquationalProof`const2], 
+           Not[
+            $CellContext`man[
+            EquationalProof`const2]]] -> \
+$CellContext`man[$CellContext`socrates]), 
+        "OutputExpression" -> $CellContext`man[$CellContext`socrates] == Or[
+           Not[
+            $CellContext`man[ELProver`Const2]], 
+           $CellContext`man[$CellContext`socrates]]|>|>, {
+     "SubstitutionLemma", 18} -> <|
+     "Statement" -> $CellContext`man[$CellContext`socrates] == Or[
+         $CellContext`man[$CellContext`socrates], 
+         Not[
+          $CellContext`man[ELProver`Const2]]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 17}, "Position" -> 2, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> $CellContext`man[$CellContext`socrates] == Or[
+           $CellContext`man[$CellContext`socrates], 
+           Not[
+            $CellContext`man[ELProver`Const2]]]|>|>, {
+     "SubstitutionLemma", 19} -> <|
+     "Statement" -> $CellContext`man[$CellContext`socrates] == 
+       Or[ELProver`Const2, 
+         Not[ELProver`Const2]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 18}, "Position" -> 2, 
+        "Construct" -> {"SubstitutionLemma", 15}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           $CellContext`man[$CellContext`socrates], 
+           Not[
+            $CellContext`man[EquationalProof`const2]]] -> Or[ELProver`Const2, 
+           Not[ELProver`Const2]]), 
+        "OutputExpression" -> $CellContext`man[$CellContext`socrates] == 
+         Or[ELProver`Const2, 
+           Not[ELProver`Const2]]|>|>, {"CriticalPairLemma", 18} -> <|
+     "Statement" -> $CellContext`x1 == And[$CellContext`x1, 
+         $CellContext`man[$CellContext`socrates]], 
+      "Proof" -> <|
+       "Construct" -> {"EquationalizedAxiom", 2}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "Side" -> 1, "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Not[
+           Pattern[$CellContext`x2, 
+            Blank[]]]], "MatchingConstruct" -> {"SubstitutionLemma", 19}, 
+        "MatchingOrientation" -> -1, 
+        "MatchingRule" -> (Or[EquationalProof`const2, 
+           Not[
+           EquationalProof`const2]] -> \
+$CellContext`man[$CellContext`socrates]), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 19} -> <|
+     "Statement" -> $CellContext`mortal[$CellContext`socrates] == \
+$CellContext`man[$CellContext`socrates], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 18}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           $CellContext`man[$CellContext`socrates]] -> $CellContext`x1), 
+        "Side" -> 1, "Subpattern" -> And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          $CellContext`man[$CellContext`socrates]], 
+        "MatchingConstruct" -> {"SubstitutionLemma", 4}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (And[
+           $CellContext`mortal[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           $CellContext`man[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`man[$CellContext`x1]), "MatchingSide" -> 
+        1|>|>, {"SubstitutionLemma", 20} -> <|"Statement" -> Or[
+         $CellContext`mortal[ELProver`Const2], 
+         Not[
+          $CellContext`man[
+          ELProver`Const2]]] == $CellContext`mortal[$CellContext`socrates], 
+      "Proof" -> <|
+       "Input" -> {"EquationalizedHypothesis", 1}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 1}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           Subscript[\[FormalA], 0], 
+           Not[
+            Subscript[\[FormalA], 0]]] -> Or[
+           $CellContext`mortal[ELProver`Const2], 
+           Not[
+            $CellContext`man[ELProver`Const2]]]), "OutputExpression" -> Or[
+           $CellContext`mortal[ELProver`Const2], 
+           Not[
+            $CellContext`man[
+            ELProver`Const2]]] == \
+$CellContext`mortal[$CellContext`socrates]|>|>, {"SubstitutionLemma", 21} -> <|
+     "Statement" -> $CellContext`man[$CellContext`socrates] == \
+$CellContext`mortal[$CellContext`socrates], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 20}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           $CellContext`mortal[EquationalProof`const2], 
+           Not[
+            $CellContext`man[
+            EquationalProof`const2]]] -> \
+$CellContext`man[$CellContext`socrates]), 
+        "OutputExpression" -> $CellContext`man[$CellContext`socrates] == \
+$CellContext`mortal[$CellContext`socrates]|>|>, {"Conclusion", 1} -> <|
+     "Statement" -> True, 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 21}, "Position" -> 2, 
+        "Construct" -> {"CriticalPairLemma", 19}, "Orientation" -> -1, 
+        "Rule" -> ($CellContext`mortal[$CellContext`socrates] -> \
+$CellContext`man[$CellContext`socrates]), "OutputExpression" -> True|>|>}],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8704419492926593`*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"a21e975c-be2f-43fc-9fe8-9551bd478e6c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{"even", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"ForAll", "[", 
+      RowBox[{"a", ",", 
+       RowBox[{
+        RowBox[{"even", "[", "a", "]"}], "\[Implies]", 
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"k", ",", 
+           RowBox[{"k", "\[Element]", "Integers"}]}]], 
+         RowBox[{"a", "==", 
+          RowBox[{"2", "k"}]}]}]}]}], "]"}], ",", 
+     RowBox[{
+      RowBox[{"even", "[", "x", "]"}], "\[And]", 
+      RowBox[{"even", "[", "y", "]"}]}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8704418202494855`*^9, 3.8704418907799864`*^9}, {
+  3.870441930532093*^9, 3.870441941861768*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"01e694f8-6bc9-4544-ae01-baccb2b7d912"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "FindEquationalProof", "invs", 
+   "\"Invalid specification of propositions \\!\\(\\*RowBox[{\\\"even\\\", \\\
+\"[\\\", \\\"x\\\", \\\"]\\\"}]\\) and axioms \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{SubscriptBox[\\\"\[ForAll]\\\", \\\"a\\\"], \
+RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"even\\\", \\\"[\\\", \\\"a\\\", \
+\\\"]\\\"}], \\\"\[Implies]\\\", RowBox[{SubscriptBox[\\\"\[Exists]\\\", \
+RowBox[{\\\"k\\\", \\\",\\\", RowBox[{\\\"k\\\", \\\"\[Element]\\\", \
+TemplateBox[List[], \\\"Integers\\\"]}]}]], RowBox[{\\\"a\\\", \\\"\[Equal]\\\
+\", RowBox[{\\\"2\\\", \\\" \\\", \\\"k\\\"}]}]}]}], \\\")\\\"}]}], \
+\\\",\\\", RowBox[{RowBox[{\\\"even\\\", \\\"[\\\", \\\"x\\\", \\\"]\\\"}], \
+\\\"&&\\\", RowBox[{\\\"even\\\", \\\"[\\\", \\\"y\\\", \\\"]\\\"}]}]}], \
+\\\"}\\\"}]\\).\"", 2, 28, 11, 19468526766476998443, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.8704418911249895`*^9, {3.8704419336025267`*^9, 3.8704419425176463`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[28]:=",ExpressionUUID->"5b2e7b35-ab44-4fc6-9d89-62651ad50913"],
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{"even", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[ForAll]", "a"], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"even", "[", "a", "]"}], "\[Implies]", 
+        RowBox[{
+         SubscriptBox["\[Exists]", 
+          RowBox[{"k", ",", 
+           RowBox[{"k", "\[Element]", 
+            TemplateBox[{},
+             "Integers"]}]}]], 
+         RowBox[{"a", "\[Equal]", 
+          RowBox[{"2", " ", "k"}]}]}]}], ")"}]}], ",", 
+     RowBox[{
+      RowBox[{"even", "[", "x", "]"}], "&&", 
+      RowBox[{"even", "[", "y", "]"}]}]}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.870441891152996*^9, {3.8704419336265326`*^9, 3.870441942543643*^9}},
+ CellLabel->"Out[28]=",ExpressionUUID->"c02542dc-3562-4d10-9439-9dadea631442"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindEquationalProof", "[", 
+  RowBox[{
+   RowBox[{"integer", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"ForAll", "[", 
+      RowBox[{"x", ",", 
+       RowBox[{"Implies", "[", 
+        RowBox[{
+         RowBox[{"even", "[", "x", "]"}], ",", 
+         RowBox[{"integer", "[", "x", "]"}]}], "]"}]}], "]"}], ",", 
+     RowBox[{"even", "[", "x", "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8704418202494855`*^9, 3.8704418907799864`*^9}, {
+  3.870441930532093*^9, 3.8704419908739653`*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"d7b30163-de06-4f97-920a-764fafd3ae04"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ProofObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[
+             
+             GraphicsComplexBox[{{0., 4.}, {1., 5.}, {-1., 5.}, {-2., 1.}, {
+              1., 4.}, {0., 3.}, {-1., 2.}, {0., 2.}, {-1., 1.}, {-1., 0.}}, {{
+                GrayLevel[0.55], 
+                LineBox[{1, 6}], 
+                LineBox[{2, 5}], 
+                LineBox[{3, 5}], 
+                LineBox[{4, 10}], 
+                LineBox[{5, 6}], 
+                LineBox[{6, 7}], 
+                LineBox[{6, 8}], 
+                LineBox[{7, 9}], 
+                LineBox[{8, 9}], 
+                LineBox[{9, 10}], 
+                LineBox[{3, 7}]}, {
+                PointBox[1], 
+                PointBox[2], 
+                PointBox[3], 
+                PointBox[4], 
+                PointBox[5], 
+                PointBox[6], 
+                PointBox[7], 
+                PointBox[8], 
+                PointBox[9], 
+                PointBox[10]}}], FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]], PlotRange -> All, PlotRangeClipping -> True, 
+             PlotRangePadding -> Scaled[0.1], Background -> GrayLevel[0.93], 
+             Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Opacity[0.5], 
+               Thickness[Tiny], 
+               RGBColor[0.368417, 0.506779, 0.709798]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Logic: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Predicate/EquationalLogic\"", "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Steps: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["53", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Theorem: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"integer", "[", "x", "]"}], Short[#, 1]& ], 
+                  "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[
+             
+             GraphicsComplexBox[{{0., 4.}, {1., 5.}, {-1., 5.}, {-2., 1.}, {
+              1., 4.}, {0., 3.}, {-1., 2.}, {0., 2.}, {-1., 1.}, {-1., 0.}}, {{
+                GrayLevel[0.55], 
+                LineBox[{1, 6}], 
+                LineBox[{2, 5}], 
+                LineBox[{3, 5}], 
+                LineBox[{4, 10}], 
+                LineBox[{5, 6}], 
+                LineBox[{6, 7}], 
+                LineBox[{6, 8}], 
+                LineBox[{7, 9}], 
+                LineBox[{8, 9}], 
+                LineBox[{9, 10}], 
+                LineBox[{3, 7}]}, {
+                PointBox[1], 
+                PointBox[2], 
+                PointBox[3], 
+                PointBox[4], 
+                PointBox[5], 
+                PointBox[6], 
+                PointBox[7], 
+                PointBox[8], 
+                PointBox[9], 
+                PointBox[10]}}], FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]], PlotRange -> All, PlotRangeClipping -> True, 
+             PlotRangePadding -> Scaled[0.1], Background -> GrayLevel[0.93], 
+             Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Opacity[0.5], 
+               Thickness[Tiny], 
+               RGBColor[0.368417, 0.506779, 0.709798]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Logic: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Predicate/EquationalLogic\"", "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Steps: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["53", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Theorem: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"integer", "[", "x", "]"}], Short[#, 1]& ], 
+                  "SummaryItem"]}], "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"Axioms: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    SubscriptBox["\[ForAll]", "x"], 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"even", "[", "x", "]"}], "\[Implies]", 
+                    RowBox[{"integer", "[", "x", "]"}]}], ")"}]}], ",", 
+                    RowBox[{"even", "[", "x", "]"}]}], "}"}], Short[#, 1]& ], 
+                  "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ProofObject["Predicate/EquationalLogic", 
+   $CellContext`integer[$CellContext`x], {
+    ForAll[$CellContext`x, 
+     Implies[
+      $CellContext`even[$CellContext`x], 
+      $CellContext`integer[$CellContext`x]]], 
+    $CellContext`even[$CellContext`x]}, {{"Axiom", 1} -> <|
+     "Statement" -> ForAll[$CellContext`x, 
+        Implies[
+         $CellContext`even[$CellContext`x], 
+         $CellContext`integer[$CellContext`x]]], "Proof" -> <||>|>, {
+     "Axiom", 2} -> <|
+     "Statement" -> $CellContext`even[$CellContext`x], "Proof" -> <||>|>, {
+     "Hypothesis", 1} -> <|
+     "Statement" -> $CellContext`integer[$CellContext`x], "Proof" -> <||>|>, {
+     "EquationalizedAxiom", 1} -> <|
+     "Statement" -> $CellContext`x1 == Or[$CellContext`x1, 
+         And[$CellContext`x2, 
+          Not[$CellContext`x2]]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 2} -> <|
+     "Statement" -> $CellContext`x1 == And[$CellContext`x1, 
+         Or[$CellContext`x2, 
+          Not[$CellContext`x2]]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 3} -> <|
+     "Statement" -> 
+      Or[$CellContext`x1, $CellContext`x2] == 
+       Or[$CellContext`x2, $CellContext`x1], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 4} -> <|"Statement" -> Or[$CellContext`x1, 
+         And[$CellContext`x2, $CellContext`x3]] == And[
+         Or[$CellContext`x1, $CellContext`x2], 
+         Or[$CellContext`x1, $CellContext`x3]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 5} -> <|"Statement" -> Or[
+         And[$CellContext`x1, $CellContext`x2], 
+         And[$CellContext`x1, $CellContext`x3]] == And[$CellContext`x1, 
+         Or[$CellContext`x2, $CellContext`x3]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 6} -> <|"Statement" -> Or[
+         Not[
+          $CellContext`even[$CellContext`x1]], 
+         $CellContext`integer[$CellContext`x1]] == Or[
+         Subscript[\[FormalA], 0], 
+         Not[
+          Subscript[\[FormalA], 0]]], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 7} -> <|"Statement" -> Or[
+         Subscript[\[FormalA], 0], 
+         Not[
+          Subscript[\[FormalA], 0]]] == $CellContext`even[$CellContext`x], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedAxiom", 8} -> <|
+     "Statement" -> 
+      And[$CellContext`x1, $CellContext`x2] == 
+       And[$CellContext`x2, $CellContext`x1], 
+      "Proof" -> <|"Input" -> {{"Axiom", 1}, {"Axiom", 2}}|>|>, {
+     "EquationalizedHypothesis", 1} -> <|"Statement" -> Or[
+         Subscript[\[FormalA], 0], 
+         Not[
+          Subscript[\[FormalA], 0]]] == $CellContext`integer[$CellContext`x], 
+      "Proof" -> <|"Input" -> {{"Hypothesis", 1}}|>|>, {
+     "CriticalPairLemma", 1} -> <|"Statement" -> Or[
+         And[$CellContext`x1, 
+          Not[$CellContext`x1]], $CellContext`x2] == $CellContext`x2, 
+      "Proof" -> <|
+       "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> TwoWayRule[
+          Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]], 
+          Or[
+           Pattern[$CellContext`x2, 
+            Blank[]], 
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "Side" -> 1, "Subpattern" -> Or[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 1}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           And[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 2} -> <|"Statement" -> And[$CellContext`x1, 
+         Or[$CellContext`x2, 
+          Not[$CellContext`x1]]] == And[$CellContext`x1, $CellContext`x2], 
+      "Proof" -> <|
+       "Construct" -> {"EquationalizedAxiom", 5}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x3, 
+             Blank[]]]] -> And[$CellContext`x1, 
+           Or[$CellContext`x2, $CellContext`x3]]), "Side" -> 1, "Subpattern" -> 
+        Or[
+          And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]], 
+          And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x3, 
+            Blank[]]]], "MatchingConstruct" -> {"EquationalizedAxiom", 1}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           And[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "SubstitutionLemma", 1} -> <|"Statement" -> Or[
+         $CellContext`integer[$CellContext`x1], 
+         Not[
+          $CellContext`even[$CellContext`x1]]] == Or[
+         Subscript[\[FormalA], 0], 
+         Not[
+          Subscript[\[FormalA], 0]]], 
+      "Proof" -> <|
+       "Input" -> {"EquationalizedAxiom", 6}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> Or[
+           $CellContext`integer[$CellContext`x1], 
+           Not[
+            $CellContext`even[$CellContext`x1]]] == Or[
+           Subscript[\[FormalA], 0], 
+           Not[
+            Subscript[\[FormalA], 0]]]|>|>, {"SubstitutionLemma", 2} -> <|
+     "Statement" -> Or[
+         $CellContext`integer[ELProver`Const2], 
+         Not[
+          $CellContext`even[
+          ELProver`Const2]]] == $CellContext`even[$CellContext`x], 
+      "Proof" -> <|
+       "Input" -> {"EquationalizedAxiom", 7}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 1}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           Subscript[\[FormalA], 0], 
+           Not[
+            Subscript[\[FormalA], 0]]] -> Or[
+           $CellContext`integer[ELProver`Const2], 
+           Not[
+            $CellContext`even[ELProver`Const2]]]), "OutputExpression" -> Or[
+           $CellContext`integer[ELProver`Const2], 
+           Not[
+            $CellContext`even[
+            ELProver`Const2]]] == $CellContext`even[$CellContext`x]|>|>, {
+     "CriticalPairLemma", 3} -> <|"Statement" -> And[
+         Or[$CellContext`x1, 
+          Not[$CellContext`x1]], $CellContext`x2] == $CellContext`x2, 
+      "Proof" -> <|
+       "Construct" -> {"EquationalizedAxiom", 8}, "Orientation" -> {-1, 1}, 
+        "Rule" -> TwoWayRule[
+          And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]], 
+          And[
+           Pattern[$CellContext`x2, 
+            Blank[]], 
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "Side" -> 1, "Subpattern" -> And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 2}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 4} -> <|
+     "Statement" -> 
+      And[$CellContext`x1, $CellContext`x2] == And[$CellContext`x1, 
+         Or[
+          Not[$CellContext`x1], $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 1}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> $CellContext`x2), "Side" -> 1, "Subpattern" -> Or[
+          And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 5}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (Or[
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x3, 
+             Blank[]]]] -> And[$CellContext`x1, 
+           Or[$CellContext`x2, $CellContext`x3]]), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 5} -> <|
+     "Statement" -> 
+      Or[$CellContext`x1, $CellContext`x2] == Or[$CellContext`x1, 
+         And[
+          Not[$CellContext`x1], $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 3}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> $CellContext`x2), "Side" -> 1, "Subpattern" -> And[
+          Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 4}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]], 
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x3, 
+             Blank[]]]] -> Or[$CellContext`x1, 
+           And[$CellContext`x2, $CellContext`x3]]), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 6} -> <|"Statement" -> Or[$CellContext`x1, 
+         Not[$CellContext`x1]] == Or[$CellContext`x2, 
+         Not[$CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 3}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> $CellContext`x2), "Side" -> 1, "Subpattern" -> And[
+          Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 2}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 7} -> <|"Statement" -> And[
+         $CellContext`even[ELProver`Const2], 
+         $CellContext`integer[ELProver`Const2]] == And[
+         $CellContext`even[ELProver`Const2], 
+         $CellContext`even[$CellContext`x]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Not[
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "MatchingConstruct" -> {"SubstitutionLemma", 2}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (Or[
+           $CellContext`integer[EquationalProof`const2], 
+           Not[
+            $CellContext`even[
+            EquationalProof`const2]]] -> $CellContext`even[$CellContext`x]), 
+        "MatchingSide" -> 1|>|>, {"CriticalPairLemma", 8} -> <|
+     "Statement" -> And[
+         $CellContext`even[$CellContext`x1], 
+         $CellContext`integer[$CellContext`x1]] == And[
+         $CellContext`even[$CellContext`x1], 
+         Or[
+          Subscript[\[FormalA], 0], 
+          Not[
+           Subscript[\[FormalA], 0]]]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Not[
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "MatchingConstruct" -> {"SubstitutionLemma", 1}, 
+        "MatchingOrientation" -> {-1, 1}, "MatchingRule" -> 0, "MatchingSide" -> 
+        1|>|>, {"SubstitutionLemma", 3} -> <|"Statement" -> And[
+         $CellContext`even[$CellContext`x1], 
+         $CellContext`integer[$CellContext`x1]] == \
+$CellContext`even[$CellContext`x1], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 8}, "Position" -> 2, 
+        "Construct" -> {"EquationalizedAxiom", 2}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "OutputExpression" -> And[
+           $CellContext`even[$CellContext`x1], 
+           $CellContext`integer[$CellContext`x1]] == \
+$CellContext`even[$CellContext`x1]|>|>, {"SubstitutionLemma", 4} -> <|
+     "Statement" -> And[
+         $CellContext`integer[$CellContext`x1], 
+         $CellContext`even[$CellContext`x1]] == \
+$CellContext`even[$CellContext`x1], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 3}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 8}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> And[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> And[
+           $CellContext`integer[$CellContext`x1], 
+           $CellContext`even[$CellContext`x1]] == \
+$CellContext`even[$CellContext`x1]|>|>, {"SubstitutionLemma", 5} -> <|
+     "Statement" -> And[
+         $CellContext`integer[ELProver`Const2], 
+         $CellContext`even[ELProver`Const2]] == And[
+         $CellContext`even[ELProver`Const2], 
+         $CellContext`even[$CellContext`x]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 7}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 8}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> And[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> And[
+           $CellContext`integer[ELProver`Const2], 
+           $CellContext`even[ELProver`Const2]] == And[
+           $CellContext`even[ELProver`Const2], 
+           $CellContext`even[$CellContext`x]]|>|>, {
+     "SubstitutionLemma", 6} -> <|
+     "Statement" -> $CellContext`even[ELProver`Const2] == And[
+         $CellContext`even[ELProver`Const2], 
+         $CellContext`even[$CellContext`x]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 5}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 4}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           $CellContext`integer[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           $CellContext`even[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`even[$CellContext`x1]), 
+        "OutputExpression" -> $CellContext`even[ELProver`Const2] == And[
+           $CellContext`even[ELProver`Const2], 
+           $CellContext`even[$CellContext`x]]|>|>, {
+     "CriticalPairLemma", 9} -> <|"Statement" -> And[$CellContext`x1, 
+         Not[
+          Not[$CellContext`x1]]] == $CellContext`x1, 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 4}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Or[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]]], "MatchingConstruct" -> {"EquationalizedAxiom", 2}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 10} -> <|"Statement" -> Or[$CellContext`x1, 
+         Not[
+          Not[
+           Not[$CellContext`x1]]]] == Or[$CellContext`x1, 
+         Not[$CellContext`x1]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 5}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           And[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[$CellContext`x1, $CellContext`x2]), "Side" -> 1,
+         "Subpattern" -> And[
+          Not[
+           Pattern[$CellContext`x1, 
+            Blank[]]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"CriticalPairLemma", 9}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 11} -> <|"Statement" -> And[
+         Not[
+          Not[$CellContext`x1]], $CellContext`x1] == And[
+         Not[
+          Not[$CellContext`x1]], 
+         Or[$CellContext`x1, 
+          Not[$CellContext`x1]]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Not[
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "MatchingConstruct" -> {"CriticalPairLemma", 10}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Not[
+             Not[
+              Pattern[$CellContext`x1, 
+               Blank[]]]]]] -> Or[$CellContext`x1, 
+           Not[$CellContext`x1]]), "MatchingSide" -> 1|>|>, {
+     "SubstitutionLemma", 7} -> <|"Statement" -> And[
+         Not[
+          Not[$CellContext`x1]], $CellContext`x1] == Not[
+         Not[$CellContext`x1]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 11}, "Position" -> 2, 
+        "Construct" -> {"EquationalizedAxiom", 2}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "OutputExpression" -> And[
+           Not[
+            Not[$CellContext`x1]], $CellContext`x1] == Not[
+           Not[$CellContext`x1]]|>|>, {"SubstitutionLemma", 8} -> <|
+     "Statement" -> And[$CellContext`x1, 
+         Not[
+          Not[$CellContext`x1]]] == Not[
+         Not[$CellContext`x1]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 7}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 8}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> And[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> And[$CellContext`x1, 
+           Not[
+            Not[$CellContext`x1]]] == Not[
+           Not[$CellContext`x1]]|>|>, {"SubstitutionLemma", 9} -> <|
+     "Statement" -> $CellContext`x1 == Not[
+         Not[$CellContext`x1]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 8}, "Position" -> 1, 
+        "Construct" -> {"CriticalPairLemma", 9}, "Orientation" -> 1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]]]] -> $CellContext`x1), 
+        "OutputExpression" -> $CellContext`x1 == Not[
+           Not[$CellContext`x1]]|>|>, {"CriticalPairLemma", 12} -> <|
+     "Statement" -> Or[
+         Not[$CellContext`x1], $CellContext`x2] == Or[
+         Not[$CellContext`x1], 
+         And[$CellContext`x1, $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 5}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           And[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[$CellContext`x1, $CellContext`x2]), "Side" -> 1,
+         "Subpattern" -> Not[
+          Pattern[$CellContext`x1, 
+           Blank[]]], "MatchingConstruct" -> {"SubstitutionLemma", 9}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (Not[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 13} -> <|"Statement" -> And[
+         Not[$CellContext`x1], $CellContext`x2] == And[
+         Not[$CellContext`x1], 
+         Or[$CellContext`x1, $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 4}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Not[
+             Pattern[$CellContext`x1, 
+              Blank[]]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> And[$CellContext`x1, $CellContext`x2]), "Side" -> 
+        1, "Subpattern" -> Not[
+          Pattern[$CellContext`x1, 
+           Blank[]]], "MatchingConstruct" -> {"SubstitutionLemma", 9}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (Not[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`x1), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 14} -> <|"Statement" -> Or[
+         Not[
+          $CellContext`even[ELProver`Const2]], 
+         $CellContext`even[$CellContext`x]] == Or[
+         Not[
+          $CellContext`even[ELProver`Const2]], 
+         $CellContext`even[ELProver`Const2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 12}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[
+           Not[$CellContext`x1], $CellContext`x2]), "Side" -> 1, "Subpattern" -> 
+        And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"SubstitutionLemma", 6}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           $CellContext`even[EquationalProof`const2], 
+           $CellContext`even[$CellContext`x]] -> $CellContext`even[
+          ELProver`Const2]), "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 15} -> <|"Statement" -> Or[
+         Not[
+          Not[$CellContext`x1]], 
+         Or[$CellContext`x1, $CellContext`x2]] == Or[
+         Not[
+          Not[$CellContext`x1]], 
+         And[
+          Not[$CellContext`x1], $CellContext`x2]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 12}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[
+           Not[$CellContext`x1], $CellContext`x2]), "Side" -> 1, "Subpattern" -> 
+        And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"CriticalPairLemma", 13}, 
+        "MatchingOrientation" -> -1, "MatchingRule" -> (And[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> And[
+           Not[$CellContext`x1], $CellContext`x2]), "MatchingSide" -> 1|>|>, {
+     "SubstitutionLemma", 10} -> <|"Statement" -> Or[$CellContext`x1, 
+         Or[$CellContext`x1, $CellContext`x2]] == Or[
+         Not[
+          Not[$CellContext`x1]], 
+         And[
+          Not[$CellContext`x1], $CellContext`x2]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 15}, "Position" -> {1, 1}, 
+        "Construct" -> {"SubstitutionLemma", 9}, "Orientation" -> -1, 
+        "Rule" -> (Not[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`x1), "OutputExpression" -> 
+        Or[$CellContext`x1, 
+           Or[$CellContext`x1, $CellContext`x2]] == Or[
+           Not[
+            Not[$CellContext`x1]], 
+           And[
+            Not[$CellContext`x1], $CellContext`x2]]|>|>, {
+     "SubstitutionLemma", 11} -> <|"Statement" -> Or[$CellContext`x1, 
+         Or[$CellContext`x1, $CellContext`x2]] == Or[
+         Not[
+          Not[$CellContext`x1]], $CellContext`x2], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 10}, "Position" -> 2, 
+        "Construct" -> {"CriticalPairLemma", 12}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           And[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[
+           Not[$CellContext`x1], $CellContext`x2]), "OutputExpression" -> 
+        Or[$CellContext`x1, 
+           Or[$CellContext`x1, $CellContext`x2]] == Or[
+           Not[
+            Not[$CellContext`x1]], $CellContext`x2]|>|>, {
+     "SubstitutionLemma", 12} -> <|"Statement" -> Or[$CellContext`x1, 
+         Or[$CellContext`x1, $CellContext`x2]] == 
+       Or[$CellContext`x1, $CellContext`x2], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 11}, "Position" -> {2, 1}, 
+        "Construct" -> {"SubstitutionLemma", 9}, "Orientation" -> -1, 
+        "Rule" -> (Not[
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`x1), "OutputExpression" -> 
+        Or[$CellContext`x1, 
+           Or[$CellContext`x1, $CellContext`x2]] == 
+         Or[$CellContext`x1, $CellContext`x2]|>|>, {
+     "CriticalPairLemma", 16} -> <|
+     "Statement" -> 
+      Or[$CellContext`x1, $CellContext`x2] == Or[$CellContext`x1, 
+         Or[$CellContext`x2, $CellContext`x1]], 
+      "Proof" -> <|
+       "Construct" -> {"SubstitutionLemma", 12}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x1, 
+             Blank[]], 
+            Pattern[$CellContext`x2, 
+             Blank[]]]] -> Or[$CellContext`x1, $CellContext`x2]), "Side" -> 1,
+         "Subpattern" -> Or[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          Pattern[$CellContext`x2, 
+           Blank[]]], "MatchingConstruct" -> {"EquationalizedAxiom", 3}, 
+        "MatchingOrientation" -> {-1, 1}, "MatchingRule" -> TwoWayRule[
+          Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]], 
+          Or[
+           Pattern[$CellContext`x2, 
+            Blank[]], 
+           Pattern[$CellContext`x1, 
+            Blank[]]]], "MatchingSide" -> 1|>|>, {
+     "CriticalPairLemma", 17} -> <|"Statement" -> Or[
+         Not[
+          $CellContext`even[ELProver`Const2]], 
+         $CellContext`integer[ELProver`Const2]] == Or[
+         Not[
+          $CellContext`even[ELProver`Const2]], 
+         $CellContext`even[$CellContext`x]], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 16}, "Orientation" -> -1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> Or[$CellContext`x1, $CellContext`x2]), "Side" -> 1,
+         "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Pattern[$CellContext`x1, 
+           Blank[]]], "MatchingConstruct" -> {"SubstitutionLemma", 2}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (Or[
+           $CellContext`integer[EquationalProof`const2], 
+           Not[
+            $CellContext`even[
+            EquationalProof`const2]]] -> $CellContext`even[$CellContext`x]), 
+        "MatchingSide" -> 1|>|>, {"SubstitutionLemma", 13} -> <|
+     "Statement" -> Or[
+         $CellContext`even[$CellContext`x], 
+         Not[
+          $CellContext`even[ELProver`Const2]]] == Or[
+         Not[
+          $CellContext`even[ELProver`Const2]], 
+         $CellContext`even[ELProver`Const2]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 14}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> Or[
+           $CellContext`even[$CellContext`x], 
+           Not[
+            $CellContext`even[ELProver`Const2]]] == Or[
+           Not[
+            $CellContext`even[ELProver`Const2]], 
+           $CellContext`even[ELProver`Const2]]|>|>, {
+     "SubstitutionLemma", 14} -> <|"Statement" -> Or[
+         $CellContext`even[$CellContext`x], 
+         Not[
+          $CellContext`even[ELProver`Const2]]] == Or[
+         $CellContext`even[ELProver`Const2], 
+         Not[
+          $CellContext`even[ELProver`Const2]]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 13}, "Position" -> 2, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> Or[
+           $CellContext`even[$CellContext`x], 
+           Not[
+            $CellContext`even[ELProver`Const2]]] == Or[
+           $CellContext`even[ELProver`Const2], 
+           Not[
+            $CellContext`even[ELProver`Const2]]]|>|>, {
+     "SubstitutionLemma", 15} -> <|"Statement" -> Or[
+         $CellContext`even[$CellContext`x], 
+         Not[
+          $CellContext`even[ELProver`Const2]]] == Or[ELProver`Const2, 
+         Not[ELProver`Const2]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 14}, "Position" -> 2, 
+        "Construct" -> {"CriticalPairLemma", 6}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Not[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> Or[ELProver`Const2, 
+           Not[ELProver`Const2]]), "OutputExpression" -> Or[
+           $CellContext`even[$CellContext`x], 
+           Not[
+            $CellContext`even[ELProver`Const2]]] == Or[ELProver`Const2, 
+           Not[ELProver`Const2]]|>|>, {"SubstitutionLemma", 16} -> <|
+     "Statement" -> Or[
+         $CellContext`integer[ELProver`Const2], 
+         Not[
+          $CellContext`even[ELProver`Const2]]] == Or[
+         Not[
+          $CellContext`even[ELProver`Const2]], 
+         $CellContext`even[$CellContext`x]], 
+      "Proof" -> <|
+       "Input" -> {"CriticalPairLemma", 17}, "Position" -> 1, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> Or[
+           $CellContext`integer[ELProver`Const2], 
+           Not[
+            $CellContext`even[ELProver`Const2]]] == Or[
+           Not[
+            $CellContext`even[ELProver`Const2]], 
+           $CellContext`even[$CellContext`x]]|>|>, {
+     "SubstitutionLemma", 17} -> <|
+     "Statement" -> $CellContext`even[$CellContext`x] == Or[
+         Not[
+          $CellContext`even[ELProver`Const2]], 
+         $CellContext`even[$CellContext`x]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 16}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           $CellContext`integer[EquationalProof`const2], 
+           Not[
+            $CellContext`even[
+            EquationalProof`const2]]] -> $CellContext`even[$CellContext`x]), 
+        "OutputExpression" -> $CellContext`even[$CellContext`x] == Or[
+           Not[
+            $CellContext`even[ELProver`Const2]], 
+           $CellContext`even[$CellContext`x]]|>|>, {
+     "SubstitutionLemma", 18} -> <|
+     "Statement" -> $CellContext`even[$CellContext`x] == Or[
+         $CellContext`even[$CellContext`x], 
+         Not[
+          $CellContext`even[ELProver`Const2]]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 17}, "Position" -> 2, 
+        "Construct" -> {"EquationalizedAxiom", 3}, "Orientation" -> {-1, 1}, 
+        "Rule" -> (Or[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Pattern[$CellContext`x2, 
+            Blank[]]] -> Or[$CellContext`x2, $CellContext`x1]), 
+        "OutputExpression" -> $CellContext`even[$CellContext`x] == Or[
+           $CellContext`even[$CellContext`x], 
+           Not[
+            $CellContext`even[ELProver`Const2]]]|>|>, {
+     "SubstitutionLemma", 19} -> <|
+     "Statement" -> $CellContext`even[$CellContext`x] == Or[ELProver`Const2, 
+         Not[ELProver`Const2]], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 18}, "Position" -> 2, 
+        "Construct" -> {"SubstitutionLemma", 15}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           $CellContext`even[$CellContext`x], 
+           Not[
+            $CellContext`even[EquationalProof`const2]]] -> Or[ELProver`Const2, 
+           Not[ELProver`Const2]]), 
+        "OutputExpression" -> $CellContext`even[$CellContext`x] == 
+         Or[ELProver`Const2, 
+           Not[ELProver`Const2]]|>|>, {"CriticalPairLemma", 18} -> <|
+     "Statement" -> $CellContext`x1 == And[$CellContext`x1, 
+         $CellContext`even[$CellContext`x]], 
+      "Proof" -> <|
+       "Construct" -> {"EquationalizedAxiom", 2}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           Or[
+            Pattern[$CellContext`x2, 
+             Blank[]], 
+            Not[
+             Pattern[$CellContext`x2, 
+              Blank[]]]]] -> $CellContext`x1), "Side" -> 1, "Subpattern" -> Or[
+          Pattern[$CellContext`x2, 
+           Blank[]], 
+          Not[
+           Pattern[$CellContext`x2, 
+            Blank[]]]], "MatchingConstruct" -> {"SubstitutionLemma", 19}, 
+        "MatchingOrientation" -> -1, 
+        "MatchingRule" -> (Or[EquationalProof`const2, 
+           Not[EquationalProof`const2]] -> $CellContext`even[$CellContext`x]),
+         "MatchingSide" -> 1|>|>, {"CriticalPairLemma", 19} -> <|
+     "Statement" -> $CellContext`integer[$CellContext`x] == \
+$CellContext`even[$CellContext`x], 
+      "Proof" -> <|
+       "Construct" -> {"CriticalPairLemma", 18}, "Orientation" -> -1, 
+        "Rule" -> (And[
+           Pattern[$CellContext`x1, 
+            Blank[]], 
+           $CellContext`even[$CellContext`x]] -> $CellContext`x1), "Side" -> 
+        1, "Subpattern" -> And[
+          Pattern[$CellContext`x1, 
+           Blank[]], 
+          $CellContext`even[$CellContext`x]], 
+        "MatchingConstruct" -> {"SubstitutionLemma", 4}, 
+        "MatchingOrientation" -> 1, "MatchingRule" -> (And[
+           $CellContext`integer[
+            Pattern[$CellContext`x1, 
+             Blank[]]], 
+           $CellContext`even[
+            Pattern[$CellContext`x1, 
+             Blank[]]]] -> $CellContext`even[$CellContext`x1]), 
+        "MatchingSide" -> 1|>|>, {"SubstitutionLemma", 20} -> <|
+     "Statement" -> Or[
+         $CellContext`integer[ELProver`Const2], 
+         Not[
+          $CellContext`even[
+          ELProver`Const2]]] == $CellContext`integer[$CellContext`x], 
+      "Proof" -> <|
+       "Input" -> {"EquationalizedHypothesis", 1}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 1}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           Subscript[\[FormalA], 0], 
+           Not[
+            Subscript[\[FormalA], 0]]] -> Or[
+           $CellContext`integer[ELProver`Const2], 
+           Not[
+            $CellContext`even[ELProver`Const2]]]), "OutputExpression" -> Or[
+           $CellContext`integer[ELProver`Const2], 
+           Not[
+            $CellContext`even[
+            ELProver`Const2]]] == $CellContext`integer[$CellContext`x]|>|>, {
+     "SubstitutionLemma", 21} -> <|
+     "Statement" -> $CellContext`even[$CellContext`x] == \
+$CellContext`integer[$CellContext`x], 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 20}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 2}, "Orientation" -> 1, 
+        "Rule" -> (Or[
+           $CellContext`integer[EquationalProof`const2], 
+           Not[
+            $CellContext`even[
+            EquationalProof`const2]]] -> $CellContext`even[$CellContext`x]), 
+        "OutputExpression" -> $CellContext`even[$CellContext`x] == \
+$CellContext`integer[$CellContext`x]|>|>, {"Conclusion", 1} -> <|
+     "Statement" -> True, 
+      "Proof" -> <|
+       "Input" -> {"SubstitutionLemma", 21}, "Position" -> 2, 
+        "Construct" -> {"CriticalPairLemma", 19}, "Orientation" -> -1, 
+        "Rule" -> ($CellContext`integer[$CellContext`x] -> \
+$CellContext`even[$CellContext`x]), "OutputExpression" -> True|>|>}],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8704419945766816`*^9},
+ CellLabel->"Out[30]=",ExpressionUUID->"3e274c2e-d01e-43c2-b469-bc2508377c60"]
+}, Open  ]]
+},
+WindowSize->{1141.2, 585.6},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2ff755d9-4043-49ae-a71b-dbbe2cac9ce0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 252, 8, 33, "Input",ExpressionUUID->"0c21027b-b218-423e-a656-5bd58df08663"],
+Cell[CellGroupData[{
+Cell[835, 32, 323, 7, 28, "Input",ExpressionUUID->"5812e4c1-3d36-4a8f-9eaa-c226c87c3085"],
+Cell[1161, 41, 343, 10, 34, "Output",ExpressionUUID->"6e48c988-2451-42d3-a167-d1a122b92773"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1541, 56, 353, 8, 28, "Input",ExpressionUUID->"8152dd30-db33-4315-86a6-dd08e65d99b0"],
+Cell[1897, 66, 411, 12, 34, "Output",ExpressionUUID->"8086f320-06f4-43c4-a519-9da5c6d55662"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2345, 83, 378, 9, 28, "Input",ExpressionUUID->"6d351848-fc37-4290-8cb9-96419c4185da"],
+Cell[2726, 94, 343, 10, 34, "Output",ExpressionUUID->"37ac1f2d-20f6-4246-b132-87764d89129f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3106, 109, 362, 11, 30, "Input",ExpressionUUID->"213c0512-56e1-4742-bd62-50c5a3f1502d"],
+Cell[3471, 122, 152, 2, 32, "Output",ExpressionUUID->"78d80254-a956-475e-9ec8-70d620e4c496"]
+}, Open  ]],
+Cell[3638, 127, 620, 15, 30, "Input",ExpressionUUID->"caad8053-76f6-4345-9e31-9bc8a4652771"],
+Cell[CellGroupData[{
+Cell[4283, 146, 214, 3, 28, "Input",ExpressionUUID->"92b1f102-b5e0-4149-a66f-2fca5ba85660"],
+Cell[4500, 151, 177, 2, 32, "Output",ExpressionUUID->"68349749-21b9-4dbe-adfc-f2de4e6b85d6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4714, 158, 216, 3, 28, "Input",ExpressionUUID->"33c0bd2e-3132-484d-97e2-af28d473fd3c"],
+Cell[4933, 163, 173, 2, 32, "Output",ExpressionUUID->"e4e10fe6-9378-440e-9053-2e341a3332b3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5143, 170, 267, 4, 28, "Input",ExpressionUUID->"a96ac4d6-22cd-4f98-b892-303b19b1c954"],
+Cell[5413, 176, 179, 2, 32, "Output",ExpressionUUID->"9164d8b6-8d9a-43e8-8f63-e45c3bc09131"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5629, 183, 817, 23, 30, "Input",ExpressionUUID->"33e71d2e-70f3-4a32-9eee-f12acd94e68f"],
+Cell[6449, 208, 972, 33, 34, "Output",ExpressionUUID->"4013efdb-bbf7-4563-b5ca-d06ae924f32d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7458, 246, 1213, 35, 30, "Input",ExpressionUUID->"e9104e7d-bf58-464d-b8ea-6c05dcf0e5a9"],
+Cell[8674, 283, 1612, 27, 28, "Message",ExpressionUUID->"89525bc0-710b-42e0-a799-f9ddfd653864"],
+Cell[10289, 312, 1415, 45, 34, "Output",ExpressionUUID->"43b99290-4c5c-4c88-b0b2-de46a1907c21"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11741, 362, 840, 24, 30, "Input",ExpressionUUID->"44986205-d5f8-4409-a6ff-05224e9178e7"],
+Cell[12584, 388, 1126, 20, 28, "Message",ExpressionUUID->"c0c737e5-ffa8-4529-b234-57b294048623"],
+Cell[13713, 410, 909, 29, 34, "Output",ExpressionUUID->"3f96efd5-b1af-4588-9641-f1ce4640a6f7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14659, 444, 1163, 34, 30, "Input",ExpressionUUID->"ad890f74-3488-449f-8b76-21cd0eaee9f5"],
+Cell[15825, 480, 1614, 27, 28, "Message",ExpressionUUID->"44fca2a4-e837-40c6-ab58-7ac01b166ae5"],
+Cell[17442, 509, 1417, 45, 34, "Output",ExpressionUUID->"12d86027-c94d-43f9-9617-b181912205d4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18896, 559, 1122, 32, 30, "Input",ExpressionUUID->"9d06a5ee-529c-47a2-9b34-3d3b5573219d"],
+Cell[20021, 593, 1547, 25, 28, "Message",ExpressionUUID->"cf38f6b3-d1d4-4b50-9c92-d73816364450"],
+Cell[21571, 620, 1337, 44, 34, "Output",ExpressionUUID->"c52a272b-f184-4124-b557-970761e9c0cf"]
+}, Open  ]],
+Cell[22923, 667, 1128, 33, 30, "Input",ExpressionUUID->"4047f695-c119-4564-a29c-5df0bb6cc4ff"],
+Cell[CellGroupData[{
+Cell[24076, 704, 512, 13, 28, "Input",ExpressionUUID->"383096f1-bace-4eec-a435-3bd163239bcc"],
+Cell[24591, 719, 48727, 1196, 64, "Output",ExpressionUUID->"a21e975c-be2f-43fc-9fe8-9551bd478e6c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73355, 1920, 809, 21, 30, "Input",ExpressionUUID->"01e694f8-6bc9-4544-ae01-baccb2b7d912"],
+Cell[74167, 1943, 1106, 19, 28, "Message",ExpressionUUID->"5b2e7b35-ab44-4fc6-9d89-62651ad50913"],
+Cell[75276, 1964, 853, 24, 34, "Output",ExpressionUUID->"c02542dc-3562-4d10-9439-9dadea631442"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76166, 1993, 623, 15, 28, "Input",ExpressionUUID->"d7b30163-de06-4f97-920a-764fafd3ae04"],
+Cell[76792, 2010, 48440, 1187, 64, "Output",ExpressionUUID->"3e274c2e-d01e-43c2-b469-bc2508377c60"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
