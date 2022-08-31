@@ -1,0 +1,17 @@
+An open sentence is a sentence with a variable.
+Exmaple:x<4
+To turn an open sentence into a statement, we use sets and quantitifers.
+A set is a collection of objects.
+Each member of a set is an element.
+Notation
+1.List method:
+Example: {1,2,3,4,5,6}
+2.Set builder: {x:x∈Z and 1<=x<=5}
+A={1,2,3,4,5}
+write 3∈A. "3 is an element of A." "3 is in A."
+7 is not an element of A. 7 is not in A.
+Quantifiers
+Universal
+For all, For each, For every
+For all x in S, P(x)
+This statement is true if P(x) is true for every
