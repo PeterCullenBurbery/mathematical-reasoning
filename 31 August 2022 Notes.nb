@@ -1,0 +1,219 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7836,        209]
+NotebookOptionsPosition[      5126,        156]
+NotebookOutlinePosition[      5632,        174]
+CellTagsIndexPosition[      5589,        171]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Enter section title here", "Section",ExpressionUUID->"c98f67a7-f392-4a48-b84f-215ae7d385e2"],
+
+Cell["\[Not](For all x\[Element]\[DoubleStruckCapitalZ], \
+|x|\[GreaterEqual]1)", "Text",
+ CellChangeTimes->{{3.870956547585514*^9, 
+  3.8709565921553526`*^9}},ExpressionUUID->"629ff6f9-8373-4df9-ae1d-\
+bc8aef3f2d70"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Resolve", "[", 
+  RowBox[{"\[Not]", 
+   RowBox[{"(", 
+    RowBox[{
+     SubscriptBox["\[ForAll]", 
+      RowBox[{"x", ",", 
+       RowBox[{"x", "\[Element]", "Integers"}]}]], 
+     RowBox[{
+      RowBox[{"Abs", "[", "x", "]"}], ">=", "1"}]}], ")"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8709564774349723`*^9, 3.8709565045213227`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"e1362ef7-8d65-45b6-bfc4-8b1e427aab3c"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.870956504888256*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"9764fb09-bd38-44b8-b288-47a733a73464"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindInstance", "[", 
+  RowBox[{
+   RowBox[{"\[Not]", 
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[ForAll]", 
+       RowBox[{"x", ",", 
+        RowBox[{"x", "\[Element]", "Integers"}]}]], 
+      RowBox[{
+       RowBox[{"Abs", "[", "x", "]"}], ">=", "1"}]}], ")"}]}], ",", "x", ",", 
+   "Integers"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8709564774349723`*^9, 3.8709565045213227`*^9}, {
+  3.870956602422391*^9, 3.8709566186138735`*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"1a24ec00-f733-4c89-a18e-27e556c9a1aa"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"x", "\[Rule]", "198"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8709566061544333`*^9, 3.870956618943155*^9}},
+ CellLabel->"Out[22]=",ExpressionUUID->"6f35b35e-fb4b-4183-8416-0aebb96b0a81"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{"\[Not]", 
+   RowBox[{"(", 
+    RowBox[{
+     SubscriptBox["\[ForAll]", 
+      RowBox[{"x", ",", 
+       RowBox[{"x", "\[Element]", "Integers"}]}]], 
+     RowBox[{
+      RowBox[{"Abs", "[", "x", "]"}], ">=", "1"}]}], ")"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8709564774349723`*^9, 3.870956510808831*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"0db50404-91be-4049-a930-f88beb0e003e"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.870956511090995*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"3b5ba3e1-4a4a-475e-9492-d1ed6973e38c"]
+}, Open  ]],
+
+Cell["\<\
+Enter text here. Enter formula for display in a separate cell below:\
+\>", "Text",ExpressionUUID->"639f29eb-9bd3-4c12-991a-9c8b2058a823"],
+
+Cell[BoxData[
+ RowBox[{"2", "+", "2"}]], "DisplayFormula",ExpressionUUID->"72c949b0-5ab9-4d03-8dc7-d227671243b4"],
+
+Cell[CellGroupData[{
+
+Cell["Enter bulleted item here.", "Item",ExpressionUUID->"b0ec60c1-bd33-40aa-9766-2f46595d4f14"],
+
+Cell["Enter bulleted subitem here.", "Subitem",ExpressionUUID->"d2e7f064-146d-475c-b70e-40369c994330"],
+
+Cell[CellGroupData[{
+
+Cell["Enter bulleted subitem here.", "Subitem",ExpressionUUID->"cd605d7e-00e3-4656-82f0-82024f5f5537"],
+
+Cell["Enter subitem paragraph text here.", "SubitemParagraph",ExpressionUUID->"2251e0fc-1b6c-448a-9c44-2a19f42e0dfc"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter bulleted item here.", "Item",ExpressionUUID->"2c0e0791-0653-446d-976c-7363a2066955"],
+
+Cell["Enter item paragraph text here.", "ItemParagraph",ExpressionUUID->"6e7425f2-a7be-41fb-a7f8-2dd7b0f6b1f0"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter section title here", "Section",ExpressionUUID->"29317731-4b31-4fc1-9eef-1d92e3480eb8"],
+
+Cell["\<\
+There exists has negation for all also P(x) becomes not P(x).
+\[Not](\[Exists]x\[Element]S,s.t. P(x))=\[ForAll]x\[Element]S, not P(x).\
+\>", "Text",
+ CellChangeTimes->{{3.870956647732385*^9, 
+  3.8709567141531477`*^9}},ExpressionUUID->"d801c0c5-5275-4a15-8c81-\
+abdde1beaf31"],
+
+Cell[BoxData[
+ RowBox[{"2", "+", "2"}]], "DisplayFormulaNumbered",ExpressionUUID->"f9248a95-e006-49e5-b886-db9b9def570f"],
+
+Cell["Examples", "Text",
+ CellChangeTimes->{{3.87095677908537*^9, 
+  3.8709567805576415`*^9}},ExpressionUUID->"280dd55a-a444-406c-bd5d-\
+f57ab7045a74"],
+
+Cell["\[Not](\[Exists]x\[Element]\[DoubleStruckCapitalN], st 3x-2=0).", "Text",
+ CellChangeTimes->{{3.870956783801489*^9, 
+  3.8709568013882113`*^9}},ExpressionUUID->"a11ceed3-7d10-4405-9f99-\
+357008acdbe5"],
+
+Cell["\[ForAll]x\[Element]\[AliasDelimiter]ds", "Text",
+ CellChangeTimes->{{3.870956805220499*^9, 
+  3.8709568111651964`*^9}},ExpressionUUID->"459f9db9-5265-400b-840f-\
+a59f6632e83f"]
+}, Open  ]]
+},
+WindowSize->{582.6, 494.4},
+WindowMargins->{{Automatic, 37.799999999999955`}, {
+  20.399999999999977`, Automatic}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (August 23, 2022)",
+StyleDefinitions->FrontEnd`FileName[{"Utility"}, "Notepad.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"ebc9f432-9947-45c0-9566-299bf11088a8"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 98, 0, 70, "Section",ExpressionUUID->"c98f67a7-f392-4a48-b84f-215ae7d385e2"],
+Cell[681, 24, 217, 4, 32, "Text",ExpressionUUID->"629ff6f9-8373-4df9-ae1d-bc8aef3f2d70"],
+Cell[CellGroupData[{
+Cell[923, 32, 441, 11, 29, "Input",ExpressionUUID->"e1362ef7-8d65-45b6-bfc4-8b1e427aab3c"],
+Cell[1367, 45, 152, 2, 31, "Output",ExpressionUUID->"9764fb09-bd38-44b8-b288-47a733a73464"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1556, 52, 549, 14, 29, "Input",ExpressionUUID->"1a24ec00-f733-4c89-a18e-27e556c9a1aa"],
+Cell[2108, 68, 252, 5, 31, "Output",ExpressionUUID->"6f35b35e-fb4b-4183-8416-0aebb96b0a81"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2397, 78, 438, 11, 29, "Input",ExpressionUUID->"0db50404-91be-4049-a930-f88beb0e003e"],
+Cell[2838, 91, 152, 2, 31, "Output",ExpressionUUID->"3b5ba3e1-4a4a-475e-9492-d1ed6973e38c"]
+}, Open  ]],
+Cell[3005, 96, 147, 2, 56, "Text",ExpressionUUID->"639f29eb-9bd3-4c12-991a-9c8b2058a823"],
+Cell[3155, 100, 113, 1, 24, "DisplayFormula",ExpressionUUID->"72c949b0-5ab9-4d03-8dc7-d227671243b4"],
+Cell[CellGroupData[{
+Cell[3293, 105, 96, 0, 26, "Item",ExpressionUUID->"b0ec60c1-bd33-40aa-9766-2f46595d4f14"],
+Cell[3392, 107, 102, 0, 25, "Subitem",ExpressionUUID->"d2e7f064-146d-475c-b70e-40369c994330"],
+Cell[CellGroupData[{
+Cell[3519, 111, 102, 0, 25, "Subitem",ExpressionUUID->"cd605d7e-00e3-4656-82f0-82024f5f5537"],
+Cell[3624, 113, 117, 0, 22, "SubitemParagraph",ExpressionUUID->"2251e0fc-1b6c-448a-9c44-2a19f42e0dfc"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3790, 119, 96, 0, 26, "Item",ExpressionUUID->"2c0e0791-0653-446d-976c-7363a2066955"],
+Cell[3889, 121, 111, 0, 23, "ItemParagraph",ExpressionUUID->"6e7425f2-a7be-41fb-a7f8-2dd7b0f6b1f0"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4049, 127, 98, 0, 70, "Section",ExpressionUUID->"29317731-4b31-4fc1-9eef-1d92e3480eb8"],
+Cell[4150, 129, 286, 6, 90, "Text",ExpressionUUID->"d801c0c5-5275-4a15-8c81-abdde1beaf31"],
+Cell[4439, 137, 121, 1, 25, "DisplayFormulaNumbered",ExpressionUUID->"f9248a95-e006-49e5-b886-db9b9def570f"],
+Cell[4563, 140, 151, 3, 32, "Text",ExpressionUUID->"280dd55a-a444-406c-bd5d-f57ab7045a74"],
+Cell[4717, 145, 207, 3, 32, "Text",ExpressionUUID->"a11ceed3-7d10-4405-9f99-357008acdbe5"],
+Cell[4927, 150, 183, 3, 32, "Text",ExpressionUUID->"459f9db9-5265-400b-840f-a59f6632e83f"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
