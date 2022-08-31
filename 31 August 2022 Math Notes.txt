@@ -9,9 +9,55 @@ Example: {1,2,3,4,5,6}
 2.Set builder: {x:x∈Z and 1<=x<=5}
 A={1,2,3,4,5}
 write 3∈A. "3 is an element of A." "3 is in A."
-7 is not an element of A. 7 is not in A.
+7 is not an element of A. 7 is not in A. 7∉A
 Quantifiers
 Universal
 For all, For each, For every
 For all x in S, P(x)
-This statement is true if P(x) is true for every
+This statement is true if P(x) is true for every value of x in S.
+
+Example: Let A be {1,2,3,4,5}
+For all x in A, x>=5
+False
+Symbols
+
+Write actual words
+∀x
+Existential quantitifer
+Example: Let A={1,2,3,4,5}
+There exists x in A such that x is even.
+
+Symbolically,
+∃x∈A s.t. x is even
+
+Examples
+write in notation
+1.For all x∈R, x^2+1>=0.
+True
+2There exists x∈N such that 3x-2=0.
+False
+Example write in words
+3.
+There exists x in the set of real numbers such that 3x-2=0
+for all x in in integers, x^2-2>0
+
+Negating quantitified statements
+1 For all,
+has negation there exists 
+also P(x) becomes not P(x)
+
+not(for all in S, P(x))=there exists x in S such that not P(x)
+
+Examples
+1. not(for all x in Z, x^2-2>0) 
+There exists x in Z such that x^2-2<=0
+
+2. not (for all x in R, x^2-5<=0)
+There exists x in R such that x^2-5>0
+3. not(for all x in Z, abs(x)>=1)
+There exists x in Z such that abs(x)<1
+
+
+
+
+
