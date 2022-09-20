@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     16502,        470]
-NotebookOptionsPosition[     13252,        407]
-NotebookOutlinePosition[     13655,        423]
-CellTagsIndexPosition[     13612,        420]
+NotebookDataLength[     31477,        812]
+NotebookOptionsPosition[     25350,        699]
+NotebookOutlinePosition[     25769,        715]
+CellTagsIndexPosition[     25726,        712]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -403,10 +403,302 @@ form of a+b-2=7(k1+k2+1). We obtain an expression definition of a+b\
  CellChangeTimes->{{3.872675509907338*^9, 3.872675701371769*^9}, {
   3.8726763533666735`*^9, 
   3.872676396499354*^9}},ExpressionUUID->"b99de55d-0828-4a94-8d3b-\
-02cc770e4ae2"]
+02cc770e4ae2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StringTemplate", "[", "\"\<first `` then ``\>\"", "]"}], "[", 
+  RowBox[{"100", ",", "200"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8726889531345515`*^9, 3.872688989761532*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"9ab3a55d-0876-49ba-aaa9-e2dedeb51245"],
+
+Cell[BoxData["\<\"first 100 then 200\"\>"], "Output",
+ CellChangeTimes->{3.872688990087551*^9},
+ CellLabel->"Out[46]=",ExpressionUUID->"1b5d2beb-4201-4c95-a49c-f50b3483c063"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", "\"\<first: `a`; second `b`; first again `a`\>\"", 
+   "]"}], "[", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{"\"\<a\>\"", "->", "\"\<AAAA\>\""}], ",", 
+    RowBox[{"\"\<b\>\"", "->", "\"\<BB BBB\>\""}]}], "|>"}], "]"}]], "Input",
+ CellChangeTimes->{{3.872688992169532*^9, 3.872689021236582*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"d7b17753-7214-4350-8ea9-38edb457310b"],
+
+Cell[BoxData["\<\"first: AAAA; second BB BBB; first again AAAA\"\>"], "Output",
+ CellChangeTimes->{3.8726890215595846`*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"3b781792-6d78-4e63-b777-734a59682b56"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<2 to the 50 is <*\!\(\*SuperscriptBox[\(2\), \(50\)]\)*>\>\"", "]"}], 
+  "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8726890258725843`*^9, 3.8726890521666017`*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"4c9f7626-9f47-4e62-b5ca-f085b0dd4e8e"],
+
+Cell[BoxData["\<\"2 to the 50 is 1125899906842624\"\>"], "Output",
+ CellChangeTimes->{{3.872689041616602*^9, 3.872689052423588*^9}},
+ CellLabel->"Out[50]=",ExpressionUUID->"cfb95451-ab33-45eb-a073-8c9703500c4b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<`1` to the `2` is <*\!\(\*SuperscriptBox[\(#1\), \(#2\)]\)*>\>\"", 
+   "]"}], "[", 
+  RowBox[{"2", ",", "50"}], "]"}]], "Input",
+ CellChangeTimes->{{3.872689059932971*^9, 3.8726890806249714`*^9}, {
+  3.872689186107283*^9, 3.8726891895373335`*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"61f6925e-8bbe-4721-9a5c-2491287a30f8"],
+
+Cell[BoxData["\<\"2 to the 50 is 1125899906842624\"\>"], "Output",
+ CellChangeTimes->{3.872689189851321*^9},
+ CellLabel->"Out[51]=",ExpressionUUID->"7839f39b-bc89-49e0-8975-4bfc91558eb2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StringTemplate", "[", "\"\<the time now is <*Now*>\>\"", "]"}], 
+  "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8726892351093426`*^9, 3.872689246352315*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"e8442ed3-70e5-4a95-912b-d112f8d18a72"],
+
+Cell[BoxData["\<\"the time now is Tue 20 Sep 2022 15:00:46\"\>"], "Output",
+ CellChangeTimes->{3.8726892466253233`*^9},
+ CellLabel->"Out[53]=",ExpressionUUID->"ea073440-3e7b-40ec-b598-d58f6df5c1b2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<`a`\[Congruent]`b` (mod `n`) means \
+(\[Exists]k\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`a`-`b`=`n`k)\>\"",
+    "]"}], "[", 
+  RowBox[{"a", ",", "b", ",", "n"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8726894575423155`*^9, 3.872689511550333*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"080e0e9a-08aa-4f62-961b-2ca22db0b872"],
+
+Cell[BoxData["\<\"\[Congruent] (mod ) means \
+(\[Exists]k\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(-=k)\"\>"],\
+ "Output",
+ CellChangeTimes->{{3.8726895064453125`*^9, 3.8726895121433125`*^9}},
+ CellLabel->"Out[55]=",ExpressionUUID->"4eb0d104-f6d0-4f94-8f01-27042ec58268"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<`1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`-`2`=`3`k) or \
+`1`\[Congruent]`2` (mod `3`) means (\[Exists]k\[Element]\!\(\*TemplateBox[{},\
+\"Integers\"]\))(`1`=`2`+`3`k)\>\"", "]"}], "[", 
+  RowBox[{"a", ",", "b", ",", "n"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8726895433163176`*^9, 3.872689601191323*^9}, {
+  3.872689646837323*^9, 3.872689666227333*^9}, {3.872689715328334*^9, 
+  3.8726897168633227`*^9}},
+ CellLabel->"In[65]:=",ExpressionUUID->"b52992b5-3ea4-4a93-8dfc-ad7621b166b0"],
+
+Cell[BoxData["\<\"a\[Congruent]b (mod n) means \
+(\[Exists]k\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a-b=nk) or \
+a\[Congruent]b (mod n) means \
+(\[Exists]k\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a=b+nk)\"\>\
+"], "Output",
+ CellChangeTimes->{
+  3.8726895559163427`*^9, 3.872689666523323*^9, {3.872689713194319*^9, 
+   3.8726897171393423`*^9}},
+ CellLabel->"Out[65]=",ExpressionUUID->"8d2c0b35-6c43-4d13-a85f-50a081f559b8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<`1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`-`2`=`3`k) or \
+`1`\[Congruent]`2` (mod `3`) means (\[Exists]k\[Element]\!\(\*TemplateBox[{},\
+\"Integers\"]\))(`1`=`2`+`3`k)\>\"", "]"}], "[", 
+  RowBox[{"a", ",", "3", ",", "7"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8726895433163176`*^9, 3.872689601191323*^9}, {
+  3.872689646837323*^9, 3.8726897077163334`*^9}},
+ CellLabel->"In[66]:=",ExpressionUUID->"7cefce9a-6232-4920-8654-5f8d8e5df9a7"],
+
+Cell[BoxData["\<\"a\[Congruent]3 (mod 7) means \
+(\[Exists]k\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a-3=7k) or \
+a\[Congruent]3 (mod 7) means \
+(\[Exists]k\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a=3+7k)\"\>\
+"], "Output",
+ CellChangeTimes->{{3.872689678633333*^9, 3.8726897192393427`*^9}},
+ CellLabel->"Out[66]=",ExpressionUUID->"f93cde4a-e462-499a-962d-2b9eda78e493"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<`1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k`4`\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`-`2`=`3`k`4`)\
+ or `1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k`4`\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`=`2`+`3`k`4`)\
+\>\"", "]"}], "[", 
+  RowBox[{"a", ",", "6", ",", "7", ",", "1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8726895433163176`*^9, 3.872689601191323*^9}, {
+  3.872689646837323*^9, 3.8726897091853423`*^9}, {3.8726902054605837`*^9, 
+  3.8726902076755733`*^9}, {3.8726906830663614`*^9, 3.872690686923361*^9}},
+ CellLabel->"In[80]:=",ExpressionUUID->"ffd54172-1bf9-42d6-b822-adf5e681999d"],
+
+Cell[BoxData["\<\"a\[Congruent]6 (mod 7) means \
+(\[Exists]k1\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a-6=7k1) \
+or a\[Congruent]6 (mod 7) means \
+(\[Exists]k1\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a=6+7k1)\"\
+\>"], "Output",
+ CellChangeTimes->{{3.872689683399333*^9, 3.8726897215083427`*^9}, 
+   3.8726902081615934`*^9, 3.8726906874533434`*^9},
+ CellLabel->"Out[80]=",ExpressionUUID->"1b7710df-753d-4076-aa67-949abf61fc92"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<`1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k`4`\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`-`2`=`3`k`4`)\
+ or `1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k`4`\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`=`2`+`3`k`4`)\
+\>\"", "]"}], "[", 
+  RowBox[{"a", ",", "b", ",", "n", ",", "1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8726895433163176`*^9, 3.872689601191323*^9}, {
+   3.872689646837323*^9, 3.872689736044327*^9}, {3.872690183942059*^9, 
+   3.8726901972955737`*^9}, 3.8726902456665735`*^9, 3.8726906930863423`*^9},
+ CellLabel->"In[81]:=",ExpressionUUID->"63c60289-6fb1-4836-8ab3-1a556eb816a6"],
+
+Cell[BoxData["\<\"a\[Congruent]b (mod n) means \
+(\[Exists]k1\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a-b=nk1) \
+or a\[Congruent]b (mod n) means \
+(\[Exists]k1\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a=b+nk1)\"\
+\>"], "Output",
+ CellChangeTimes->{
+  3.8726897364403334`*^9, {3.8726901983075795`*^9, 3.872690209664593*^9}, 
+   3.872690246449584*^9, 3.872690693921342*^9},
+ CellLabel->"Out[81]=",ExpressionUUID->"d87b1065-a119-45bf-b1bc-09a7dba9bbb7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<`1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k`4`\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`-`2`=`3`k`4`)\
+ or `1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k`4`\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`=`2`+`3`k`4`)\
+\>\"", "]"}], "[", 
+  RowBox[{"b", ",", "c", ",", "n", ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8726895433163176`*^9, 3.872689601191323*^9}, {
+   3.872689646837323*^9, 3.872689740531333*^9}, {3.8726902127166066`*^9, 
+   3.872690219424574*^9}, 3.8726902515865774`*^9, 3.872690696872364*^9},
+ CellLabel->"In[82]:=",ExpressionUUID->"5045bf2d-0882-4ad2-af2b-693b4a6cc0c6"],
+
+Cell[BoxData["\<\"b\[Congruent]c (mod n) means \
+(\[Exists]k2\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(b-c=nk2) \
+or b\[Congruent]c (mod n) means \
+(\[Exists]k2\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(b=c+nk2)\"\
+\>"], "Output",
+ CellChangeTimes->{
+  3.872689740960315*^9, {3.872690213561584*^9, 3.872690219836593*^9}, 
+   3.8726902522985935`*^9, 3.8726906976423426`*^9},
+ CellLabel->"Out[82]=",ExpressionUUID->"97fd5b47-4f94-4830-ad19-ecd076df8a07"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<`1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k`4`\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`-`2`=`3`k`4`)\
+ or `1`\[Congruent]`2` (mod `3`) means \
+(\[Exists]k`4`\[Element]\!\(\*TemplateBox[{},\"Integers\"]\))(`1`=`2`+`3`k`4`)\
+\>\"", "]"}], "[", 
+  RowBox[{"a", ",", "c", ",", "n", ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8726895433163176`*^9, 3.872689601191323*^9}, {
+   3.872689646837323*^9, 3.8726897437643237`*^9}, {3.8726902554045935`*^9, 
+   3.8726902614635763`*^9}, 3.8726907061233425`*^9, 3.8726907466313424`*^9},
+ CellLabel->"In[84]:=",ExpressionUUID->"337987e1-2fc5-42de-b14e-80ff721adbc6"],
+
+Cell[BoxData["\<\"a\[Congruent]c (mod n) means \
+(\[Exists]k3\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a-c=nk3) \
+or a\[Congruent]c (mod n) means \
+(\[Exists]k3\[Element]\\!\\(\\*TemplateBox[{},\\\"Integers\\\"]\\))(a=c+nk3)\"\
+\>"], "Output",
+ CellChangeTimes->{
+  3.8726897441143427`*^9, {3.8726902560625935`*^9, 3.872690262259593*^9}, 
+   3.8726907069393616`*^9, 3.872690747460362*^9},
+ CellLabel->"Out[84]=",ExpressionUUID->"9bd39644-c35e-4a88-8017-d53e519ed6e8"]
+}, Open  ]],
+
+Cell["\<\
+We bind a\[Congruent]b (mod n) as follows: a\[Congruent]b (mod n) means (\
+\[Exists]k1\[Element]\[DoubleStruckCapitalZ])(a-b=nk1) or a\[Congruent]b (mod \
+n) means (\[Exists]k1\[Element]\[DoubleStruckCapitalZ])(a=b+nk1). We also \
+bind b\[Congruent]c (mod n) as the following: b\[Congruent]c (mod n) means (\
+\[Exists]k2\[Element]\[DoubleStruckCapitalZ])(b-c=nk2) or b\[Congruent]c (mod \
+n) means (\[Exists]k2\[Element]\[DoubleStruckCapitalZ])(b=c+nk2).\
+\>", "Text",
+ CellChangeTimes->{{3.872689753262333*^9, 3.872689769685316*^9}, {
+  3.872690164072049*^9, 3.872690171097049*^9}, {3.8726902722605734`*^9, 
+  3.872690295999692*^9}, {3.8726907553293424`*^9, 
+  3.872690764313342*^9}},ExpressionUUID->"f7bd614f-bc1a-49dd-a66b-\
+5a1244492261"],
+
+Cell["\<\
+We will use proof by contradiction to show that assuming that a \[Congruent] \
+b (mod n) and b \[Congruent] c (mod n) and the negation of the conclusion \
+leads to a logical contradiction to prove the theorem. We make P a \
+\[Congruent] b (mod n) and b \[Congruent] c (mod n)  and Q a \[Congruent] \
+c(mod n). We simplify \[Not](P\[Implies]Q) to P\[And]\[Not]Q. We have \[Not]Q \
+as follows: a\[NotCongruent]c (mod n) means (\[ForAll]k3\[Element]\
+\[DoubleStruckCapitalZ])(a-c\[NotEqual]nk3) and a\[NotCongruent]c (mod n) \
+means (\[ForAll]k3\[Element]\[DoubleStruckCapitalZ])(a\[NotEqual]c+nk3).\
+\>", "Text",
+ CellChangeTimes->{{3.8726903746953588`*^9, 3.872690526608342*^9}, {
+   3.872690605289343*^9, 3.872690676471342*^9}, 
+   3.872690779378352*^9},ExpressionUUID->"e09be400-1bd1-462a-8692-\
+eb01188506cf"]
 },
-WindowSize->{718.5, 735.},
-WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"25b0c939-1726-4e38-9295-63112b337eb5"
@@ -424,7 +716,7 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 225, 4, 28, "Input",ExpressionUUID->"e6b1c87b-a513-4901-bdca-f5d89c283f8d"],
-Cell[808, 28, 416, 8, 32, "Output",ExpressionUUID->"694d151b-ffa5-4814-bd35-d0b7b8ec6063"]
+Cell[808, 28, 416, 8, 52, "Output",ExpressionUUID->"694d151b-ffa5-4814-bd35-d0b7b8ec6063"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[1261, 41, 347, 8, 28, "Input",ExpressionUUID->"8d04b100-6166-4f4a-b5cc-35c7b2bfe908"],
@@ -460,18 +752,68 @@ Cell[8193, 260, 503, 13, 28, "Input",ExpressionUUID->"2d28a071-d640-4ca5-9dae-14
 Cell[8699, 275, 309, 8, 32, "Output",ExpressionUUID->"0fcc7262-e501-45cf-87d1-d19d9f7da8b1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9045, 288, 611, 17, 28, "Input",ExpressionUUID->"d864e509-3f2d-497e-8b55-77f8b116ccdb"],
+Cell[9045, 288, 611, 17, 48, "Input",ExpressionUUID->"d864e509-3f2d-497e-8b55-77f8b116ccdb"],
 Cell[9659, 307, 224, 4, 32, "Output",ExpressionUUID->"866a48af-c03a-4282-bfc1-74b6c25e2d91"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9920, 316, 724, 20, 67, "Input",ExpressionUUID->"4c5c9aca-5fad-4532-b7b6-bbca696f4d9d"],
+Cell[9920, 316, 724, 20, 86, "Input",ExpressionUUID->"4c5c9aca-5fad-4532-b7b6-bbca696f4d9d"],
 Cell[10647, 338, 178, 2, 32, "Output",ExpressionUUID->"78921aae-90cc-4184-82cf-768a64840ddf"]
 }, Open  ]],
 Cell[10840, 343, 283, 5, 35, "Text",ExpressionUUID->"ad7e36e0-3216-4a25-ae0b-52ae1fe2afc0"],
 Cell[11126, 350, 220, 4, 35, "Text",ExpressionUUID->"1c919134-d590-4c5e-851e-21f7ac92d27e"],
 Cell[11349, 356, 494, 13, 35, "Text",ExpressionUUID->"456e544b-4f15-4a7c-a0c4-452f27ee9d94"],
 Cell[11846, 371, 542, 14, 35, "Text",ExpressionUUID->"1ba28fc5-60bc-42ce-9051-a031e3533194"],
-Cell[12391, 387, 857, 18, 127, "Text",ExpressionUUID->"b99de55d-0828-4a94-8d3b-02cc770e4ae2"]
+Cell[12391, 387, 857, 18, 150, "Text",ExpressionUUID->"b99de55d-0828-4a94-8d3b-02cc770e4ae2"],
+Cell[CellGroupData[{
+Cell[13273, 409, 292, 5, 28, "Input",ExpressionUUID->"9ab3a55d-0876-49ba-aaa9-e2dedeb51245"],
+Cell[13568, 416, 174, 2, 32, "Output",ExpressionUUID->"1b5d2beb-4201-4c95-a49c-f50b3483c063"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13779, 423, 434, 10, 48, "Input",ExpressionUUID->"d7b17753-7214-4350-8ea9-38edb457310b"],
+Cell[14216, 435, 202, 2, 32, "Output",ExpressionUUID->"3b781792-6d78-4e63-b777-734a59682b56"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14455, 442, 312, 7, 31, "Input",ExpressionUUID->"4c9f7626-9f47-4e62-b5ca-f085b0dd4e8e"],
+Cell[14770, 451, 211, 2, 32, "Output",ExpressionUUID->"cfb95451-ab33-45eb-a073-8c9703500c4b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15018, 458, 395, 9, 31, "Input",ExpressionUUID->"61f6925e-8bbe-4721-9a5c-2491287a30f8"],
+Cell[15416, 469, 187, 2, 32, "Output",ExpressionUUID->"7839f39b-bc89-49e0-8975-4bfc91558eb2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15640, 476, 270, 5, 28, "Input",ExpressionUUID->"e8442ed3-70e5-4a95-912b-d112f8d18a72"],
+Cell[15913, 483, 198, 2, 32, "Output",ExpressionUUID->"ea073440-3e7b-40ec-b598-d58f6df5c1b2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16148, 490, 402, 9, 67, "Input",ExpressionUUID->"080e0e9a-08aa-4f62-961b-2ca22db0b872"],
+Cell[16553, 501, 285, 4, 32, "Output",ExpressionUUID->"4eb0d104-f6d0-4f94-8f01-27042ec58268"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16875, 510, 613, 12, 86, "Input",ExpressionUUID->"b52992b5-3ea4-4a93-8dfc-ad7621b166b0"],
+Cell[17491, 524, 453, 8, 52, "Output",ExpressionUUID->"8d2c0b35-6c43-4d13-a85f-50a081f559b8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17981, 537, 564, 11, 86, "Input",ExpressionUUID->"7cefce9a-6232-4920-8654-5f8d8e5df9a7"],
+Cell[18548, 550, 400, 6, 52, "Output",ExpressionUUID->"f93cde4a-e462-499a-962d-2b9eda78e493"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18985, 561, 689, 13, 86, "Input",ExpressionUUID->"ffd54172-1bf9-42d6-b822-adf5e681999d"],
+Cell[19677, 576, 456, 7, 52, "Output",ExpressionUUID->"1b7710df-753d-4076-aa67-949abf61fc92"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20170, 588, 687, 13, 86, "Input",ExpressionUUID->"63c60289-6fb1-4836-8ab3-1a556eb816a6"],
+Cell[20860, 603, 479, 8, 52, "Output",ExpressionUUID->"d87b1065-a119-45bf-b1bc-09a7dba9bbb7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21376, 616, 685, 13, 86, "Input",ExpressionUUID->"5045bf2d-0882-4ad2-af2b-693b4a6cc0c6"],
+Cell[22064, 631, 479, 8, 52, "Output",ExpressionUUID->"97fd5b47-4f94-4830-ad19-ecd076df8a07"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22580, 644, 691, 13, 86, "Input",ExpressionUUID->"337987e1-2fc5-42de-b14e-80ff721adbc6"],
+Cell[23274, 659, 481, 8, 52, "Output",ExpressionUUID->"9bd39644-c35e-4a88-8017-d53e519ed6e8"]
+}, Open  ]],
+Cell[23770, 670, 752, 12, 104, "Text",ExpressionUUID->"f7bd614f-bc1a-49dd-a66b-5a1244492261"],
+Cell[24525, 684, 821, 13, 150, "Text",ExpressionUUID->"e09be400-1bd1-462a-8692-eb01188506cf"]
 }
 ]
 *)
