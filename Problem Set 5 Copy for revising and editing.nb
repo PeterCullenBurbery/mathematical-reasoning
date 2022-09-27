@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     53637,       1284]
-NotebookOptionsPosition[     43103,       1112]
-NotebookOutlinePosition[     43630,       1130]
-CellTagsIndexPosition[     43587,       1127]
+NotebookDataLength[     75094,       1942]
+NotebookOptionsPosition[     62882,       1743]
+NotebookOutlinePosition[     63409,       1761]
+CellTagsIndexPosition[     63366,       1758]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -56,7 +56,67 @@ Cell[BoxData[
 
 Cell["Enter continued abstract text here.", "AbstractContinuation",ExpressionUUID->"c6152838-efec-4ac8-b71e-242d384b9ff3"],
 
-Cell["Enter a date here", "Date",ExpressionUUID->"f405c2c0-89e6-4c01-93bd-f7d50706615d"]
+Cell["Enter a date here", "Date",ExpressionUUID->"f405c2c0-89e6-4c01-93bd-f7d50706615d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mod", "[", 
+  RowBox[{"3", ",", "7"}], "]"}]], "Input",
+ CellChangeTimes->{{3.873280924590822*^9, 3.8732809296443663`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"95b2acdd-afab-4866-a5be-af8d8fd9e8b9"],
+
+Cell[BoxData["3"], "Output",
+ CellChangeTimes->{3.873280930165879*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"1cff049f-785f-4f58-97de-20fa35937ac2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mod", "[", 
+  RowBox[{"10", ",", "7"}], "]"}]], "Input",
+ CellChangeTimes->{{3.873280924590822*^9, 3.873280945490071*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"f92b12d3-7a7f-4df1-bb3d-ff90f9f67800"],
+
+Cell[BoxData["3"], "Output",
+ CellChangeTimes->{{3.873280941471056*^9, 3.8732809457555428`*^9}},
+ CellLabel->"Out[4]=",ExpressionUUID->"946e8e84-a2df-4b77-9e7d-1eaa056d27d4"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Mod", "[", 
+  RowBox[{"10", ",", "7"}], "]"}]], "Input",
+ CellChangeTimes->{{3.873280924590822*^9, 
+  3.87328094703292*^9}},ExpressionUUID->"790aafcd-2a58-4fdd-97dd-\
+99a983d797bf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Divisible", "[", 
+  RowBox[{
+   RowBox[{"10", "-", "3"}], ",", "7"}], "]"}]], "Input",
+ CellChangeTimes->{{3.873280953320208*^9, 3.873280983967819*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"2d6b5737-3bd7-4251-b5fc-41e911442d56"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.873280984326759*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"6ea06de4-6447-4a43-8266-c1dc91c77bb9"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Divisible", "[", 
+  RowBox[{
+   RowBox[{"10", "-", "3"}], ",", "7"}], "]"}]], "Input",
+ CellChangeTimes->{{3.873280953320208*^9, 
+  3.8732809851703157`*^9}},ExpressionUUID->"2ac81b1c-cd5e-40d2-a878-\
+5b5df0ad6538"],
+
+Cell["|", "Text",
+ CellChangeTimes->{
+  3.8732809415803747`*^9},ExpressionUUID->"3c58736b-d3da-4019-a647-\
+873568eeb210"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -68,6 +128,586 @@ b4b276b6dc3b"],
 
 Cell[CellGroupData[{
 
+Cell["Problem 1 Proof", "Subsection",
+ CellChangeTimes->{{3.8731920344192953`*^9, 3.8731920399394093`*^9}, 
+   3.873192638153889*^9, 3.8732805391209593`*^9, 3.873281704105578*^9, 
+   3.87328245994217*^9},ExpressionUUID->"1e614fbf-747c-48c3-a6f8-\
+80183ad74111"],
+
+Cell[TextData[{
+ "Let n be an even integer. Since n is even, two divides n. Since 2|n, there \
+exists an integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "90e3cd63-0a32-40dd-a047-f70be79f674a"],
+ " such that n equals two times ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c07dbeca-d55c-4a6b-a056-e86c018be9a1"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{
+        SubscriptBox["H", "1"], "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]], "n"}], "=", 
+     RowBox[{"2", 
+      SubscriptBox["H", "1"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "02dc12f6-4e0f-4c6c-8616-de7dd1845410"],
+ "). We aim to prove that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"4", "|", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["n", "2"], "-", 
+      RowBox[{"6", "n"}], "+", "8"}], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c153a054-4537-41de-9ac7-38df1893c3e3"],
+ ". We will do this by demonstrating that there exists an integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "28fd42fe-c05b-46b4-b09d-e6cd0dbebcaf"],
+ " such that  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{
+        SubscriptBox["H", "2"], "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]], 
+      RowBox[{
+       SuperscriptBox["n", "2"], "-", 
+       RowBox[{"6", "n"}], "+", "8"}]}], "=", 
+     RowBox[{"4", 
+      SubscriptBox["H", "2"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2c1b8a90-f403-434c-bf75-cdf3db5aab11"],
+ "). We will replace n with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", 
+    SubscriptBox["H", "1"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d83975d3-2ed6-4e02-a89c-f133c61a3e4d"],
+ " in the expression ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["n", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "fbea731e-a936-4c2b-8ef1-e18fc2257b71"],
+ "-6n+8 to get ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", 
+       SubscriptBox["H", "1"]}], ")"}], "2"], "-", 
+    RowBox[{"6", 
+     RowBox[{"(", 
+      RowBox[{"2", 
+       SubscriptBox["H", "1"]}], ")"}]}], "+", "8"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3b077155-4d71-4392-988d-69f577b3a344"],
+ ". We distribute the exponent and parentheses to get ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"4", " ", 
+     SubsuperscriptBox["H", "1", "2"]}], "-", 
+    RowBox[{"12", 
+     SubscriptBox["H", "1"]}], "+", "8"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "264506c7-d3d9-49ee-a8ed-9bc9274466bc"],
+ ", which equals ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"4", 
+    SubscriptBox["H", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5db43e79-1dd7-4291-96ea-18d031bc13c3"],
+ ". We are left with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"4", " ", 
+      SubsuperscriptBox["H", "1", "2"]}], "-", 
+     RowBox[{"12", 
+      SubscriptBox["H", "1"]}], "+", "8"}], "=", 
+    RowBox[{"4", 
+     SubscriptBox["H", "2"]}]}], TraditionalForm]],ExpressionUUID->
+  "bccf0f32-47d1-4504-a3bd-0edf84326bf7"],
+ ". We can factor out a 4 to obtain the following form: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"4", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       SubsuperscriptBox["H", "1", "2"], "-", 
+       RowBox[{"3", 
+        SubscriptBox["H", "1"]}], "+", "2"}], "=", 
+      SubscriptBox["H", "2"]}], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "89e0596c-25ee-4884-8488-b89cea20d696"],
+ ". We have showed that there exists an integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "47da67b6-577d-4e2d-984a-5a6439904c38"],
+ " of the form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["H", "1", "2"], "-", 
+    RowBox[{"3", 
+     SubscriptBox["H", "1"]}], "+", "2"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f31fc7ac-62cf-4dcb-a0f9-ea461b71a0a3"],
+ ". We know this form will always be an integer because the multiplying and \
+adding integers always ends with another integer. Since there exists an \
+integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a85fc504-7d4b-42c9-84a0-8f67b0abcbd8"],
+ " such that  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{
+        SubscriptBox["H", "2"], "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]], 
+      RowBox[{
+       SuperscriptBox["n", "2"], "-", 
+       RowBox[{"6", "n"}], "+", "8"}]}], "=", 
+     RowBox[{"4", 
+      SubscriptBox["H", "2"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a3d4d4a0-6022-45b8-acdf-38f4e5129341"],
+ "), (specifically of the form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["H", "2"], "=", 
+    RowBox[{
+     SubsuperscriptBox["H", "1", "2"], "-", 
+     RowBox[{"3", 
+      SubscriptBox["H", "1"]}], "+", "2"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d567390b-5c4b-4b11-88c3-bb1ad4ca7209"],
+ "), 4 divides ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["n", "2"], "-", 
+    RowBox[{"6", "n"}], "+", "8"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "1b251057-a737-4caf-8149-1e4983908907"],
+ ". We have proven ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"4", "|", 
+    RowBox[{
+     SuperscriptBox["n", "2"], "-", 
+     RowBox[{"6", "n"}], "+", "8"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9ec7338e-a579-4224-90b8-fd8c86de98f7"],
+ "!!! "
+}], "Text",
+ CellChangeTimes->{{3.8732824673760843`*^9, 
+  3.873283022433059*^9}},ExpressionUUID->"ff0ba135-1942-4527-adc3-\
+804c526968c1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 2 Proof", "Subsection",
+ CellChangeTimes->{{3.8731920344192953`*^9, 3.8731920399394093`*^9}, 
+   3.873192638153889*^9, 3.8732805391209593`*^9, 
+   3.873281704105578*^9},ExpressionUUID->"55234600-f8ad-461e-9e47-\
+eac61736544a"],
+
+Cell[TextData[{
+ "Let a, b, and c be integers with the condition that a is not zero. Suppose \
+a divides b (a|b). Since a|b, there exists an integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "1"], TraditionalForm]],ExpressionUUID->
+  "64fcb82b-5fb2-4b54-89ea-61c3203abd10"],
+ " such that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "=", 
+    RowBox[{"a", "\[Cross]", 
+     SubscriptBox["H", "1"]}]}], TraditionalForm]],ExpressionUUID->
+  "3daafc24-e277-498c-814f-001ce808d844"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{
+        SubscriptBox["H", "1"], "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]], "b"}], "=", 
+     RowBox[{"a", "\[Cross]", 
+      SubscriptBox["H", "1"]}]}], ")"}], TraditionalForm]],ExpressionUUID->
+  "14bfdd3f-8101-4674-80bb-55b33b38f579"],
+ ". We aim to show that a divides b times c. We can show this by \
+demonstrating that there exists an integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "2"], TraditionalForm]],ExpressionUUID->
+  "c3ae00b3-5a22-4c6d-aafd-a44bedbbb51b"],
+ " such that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"b", "\[Cross]", "c"}], "=", 
+    RowBox[{"a", "\[Cross]", 
+     SubscriptBox["H", "2"]}]}], TraditionalForm]],ExpressionUUID->
+  "f033822d-55af-4156-9423-0666eceb116e"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{
+        SubscriptBox["H", "2"], "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]], 
+      RowBox[{"b", "\[Cross]", "c"}]}], "=", 
+     RowBox[{"a", "\[Cross]", 
+      SubscriptBox["H", "2"]}]}], ")"}], TraditionalForm]],ExpressionUUID->
+  "0d14dfd2-9b34-4f9a-94f5-13006e119103"],
+ ". We can use the equation ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "=", 
+    RowBox[{"a", "\[Cross]", 
+     SubscriptBox["H", "1"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "fa7340a3-5336-485f-928f-65f3341eada2"],
+ " and substitute for b into ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"b", "\[Cross]", "c"}], "=", 
+    RowBox[{"a", "\[Cross]", 
+     SubscriptBox["H", "2"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4aec6292-4f74-4576-9a21-5c5cf23e0316"],
+ " to get ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"a", "\[Cross]", 
+       SubscriptBox["H", "1"]}], ")"}], "\[Cross]", "c"}], "=", 
+    RowBox[{"a", "\[Cross]", 
+     SubscriptBox["H", "2"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c4941fa1-b349-438d-8212-ac0dc36b6065"],
+ ". We can divide both sides by a as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"a", "\[Cross]", 
+        SubscriptBox["H", "1"]}], ")"}], "\[Cross]", "c"}], "a"], "=", 
+    FractionBox[
+     RowBox[{"a", "\[Cross]", 
+      SubscriptBox["H", "2"]}], "a"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b1b169c7-e936-46ca-b649-288ded1465bd"],
+ ". We can be sure that this is valid because we know a is not zero so we \
+will not ever divide by zero. We now end up with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["H", "1"], "\[Cross]", "c"}], "=", 
+    SubscriptBox["H", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "181c645f-0e86-42fc-abe5-57bb4bb8023d"],
+ ". We have showed that the form of the integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cf633db6-b518-4f76-b63f-85229b00c910"],
+ " that makes the statement ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"b", "\[Cross]", "c"}], "=", 
+    RowBox[{"a", "\[Cross]", 
+     SubscriptBox["H", "2"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b848214d-e437-4d7e-939c-bb99f2eb4fcb"],
+ " true has the form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["H", "1"], "\[Cross]", "c"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3421cb10-6abc-4f16-a57f-7f42a9d8479d"],
+ ". The number ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ee536a1c-449c-47e4-b836-e1c7a126a8cb"],
+ " will be an integer because the product of two integers, in this case ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "29dfcf02-bb2b-4754-b777-fca2e56ef7d1"],
+ " and c ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     SubscriptBox["H", "1"], "\[Cross]", "c"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "77382b65-30a0-4a86-af2c-49e724633580"],
+ ") is always an integer. Now that we have demonstrated that there exists an \
+integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "2"], TraditionalForm]],ExpressionUUID->
+  "89ddcf66-2bde-47d4-8acc-6480a9140851"],
+ " such that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"b", "\[Cross]", "c"}], "=", 
+    RowBox[{"a", "\[Cross]", 
+     SubscriptBox["H", "2"]}]}], TraditionalForm]],ExpressionUUID->
+  "e52b095b-a00f-4cf9-a481-eeb1aab120f7"],
+ ", the statement that a divides b times c follows. We have proven a|(b\
+\[Cross]c)!!!"
+}], "Text",
+ CellChangeTimes->{{3.873281801266163*^9, 3.873281942050604*^9}, {
+  3.8732819762672496`*^9, 3.873282193611195*^9}, {3.8732822525568557`*^9, 
+  3.873282399478074*^9}, {3.873282442018923*^9, 
+  3.8732824437657557`*^9}},ExpressionUUID->"04a1e5ad-cfeb-434b-ae46-\
+dff2f6d5b79d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 3 Proof", "Subsection",
+ CellChangeTimes->{{3.8731920344192953`*^9, 3.8731920399394093`*^9}, 
+   3.873192638153889*^9, 
+   3.8732805391209593`*^9},ExpressionUUID->"a07d28ce-21d4-4016-adb8-\
+fdf1bdfa047a"],
+
+Cell[TextData[{
+ "Let a and b be integers. Suppose a is congruent to 3 modulo 7 \
+(a\[Congruent]3 mod 7). Suppose b is congruent to 6 modulo 7 (b\[Congruent]6 \
+mod 7). Since a\[Congruent]3 mod 7, 7 divides a-3. Since 7|a-3, there exists \
+an integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "843a00de-3c34-4bee-afbb-0131d1a3aba5"],
+ " such that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "=", 
+    RowBox[{"3", "+", 
+     RowBox[{"7", 
+      SubscriptBox["H", "1"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9fdbccd1-c75e-40ee-a392-3d771b333e7d"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{
+        SubscriptBox["H", "1"], "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]], "a"}], "=", 
+     RowBox[{"3", "+", 
+      RowBox[{"7", 
+       SubscriptBox["H", "1"]}]}]}], ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e58c7e1b-451c-48d7-af1c-2f00336c4164"],
+ ". Since b\[Congruent]6 mod 7, 7 divides b-6. Since 7|b-6, there exists an \
+integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a9c4e481-1f60-4be6-a675-351c7acde45d"],
+ " such that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "=", 
+    RowBox[{"6", "+", 
+     RowBox[{"7", 
+      SubscriptBox["H", "2"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cbf67e4a-0fa9-467d-866e-3474894d8183"],
+ ". ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Exists]", 
+       RowBox[{
+        SubscriptBox["H", "2"], "\[Element]", 
+        TemplateBox[{},
+         "Integers"]}]], "b"}], "=", 
+     RowBox[{"6", "+", 
+      RowBox[{"7", 
+       SubscriptBox["H", "2"]}]}]}], ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e3888bed-5282-46be-9bdb-b4def1e68578"],
+ ". We add the expressions a and b to get ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", "+", "b"}], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"3", "+", 
+       RowBox[{"7", 
+        SubscriptBox["H", "1"]}]}], ")"}], "+", 
+     RowBox[{"(", 
+      RowBox[{"6", "+", 
+       RowBox[{"7", 
+        SubscriptBox["H", "2"]}]}], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7cb1daf7-d82e-41c8-8e41-b6d3e23561d1"],
+ ". We get ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", "+", "b"}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"7", 
+       SubscriptBox["H", "1"]}], "+", 
+      RowBox[{"7", 
+       SubscriptBox["H", "2"]}], "+", "9"}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"7", 
+        SubscriptBox["H", "1"]}], "+", 
+       RowBox[{"7", 
+        SubscriptBox["H", "2"]}], "+", "7", "+", "2"}], "=", 
+      RowBox[{
+       RowBox[{"7", 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["H", "1"], "+", 
+          SubscriptBox["H", "2"], "+", "1"}], ")"}]}], "+", "2"}]}]}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3aca02a0-2045-49ef-a674-b627afbf2db0"],
+ ". We can make ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", 
+    RowBox[{"3", " "}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a4748c73-b34e-4fad-9b6d-f2413bcb68e3"],
+ "have the value ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["H", "1"], "+", 
+    SubscriptBox["H", "2"], "+", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "96dc46d1-5b1f-492d-96fc-a39cad3bbc39"],
+ ", and we see that there exists an integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "3"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d9a9687c-7fd8-4c73-bd0b-4346f4ac5529"],
+ " such that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", "+", "b"}], "=", 
+    RowBox[{
+     RowBox[{"7", 
+      SubscriptBox["H", "3"]}], "+", "2"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "288dd566-e34d-4b5c-a474-f84f967c5c07"],
+ ". We are certain that ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "3"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2dccba77-1b61-4546-b461-a560c69cda15"],
+ " is an integer because the integers are closed under addition and \
+multiplication. Since there exists an integer ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["H", "3"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "db9daffc-ff9a-4882-90ec-5f9a7446d567"],
+ " such that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", "+", "b"}], "=", 
+    RowBox[{
+     RowBox[{"7", 
+      SubscriptBox["H", "3"]}], "+", "2"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2c605ba7-5913-45b1-9eee-2cec1b3d33fa"],
+ ", 7 divides (a+b)-2.. Since 7|((a+b)-2, a+b is congruent to 2 modulo 7. \
+Therefore a+b\[Congruent]2 mod 7. Proven! QED"
+}], "Text",
+ CellChangeTimes->{{3.8732808394415607`*^9, 3.8732808995196033`*^9}, {
+  3.873281014729003*^9, 3.873281033397853*^9}, {3.8732811100435767`*^9, 
+  3.873281130731703*^9}, {3.8732812012936883`*^9, 
+  3.8732816531227703`*^9}},ExpressionUUID->"a51d8e5c-3a8e-4ba6-8452-\
+a4b30b7fabb5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell["Problem 4 Proof", "Subsection",
  CellChangeTimes->{{3.8731920344192953`*^9, 3.8731920399394093`*^9}, 
    3.873192638153889*^9},ExpressionUUID->"218493d2-8676-4be7-af45-\
@@ -75,14 +715,13 @@ Cell["Problem 4 Proof", "Subsection",
 
 Cell[TextData[{
  "Let a, b, and c be integers. Let n be a natural number, aka a positive \
-integer. Suppose a is congruent to be modulo n (a\[Congruent]b mod n). \
-Suppose b is congruent to c modulo n (b\[Congruent]c mod n). Since a\
-\[Congruent]b mod n, n divides a=b (n|a-b). Since n divides a-b, there exists \
-and integer ",
+integer. Suppose a is congruent to b modulo n (a\[Congruent]b mod n). Suppose \
+b is congruent to c modulo n (b\[Congruent]c mod n). Since a\[Congruent]b mod \
+n, n divides a-b (n|a-b). Since n|a-b, there exists an integer ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["H", "1"], TraditionalForm]],ExpressionUUID->
-  "c08fa6fe-1b72-4a80-81ab-7bd7b0eca0c0"],
+  "9f6d7c08-f2f1-4d1e-abdf-450c86f7ef3f"],
  " such that ",
  Cell[BoxData[
   FormBox[
@@ -90,7 +729,7 @@ and integer ",
     RowBox[{"a", "-", "b"}], "=", 
     RowBox[{"n", "\[Cross]", 
      SubscriptBox["H", "1"]}]}], TraditionalForm]],ExpressionUUID->
-  "5d0fc5bd-ce47-4146-945a-112f90b469c5"],
+  "3a307a51-19c7-414b-984c-e21787a32553"],
  " ",
  Cell[BoxData[
   FormBox[
@@ -105,7 +744,7 @@ and integer ",
       RowBox[{"a", "-", "b"}]}], "=", 
      RowBox[{"n", "\[Cross]", 
       SubscriptBox["H", "1"]}]}], ")"}], TraditionalForm]],ExpressionUUID->
-  "3051cad6-e7ca-4e83-a0f1-f7e63752adc4"],
+  "22b4ec7d-9592-4536-834a-2467eb1a7cb3"],
  ". Since b\[Congruent]c mod n, n divides b-c (n|b-c). Since n|b-c, there \
 exists an integer ",
  Cell[BoxData[
@@ -168,8 +807,9 @@ exists an integer ",
 a\[Congruent]c (mod n). "
 }], "Text",
  CellChangeTimes->{{3.873191367088202*^9, 3.8731913677160034`*^9}, {
-  3.8731914458889523`*^9, 3.873191969004923*^9}, {3.8731925060347476`*^9, 
-  3.873192631490755*^9}},ExpressionUUID->"f9142d2c-03c4-40a3-99bc-\
+   3.8731914458889523`*^9, 3.873191969004923*^9}, {3.8731925060347476`*^9, 
+   3.873192631490755*^9}, {3.873280359984584*^9, 3.8732804145229645`*^9}, 
+   3.873280572925917*^9},ExpressionUUID->"f9142d2c-03c4-40a3-99bc-\
 516f4f393a1b"]
 }, Open  ]],
 
@@ -182,24 +822,21 @@ a32360f39262"],
 
 Cell[TextData[{
  "Let a, b, c, and d be integers. Let n be a natural number, aka a positive \
-integer. Suppose a is congruent to be modulo n (a\[Congruent]b mod n). \
-Suppose c is congruent to d modulo n (c\[Congruent]d mod n). Since a\
-\[Congruent]b mod n, n divides a=b (n|a-b). Since n divides a-b, there exists \
-and integer ",
+integer. Suppose a is congruent to b modulo n (a\[Congruent]b mod n). Suppose \
+c is congruent to d modulo n (c\[Congruent]d mod n). Since a\[Congruent]b mod \
+n, n divides a-b (n|a-b). Since n|a-b, there exists an integer ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["H", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "e12959e9-cd8a-47ed-ac23-cf98b705badc"],
+   SubscriptBox["H", "1"], TraditionalForm]],ExpressionUUID->
+  "363b131f-609c-477b-9a44-fe4c8847a7a8"],
  " such that ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     RowBox[{"a", "-", "b"}], "=", 
     RowBox[{"n", "\[Cross]", 
-     SubscriptBox["H", "1"]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "8e41a25c-0870-45ee-9090-e2c879855c78"],
+     SubscriptBox["H", "1"]}]}], TraditionalForm]],ExpressionUUID->
+  "fc9f33ef-fd22-4bc7-b5f6-4b2ac839e795"],
  " ",
  Cell[BoxData[
   FormBox[
@@ -213,15 +850,13 @@ and integer ",
          "Integers"]}]], 
       RowBox[{"a", "-", "b"}]}], "=", 
      RowBox[{"n", "\[Cross]", 
-      SubscriptBox["H", "1"]}]}], ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "edc86c0a-a886-415c-b1de-3ea64ab5d9e9"],
+      SubscriptBox["H", "1"]}]}], ")"}], TraditionalForm]],ExpressionUUID->
+  "63e37320-6cf4-4fb2-b89d-f96aa2632315"],
  ". Since c\[Congruent]d mod n, n divides c-d (n|c-d). Since n|c-d, there \
 exists an integer ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["H", "2"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["H", "2"], TraditionalForm]],ExpressionUUID->
   "a93f6d57-fa26-4735-8914-9fb00fed18a0"],
  " such that ",
  Cell[BoxData[
@@ -229,8 +864,7 @@ exists an integer ",
    RowBox[{
     RowBox[{"c", "-", "d"}], "=", 
     RowBox[{"n", "\[Cross]", 
-     SubscriptBox["H", "2"]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     SubscriptBox["H", "2"]}]}], TraditionalForm]],ExpressionUUID->
   "e1797bdf-def4-4856-acc8-c69548097658"],
  " ",
  Cell[BoxData[
@@ -245,8 +879,7 @@ exists an integer ",
          "Integers"]}]], 
       RowBox[{"c", "-", "d"}]}], "=", 
      RowBox[{"n", "\[Cross]", 
-      SubscriptBox["H", "2"]}]}], ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+      SubscriptBox["H", "2"]}]}], ")"}], TraditionalForm]],ExpressionUUID->
   "a412a50e-1050-46b7-ab0c-779ae3df27d8"],
  ". We add expressions a-b and c-d to get (a+c)-(b+d), which is equal to ",
  Cell[BoxData[
@@ -255,8 +888,7 @@ exists an integer ",
     RowBox[{"n", "\[Cross]", 
      SubscriptBox["H", "1"]}], "+", 
     RowBox[{"n", "\[Cross]", 
-     SubscriptBox["H", "2"]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     SubscriptBox["H", "2"]}]}], TraditionalForm]],ExpressionUUID->
   "0e303c7f-3a17-48d4-8e90-b6a4dcc8cf80"],
  ", which is equal to ",
  Cell[BoxData[
@@ -265,8 +897,7 @@ exists an integer ",
     RowBox[{"(", 
      RowBox[{
       SubscriptBox["H", "1"], "+", 
-      SubscriptBox["H", "2"]}], ")"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+      SubscriptBox["H", "2"]}], ")"}]}], TraditionalForm]],ExpressionUUID->
   "fa6df80f-eaec-4b85-aa9f-a90756f16fd3"],
  ". Since ",
  Cell[BoxData[
@@ -281,15 +912,15 @@ exists an integer ",
      RowBox[{"(", 
       RowBox[{
        SubscriptBox["H", "1"], "+", 
-       SubscriptBox["H", "2"]}], ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       SubscriptBox["H", "2"]}], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "b736746f-fa15-40d6-a232-bea4ad8877a2"],
  ", n divides (a+c)-(b+d). Since n|(a+c)-(b+d), (a+c) is congruent to b+d \
 modulo n. We have proved (a+c)\[Congruent](b+d) (mod n). "
 }], "Text",
  CellChangeTimes->{{3.873191367088202*^9, 3.8731913677160034`*^9}, {
-  3.8731914458889523`*^9, 
-  3.873191969004923*^9}},ExpressionUUID->"7f1dca8e-6a49-4202-ba54-\
+   3.8731914458889523`*^9, 3.873191969004923*^9}, {3.873280483152232*^9, 
+   3.873280508836335*^9}, 
+   3.8732805763998346`*^9},ExpressionUUID->"7f1dca8e-6a49-4202-ba54-\
 2f6d1caaca3d"],
 
 Cell[BoxData[
@@ -1110,8 +1741,8 @@ from CompanyN\[LongDash]A CompanyN Web Resource. URL.\
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1440., 741.75},
-WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+WindowSize->{718.5, 735.},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
   CharacterEncoding -> "UTF-8"],
@@ -1141,50 +1772,77 @@ Cell[1027, 35, 100, 0, 14, "Institution",ExpressionUUID->"a3f689cd-5263-493d-9a6
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[1164, 40, 107, 0, 46, "AbstractSection",ExpressionUUID->"257bc5a9-4b07-4d6f-9fd2-4be125363c6c"],
-Cell[1274, 42, 164, 3, 45, "Abstract",ExpressionUUID->"bfa18a70-9447-4370-85fe-3e8f49883b71"],
+Cell[1274, 42, 164, 3, 67, "Abstract",ExpressionUUID->"bfa18a70-9447-4370-85fe-3e8f49883b71"],
 Cell[1441, 47, 240, 7, 40, "AbstractMath",ExpressionUUID->"78e7ba6e-1fc3-4548-ae45-70ec5dc51509"],
 Cell[1684, 56, 122, 0, 18, "AbstractContinuation",ExpressionUUID->"c6152838-efec-4ac8-b71e-242d384b9ff3"],
-Cell[1809, 58, 88, 0, 27, "Date",ExpressionUUID->"f405c2c0-89e6-4c01-93bd-f7d50706615d"]
+Cell[1809, 58, 88, 0, 27, "Date",ExpressionUUID->"f405c2c0-89e6-4c01-93bd-f7d50706615d"],
+Cell[CellGroupData[{
+Cell[1922, 62, 225, 4, 29, "Input",ExpressionUUID->"95b2acdd-afab-4866-a5be-af8d8fd9e8b9"],
+Cell[2150, 68, 148, 2, 29, "Output",ExpressionUUID->"1cff049f-785f-4f58-97de-20fa35937ac2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1934, 63, 162, 3, 50, "Section",ExpressionUUID->"90a25cc8-6e9c-49a5-b3ba-b4b276b6dc3b"],
+Cell[2335, 75, 224, 4, 29, "Input",ExpressionUUID->"f92b12d3-7a7f-4df1-bb3d-ff90f9f67800"],
+Cell[2562, 81, 174, 2, 29, "Output",ExpressionUUID->"946e8e84-a2df-4b77-9e7d-1eaa056d27d4"]
+}, Open  ]],
+Cell[2751, 86, 205, 5, 29, "Input",ExpressionUUID->"790aafcd-2a58-4fdd-97dd-99a983d797bf"],
 Cell[CellGroupData[{
-Cell[2121, 70, 190, 3, 35, "Subsection",ExpressionUUID->"218493d2-8676-4be7-af45-4ad09e1d7b54"],
-Cell[2314, 75, 3203, 97, 58, "Text",ExpressionUUID->"f9142d2c-03c4-40a3-99bc-516f4f393a1b"]
+Cell[2981, 95, 254, 5, 29, "Input",ExpressionUUID->"2d6b5737-3bd7-4251-b5fc-41e911442d56"],
+Cell[3238, 102, 151, 2, 29, "Output",ExpressionUUID->"6ea06de4-6447-4a43-8266-c1dc91c77bb9"]
+}, Open  ]],
+Cell[3404, 107, 238, 6, 29, "Input",ExpressionUUID->"2ac81b1c-cd5e-40d2-a878-5b5df0ad6538"],
+Cell[3645, 115, 121, 3, 22, "Text",ExpressionUUID->"3c58736b-d3da-4019-a647-873568eeb210"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5554, 177, 167, 3, 35, "Subsection",ExpressionUUID->"13c3f8ae-5295-425e-af96-a32360f39262"],
-Cell[5724, 182, 3581, 110, 58, "Text",ExpressionUUID->"7f1dca8e-6a49-4202-ba54-2f6d1caaca3d"],
-Cell[9308, 294, 236, 7, 40, "Equation",ExpressionUUID->"0122b442-1525-4852-9388-8cf90840c2e9"],
+Cell[3803, 123, 162, 3, 50, "Section",ExpressionUUID->"90a25cc8-6e9c-49a5-b3ba-b4b276b6dc3b"],
 Cell[CellGroupData[{
-Cell[9569, 305, 110, 0, 17, "Item1Numbered",ExpressionUUID->"08d3221f-da90-4cc7-8e9f-ba084f642ec3"],
+Cell[3990, 130, 261, 4, 35, "Subsection",ExpressionUUID->"1e614fbf-747c-48c3-a6f8-80183ad74111"],
+Cell[4254, 136, 6266, 204, 155, "Text",ExpressionUUID->"ff0ba135-1942-4527-adc3-804c526968c1"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[9704, 309, 112, 0, 16, "Item1Paragraph",ExpressionUUID->"d9bae33f-a1c8-4128-b99d-04b0b6b6964d"],
+Cell[10557, 345, 240, 4, 35, "Subsection",ExpressionUUID->"55234600-f8ad-461e-9e47-eac61736544a"],
+Cell[10800, 351, 5652, 173, 156, "Text",ExpressionUUID->"04a1e5ad-cfeb-434b-ae46-dff2f6d5b79d"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[9841, 313, 110, 0, 17, "Item2Numbered",ExpressionUUID->"7ee10074-0596-42d9-9bd1-62a9fd4b21cf"],
+Cell[16489, 529, 218, 4, 35, "Subsection",ExpressionUUID->"a07d28ce-21d4-4016-adb8-fdf1bdfa047a"],
+Cell[16710, 535, 5304, 170, 129, "Text",ExpressionUUID->"a51d8e5c-3a8e-4ba6-8452-a4b30b7fabb5"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[9976, 317, 112, 0, 16, "Item2Paragraph",ExpressionUUID->"a90b8440-d11b-431e-bd70-b2bb64d8765b"],
+Cell[22051, 710, 190, 3, 35, "Subsection",ExpressionUUID->"218493d2-8676-4be7-af45-4ad09e1d7b54"],
+Cell[22244, 715, 3267, 97, 95, "Text",ExpressionUUID->"f9142d2c-03c4-40a3-99bc-516f4f393a1b"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[10113, 321, 110, 0, 17, "Item3Numbered",ExpressionUUID->"6a641cf0-c304-422b-8ae4-7f9acf476148"],
-Cell[10226, 323, 112, 0, 16, "Item3Paragraph",ExpressionUUID->"8f02d11f-931e-4b2b-9119-9dca4b206356"]
+Cell[25548, 817, 167, 3, 35, "Subsection",ExpressionUUID->"13c3f8ae-5295-425e-af96-a32360f39262"],
+Cell[25718, 822, 3366, 101, 112, "Text",ExpressionUUID->"7f1dca8e-6a49-4202-ba54-2f6d1caaca3d"],
+Cell[29087, 925, 236, 7, 40, "Equation",ExpressionUUID->"0122b442-1525-4852-9388-8cf90840c2e9"],
+Cell[CellGroupData[{
+Cell[29348, 936, 110, 0, 17, "Item1Numbered",ExpressionUUID->"08d3221f-da90-4cc7-8e9f-ba084f642ec3"],
+Cell[CellGroupData[{
+Cell[29483, 940, 112, 0, 16, "Item1Paragraph",ExpressionUUID->"d9bae33f-a1c8-4128-b99d-04b0b6b6964d"],
+Cell[CellGroupData[{
+Cell[29620, 944, 110, 0, 17, "Item2Numbered",ExpressionUUID->"7ee10074-0596-42d9-9bd1-62a9fd4b21cf"],
+Cell[CellGroupData[{
+Cell[29755, 948, 112, 0, 16, "Item2Paragraph",ExpressionUUID->"a90b8440-d11b-431e-bd70-b2bb64d8765b"],
+Cell[CellGroupData[{
+Cell[29892, 952, 110, 0, 17, "Item3Numbered",ExpressionUUID->"6a641cf0-c304-422b-8ae4-7f9acf476148"],
+Cell[30005, 954, 112, 0, 16, "Item3Paragraph",ExpressionUUID->"8f02d11f-931e-4b2b-9119-9dca4b206356"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[10401, 330, 157, 2, 22, "Text",ExpressionUUID->"fb08ce23-719e-4c96-93cf-3320e80bee56"],
-Cell[10561, 334, 244, 7, 40, "EquationNumbered",ExpressionUUID->"fbfc524c-2da9-49c5-99e6-29790db2fd40"],
+Cell[30180, 961, 157, 2, 22, "Text",ExpressionUUID->"fb08ce23-719e-4c96-93cf-3320e80bee56"],
+Cell[30340, 965, 244, 7, 40, "EquationNumbered",ExpressionUUID->"fbfc524c-2da9-49c5-99e6-29790db2fd40"],
 Cell[CellGroupData[{
-Cell[10830, 345, 94, 0, 17, "Item1",ExpressionUUID->"020cdf3d-cde0-4db6-a8ee-f7d6a4dc8cd3"],
+Cell[30609, 976, 94, 0, 17, "Item1",ExpressionUUID->"020cdf3d-cde0-4db6-a8ee-f7d6a4dc8cd3"],
 Cell[CellGroupData[{
-Cell[10949, 349, 112, 0, 16, "Item1Paragraph",ExpressionUUID->"86bf31f5-6dfd-4be9-a520-9a09e97efc75"],
+Cell[30728, 980, 112, 0, 16, "Item1Paragraph",ExpressionUUID->"86bf31f5-6dfd-4be9-a520-9a09e97efc75"],
 Cell[CellGroupData[{
-Cell[11086, 353, 94, 0, 17, "Item2",ExpressionUUID->"9f90037c-f975-4939-a735-20f47c7e11d4"],
+Cell[30865, 984, 94, 0, 17, "Item2",ExpressionUUID->"9f90037c-f975-4939-a735-20f47c7e11d4"],
 Cell[CellGroupData[{
-Cell[11205, 357, 112, 0, 16, "Item2Paragraph",ExpressionUUID->"b60ba90c-16a5-4309-b958-4936cec36b98"],
+Cell[30984, 988, 112, 0, 16, "Item2Paragraph",ExpressionUUID->"b60ba90c-16a5-4309-b958-4936cec36b98"],
 Cell[CellGroupData[{
-Cell[11342, 361, 94, 0, 17, "Item3",ExpressionUUID->"b6abbe08-c3b6-4b80-9848-2ab0e1e49cfd"],
-Cell[11439, 363, 112, 0, 16, "Item3Paragraph",ExpressionUUID->"aef2b918-3bc8-4cde-b8e2-f0a6edc34d94"]
+Cell[31121, 992, 94, 0, 17, "Item3",ExpressionUUID->"b6abbe08-c3b6-4b80-9848-2ab0e1e49cfd"],
+Cell[31218, 994, 112, 0, 16, "Item3Paragraph",ExpressionUUID->"aef2b918-3bc8-4cde-b8e2-f0a6edc34d94"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -1192,97 +1850,97 @@ Cell[11439, 363, 112, 0, 16, "Item3Paragraph",ExpressionUUID->"aef2b918-3bc8-4cd
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11648, 373, 104, 0, 35, "Subsection",ExpressionUUID->"5d4a7c32-dd23-4c0a-8eab-2478685638db"],
+Cell[31427, 1004, 104, 0, 35, "Subsection",ExpressionUUID->"5d4a7c32-dd23-4c0a-8eab-2478685638db"],
 Cell[CellGroupData[{
-Cell[11777, 377, 1554, 30, 162, "Figure",ExpressionUUID->"976cc665-e669-4f2e-b9f2-5a0ec176be4b"],
-Cell[13334, 409, 295, 6, 20, "FigureCaption",ExpressionUUID->"d3d19043-03d3-4c5f-8369-00de566eda64"]
+Cell[31556, 1008, 1554, 30, 162, "Figure",ExpressionUUID->"976cc665-e669-4f2e-b9f2-5a0ec176be4b"],
+Cell[33113, 1040, 295, 6, 20, "FigureCaption",ExpressionUUID->"d3d19043-03d3-4c5f-8369-00de566eda64"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13666, 420, 1555, 30, 162, "Picture",ExpressionUUID->"01c47a31-bc65-4b91-af7c-083d9c5b9172"],
-Cell[15224, 452, 302, 6, 20, "PictureCaption",ExpressionUUID->"df442960-9d43-4ecb-b339-23fa0b14b8c8"]
+Cell[33445, 1051, 1555, 30, 162, "Picture",ExpressionUUID->"01c47a31-bc65-4b91-af7c-083d9c5b9172"],
+Cell[35003, 1083, 302, 6, 20, "PictureCaption",ExpressionUUID->"df442960-9d43-4ecb-b339-23fa0b14b8c8"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15587, 465, 98, 0, 50, "Section",ExpressionUUID->"4c22cfa7-94df-4bec-88cd-9928ddbb4b08"],
+Cell[35366, 1096, 98, 0, 50, "Section",ExpressionUUID->"4c22cfa7-94df-4bec-88cd-9928ddbb4b08"],
 Cell[CellGroupData[{
-Cell[15710, 469, 261, 8, 22, "TableTitle",ExpressionUUID->"eefd2214-6c5a-4e3e-8c67-74976db9ff30"],
-Cell[15974, 479, 2623, 54, 107, "Table",ExpressionUUID->"44213dd9-1904-4328-b083-d2f5e6b0f89f"],
-Cell[18600, 535, 98, 0, 16, "TableNote",ExpressionUUID->"5dbed6e2-3980-413f-a59b-b75dbd8877df"]
+Cell[35489, 1100, 261, 8, 22, "TableTitle",ExpressionUUID->"eefd2214-6c5a-4e3e-8c67-74976db9ff30"],
+Cell[35753, 1110, 2623, 54, 107, "Table",ExpressionUUID->"44213dd9-1904-4328-b083-d2f5e6b0f89f"],
+Cell[38379, 1166, 98, 0, 16, "TableNote",ExpressionUUID->"5dbed6e2-3980-413f-a59b-b75dbd8877df"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18735, 540, 286, 6, 22, "TableTitle",ExpressionUUID->"806ac2b3-505b-4ddd-912c-07bcdaaf396c"],
-Cell[19024, 548, 3615, 71, 107, "Table",ExpressionUUID->"2562584a-bc22-4b39-a258-f7d14723f0ee"],
-Cell[22642, 621, 98, 0, 16, "TableNote",ExpressionUUID->"d114773f-5ec3-4544-bc40-75e8ac1fe36b"]
+Cell[38514, 1171, 286, 6, 22, "TableTitle",ExpressionUUID->"806ac2b3-505b-4ddd-912c-07bcdaaf396c"],
+Cell[38803, 1179, 3615, 71, 107, "Table",ExpressionUUID->"2562584a-bc22-4b39-a258-f7d14723f0ee"],
+Cell[42421, 1252, 98, 0, 16, "TableNote",ExpressionUUID->"d114773f-5ec3-4544-bc40-75e8ac1fe36b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22777, 626, 286, 6, 22, "TableTitle",ExpressionUUID->"85c89475-1ef2-4fb0-ba00-2acb024fd2fe"],
-Cell[23066, 634, 4578, 88, 107, "Table",ExpressionUUID->"a583d33e-e78e-493e-aa17-2613cd6c6685"],
-Cell[27647, 724, 98, 0, 16, "TableNote",ExpressionUUID->"6ba8cdd6-b1df-4c3d-a99e-eef4177092ec"]
+Cell[42556, 1257, 286, 6, 22, "TableTitle",ExpressionUUID->"85c89475-1ef2-4fb0-ba00-2acb024fd2fe"],
+Cell[42845, 1265, 4578, 88, 107, "Table",ExpressionUUID->"a583d33e-e78e-493e-aa17-2613cd6c6685"],
+Cell[47426, 1355, 98, 0, 16, "TableNote",ExpressionUUID->"6ba8cdd6-b1df-4c3d-a99e-eef4177092ec"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27782, 729, 286, 6, 22, "TableTitle",ExpressionUUID->"d6784e8b-8292-4916-b374-5503ea70c021"],
-Cell[28071, 737, 5556, 105, 107, "Table",ExpressionUUID->"ec6dc378-3187-4711-b2cf-71ad09e77d30"],
-Cell[33630, 844, 98, 0, 16, "TableNote",ExpressionUUID->"3fc79d0e-2e06-415a-ada3-0fa0abc42552"]
+Cell[47561, 1360, 286, 6, 22, "TableTitle",ExpressionUUID->"d6784e8b-8292-4916-b374-5503ea70c021"],
+Cell[47850, 1368, 5556, 105, 125, "Table",ExpressionUUID->"ec6dc378-3187-4711-b2cf-71ad09e77d30"],
+Cell[53409, 1475, 98, 0, 16, "TableNote",ExpressionUUID->"3fc79d0e-2e06-415a-ada3-0fa0abc42552"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33765, 849, 104, 0, 35, "Subsection",ExpressionUUID->"d8cb8f18-390d-40c2-b4d1-63ea9310e97d"],
+Cell[53544, 1480, 104, 0, 35, "Subsection",ExpressionUUID->"d8cb8f18-390d-40c2-b4d1-63ea9310e97d"],
 Cell[CellGroupData[{
-Cell[33894, 853, 262, 6, 22, "Theorem",ExpressionUUID->"76e5aaf3-4a20-44ea-aa24-960a368c1056"],
-Cell[34159, 861, 120, 0, 22, "TheoremContinuation",ExpressionUUID->"a02a9255-a8b4-4863-90bb-b0f3beb69eff"],
-Cell[34282, 863, 276, 6, 22, "Corollary",ExpressionUUID->"74754674-9cd5-4120-9a1d-d23e7107209c"],
-Cell[34561, 871, 124, 0, 22, "CorollaryContinuation",ExpressionUUID->"b295aa46-bfa1-485f-8ed2-5c129e2a4702"],
-Cell[34688, 873, 271, 6, 22, "Definition",ExpressionUUID->"5e453407-4901-4a55-8987-9fb53800c3fe"],
-Cell[34962, 881, 126, 0, 22, "DefinitionContinuation",ExpressionUUID->"950788aa-ebd0-4b81-97fc-b6f8a772a493"],
-Cell[35091, 883, 290, 6, 22, "Proposition",ExpressionUUID->"19ea0c3f-4ec8-40a5-939f-ee83603fb4fc"],
-Cell[35384, 891, 128, 0, 22, "PropositionContinuation",ExpressionUUID->"f9e13e4f-e027-44f3-9f77-902aaeeecda9"],
-Cell[35515, 893, 283, 6, 22, "Conjecture",ExpressionUUID->"a16d213c-5268-4657-bcf9-155d8268292d"],
-Cell[35801, 901, 126, 0, 22, "ConjectureContinuation",ExpressionUUID->"70e4455f-8c00-4732-8a9f-ced078882044"],
-Cell[35930, 903, 248, 6, 22, "Axiom",ExpressionUUID->"bd81013f-f4ed-4728-8a47-e9951cbe0ef7"],
-Cell[36181, 911, 116, 0, 22, "AxiomContinuation",ExpressionUUID->"2ea49e18-9712-4e2a-bf3c-84756371b29e"],
-Cell[36300, 913, 241, 6, 22, "Rule",ExpressionUUID->"7c17d608-4d51-4d6e-aa39-bdfe5a01f0b0"],
-Cell[36544, 921, 114, 0, 22, "RuleContinuation",ExpressionUUID->"4ec24a7d-d6d2-4615-80e8-c18de85bbd8f"],
-Cell[36661, 923, 262, 6, 22, "Example",ExpressionUUID->"44875885-d991-48a9-9f56-7d313a41d2fd"],
-Cell[36926, 931, 120, 0, 22, "ExampleContinuation",ExpressionUUID->"9bfeaaab-9513-4add-9b14-a0d840e241fd"],
-Cell[37049, 933, 255, 6, 22, "Remark",ExpressionUUID->"2e735ed3-73b4-4a03-ac64-03aeaa2ba039"],
-Cell[37307, 941, 118, 0, 22, "RemarkContinuation",ExpressionUUID->"e8b0ac38-0fbb-4939-9f73-119cdded7ce3"],
-Cell[37428, 943, 267, 6, 22, "Solution",ExpressionUUID->"872bbcc1-3abc-48d7-aa85-e7c93811d901"],
-Cell[37698, 951, 122, 0, 22, "SolutionContinuation",ExpressionUUID->"6e8a017d-7c45-4f07-b891-5231bc5ff457"],
-Cell[37823, 953, 249, 6, 22, "Proof",ExpressionUUID->"e72ea046-4ec7-4d26-a211-5e8bcef90a00"],
-Cell[38075, 961, 116, 0, 22, "ProofContinuation",ExpressionUUID->"b4a81b95-b5cf-4433-aaca-e1fa14a36f10"],
-Cell[38194, 963, 84, 0, 25, "QED",ExpressionUUID->"dbbe8001-5512-484d-9004-eb552f775ede"]
+Cell[53673, 1484, 262, 6, 22, "Theorem",ExpressionUUID->"76e5aaf3-4a20-44ea-aa24-960a368c1056"],
+Cell[53938, 1492, 120, 0, 22, "TheoremContinuation",ExpressionUUID->"a02a9255-a8b4-4863-90bb-b0f3beb69eff"],
+Cell[54061, 1494, 276, 6, 22, "Corollary",ExpressionUUID->"74754674-9cd5-4120-9a1d-d23e7107209c"],
+Cell[54340, 1502, 124, 0, 22, "CorollaryContinuation",ExpressionUUID->"b295aa46-bfa1-485f-8ed2-5c129e2a4702"],
+Cell[54467, 1504, 271, 6, 22, "Definition",ExpressionUUID->"5e453407-4901-4a55-8987-9fb53800c3fe"],
+Cell[54741, 1512, 126, 0, 22, "DefinitionContinuation",ExpressionUUID->"950788aa-ebd0-4b81-97fc-b6f8a772a493"],
+Cell[54870, 1514, 290, 6, 22, "Proposition",ExpressionUUID->"19ea0c3f-4ec8-40a5-939f-ee83603fb4fc"],
+Cell[55163, 1522, 128, 0, 22, "PropositionContinuation",ExpressionUUID->"f9e13e4f-e027-44f3-9f77-902aaeeecda9"],
+Cell[55294, 1524, 283, 6, 22, "Conjecture",ExpressionUUID->"a16d213c-5268-4657-bcf9-155d8268292d"],
+Cell[55580, 1532, 126, 0, 22, "ConjectureContinuation",ExpressionUUID->"70e4455f-8c00-4732-8a9f-ced078882044"],
+Cell[55709, 1534, 248, 6, 22, "Axiom",ExpressionUUID->"bd81013f-f4ed-4728-8a47-e9951cbe0ef7"],
+Cell[55960, 1542, 116, 0, 22, "AxiomContinuation",ExpressionUUID->"2ea49e18-9712-4e2a-bf3c-84756371b29e"],
+Cell[56079, 1544, 241, 6, 22, "Rule",ExpressionUUID->"7c17d608-4d51-4d6e-aa39-bdfe5a01f0b0"],
+Cell[56323, 1552, 114, 0, 22, "RuleContinuation",ExpressionUUID->"4ec24a7d-d6d2-4615-80e8-c18de85bbd8f"],
+Cell[56440, 1554, 262, 6, 22, "Example",ExpressionUUID->"44875885-d991-48a9-9f56-7d313a41d2fd"],
+Cell[56705, 1562, 120, 0, 22, "ExampleContinuation",ExpressionUUID->"9bfeaaab-9513-4add-9b14-a0d840e241fd"],
+Cell[56828, 1564, 255, 6, 22, "Remark",ExpressionUUID->"2e735ed3-73b4-4a03-ac64-03aeaa2ba039"],
+Cell[57086, 1572, 118, 0, 22, "RemarkContinuation",ExpressionUUID->"e8b0ac38-0fbb-4939-9f73-119cdded7ce3"],
+Cell[57207, 1574, 267, 6, 22, "Solution",ExpressionUUID->"872bbcc1-3abc-48d7-aa85-e7c93811d901"],
+Cell[57477, 1582, 122, 0, 22, "SolutionContinuation",ExpressionUUID->"6e8a017d-7c45-4f07-b891-5231bc5ff457"],
+Cell[57602, 1584, 249, 6, 22, "Proof",ExpressionUUID->"e72ea046-4ec7-4d26-a211-5e8bcef90a00"],
+Cell[57854, 1592, 116, 0, 22, "ProofContinuation",ExpressionUUID->"b4a81b95-b5cf-4433-aaca-e1fa14a36f10"],
+Cell[57973, 1594, 84, 0, 25, "QED",ExpressionUUID->"dbbe8001-5512-484d-9004-eb552f775ede"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38339, 970, 107, 0, 50, "AppendixSection",ExpressionUUID->"bc29db11-fa65-4ff6-8e51-03aa8218260c"],
+Cell[58118, 1601, 107, 0, 50, "AppendixSection",ExpressionUUID->"bc29db11-fa65-4ff6-8e51-03aa8218260c"],
 Cell[CellGroupData[{
-Cell[38471, 974, 172, 3, 22, "Appendix",ExpressionUUID->"8c06e2f6-b766-41bc-91e3-3ae7500551ba"],
-Cell[38646, 979, 244, 7, 40, "AppendixEquation",ExpressionUUID->"f6e99416-ced8-40b7-ab19-2adecf58ad49"]
+Cell[58250, 1605, 172, 3, 22, "Appendix",ExpressionUUID->"8c06e2f6-b766-41bc-91e3-3ae7500551ba"],
+Cell[58425, 1610, 244, 7, 40, "AppendixEquation",ExpressionUUID->"f6e99416-ced8-40b7-ab19-2adecf58ad49"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38939, 992, 121, 0, 50, "AcknowledgmentsSection",ExpressionUUID->"329dfb5d-9140-40f1-85e8-c723768f8a70"],
-Cell[39063, 994, 113, 0, 22, "Acknowledgments",ExpressionUUID->"b01d2c4f-d3ef-42e4-9ba8-46a191910823"]
+Cell[58718, 1623, 121, 0, 50, "AcknowledgmentsSection",ExpressionUUID->"329dfb5d-9140-40f1-85e8-c723768f8a70"],
+Cell[58842, 1625, 113, 0, 22, "Acknowledgments",ExpressionUUID->"b01d2c4f-d3ef-42e4-9ba8-46a191910823"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39213, 999, 105, 0, 50, "EndnoteSection",ExpressionUUID->"015fa5a2-76f3-46f0-acca-b05020674df0"],
-Cell[39321, 1001, 98, 0, 18, "Endnote",ExpressionUUID->"487fca5d-852d-42fb-8d04-ccc6e74bce53"]
+Cell[58992, 1630, 105, 0, 50, "EndnoteSection",ExpressionUUID->"015fa5a2-76f3-46f0-acca-b05020674df0"],
+Cell[59100, 1632, 98, 0, 18, "Endnote",ExpressionUUID->"487fca5d-852d-42fb-8d04-ccc6e74bce53"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39456, 1006, 109, 0, 50, "ReferenceSection",ExpressionUUID->"34143cb9-a687-4a53-8a97-283f706fd356"],
+Cell[59235, 1637, 109, 0, 50, "ReferenceSection",ExpressionUUID->"34143cb9-a687-4a53-8a97-283f706fd356"],
 Cell[CellGroupData[{
-Cell[39590, 1010, 299, 8, 18, "Reference",ExpressionUUID->"811c8258-c5a0-479a-b3f4-21bf62dab927"],
-Cell[39892, 1020, 321, 9, 18, "Reference",ExpressionUUID->"5ffc9629-1609-4db0-8d37-7488cc3ae20f"],
-Cell[40216, 1031, 338, 9, 18, "Reference",ExpressionUUID->"e38c1366-6427-470e-8ddc-b3cc5c32aa29"],
-Cell[40557, 1042, 251, 8, 18, "Reference",ExpressionUUID->"0b1b62ba-98c2-4a00-a119-f4843cdf660a"],
-Cell[40811, 1052, 271, 8, 18, "Reference",ExpressionUUID->"03b7904a-7c46-4b03-8ad2-310d41e79e9b"],
-Cell[41085, 1062, 288, 8, 18, "Reference",ExpressionUUID->"dbe1d0f0-1fd5-4a37-8cac-36a8414e51bd"],
-Cell[41376, 1072, 380, 6, 18, "Reference",ExpressionUUID->"ee87f4f2-e455-4b31-af46-3db71f976ac9"],
-Cell[41759, 1080, 419, 7, 34, "Reference",ExpressionUUID->"1eed7727-10f4-405b-9ea1-928b7d20c1cc"],
-Cell[42181, 1089, 419, 7, 34, "Reference",ExpressionUUID->"e9595125-0632-4915-ac84-3024b40ebc7d"],
-Cell[42603, 1098, 244, 4, 18, "Reference",ExpressionUUID->"b9cedcfc-056e-4ad9-bb1d-022cdf2a4f05"],
-Cell[42850, 1104, 213, 3, 18, "Reference",ExpressionUUID->"2ee78674-7697-498b-a977-a16a3a2c8529"]
+Cell[59369, 1641, 299, 8, 18, "Reference",ExpressionUUID->"811c8258-c5a0-479a-b3f4-21bf62dab927"],
+Cell[59671, 1651, 321, 9, 18, "Reference",ExpressionUUID->"5ffc9629-1609-4db0-8d37-7488cc3ae20f"],
+Cell[59995, 1662, 338, 9, 18, "Reference",ExpressionUUID->"e38c1366-6427-470e-8ddc-b3cc5c32aa29"],
+Cell[60336, 1673, 251, 8, 18, "Reference",ExpressionUUID->"0b1b62ba-98c2-4a00-a119-f4843cdf660a"],
+Cell[60590, 1683, 271, 8, 18, "Reference",ExpressionUUID->"03b7904a-7c46-4b03-8ad2-310d41e79e9b"],
+Cell[60864, 1693, 288, 8, 18, "Reference",ExpressionUUID->"dbe1d0f0-1fd5-4a37-8cac-36a8414e51bd"],
+Cell[61155, 1703, 380, 6, 18, "Reference",ExpressionUUID->"ee87f4f2-e455-4b31-af46-3db71f976ac9"],
+Cell[61538, 1711, 419, 7, 34, "Reference",ExpressionUUID->"1eed7727-10f4-405b-9ea1-928b7d20c1cc"],
+Cell[61960, 1720, 419, 7, 34, "Reference",ExpressionUUID->"e9595125-0632-4915-ac84-3024b40ebc7d"],
+Cell[62382, 1729, 244, 4, 18, "Reference",ExpressionUUID->"b9cedcfc-056e-4ad9-bb1d-022cdf2a4f05"],
+Cell[62629, 1735, 213, 3, 18, "Reference",ExpressionUUID->"2ee78674-7697-498b-a977-a16a3a2c8529"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
