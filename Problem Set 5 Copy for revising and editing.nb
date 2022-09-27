@@ -10,7 +10,7 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     75094,       1942]
+NotebookDataLength[     75093,       1942]
 NotebookOptionsPosition[     62882,       1743]
 NotebookOutlinePosition[     63409,       1761]
 CellTagsIndexPosition[     63366,       1758]
@@ -1741,8 +1741,8 @@ from CompanyN\[LongDash]A CompanyN Web Resource. URL.\
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{718.5, 735.},
-WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+WindowSize->{1440., 741.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
   CharacterEncoding -> "UTF-8"],
@@ -1772,7 +1772,7 @@ Cell[1027, 35, 100, 0, 14, "Institution",ExpressionUUID->"a3f689cd-5263-493d-9a6
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[1164, 40, 107, 0, 46, "AbstractSection",ExpressionUUID->"257bc5a9-4b07-4d6f-9fd2-4be125363c6c"],
-Cell[1274, 42, 164, 3, 67, "Abstract",ExpressionUUID->"bfa18a70-9447-4370-85fe-3e8f49883b71"],
+Cell[1274, 42, 164, 3, 45, "Abstract",ExpressionUUID->"bfa18a70-9447-4370-85fe-3e8f49883b71"],
 Cell[1441, 47, 240, 7, 40, "AbstractMath",ExpressionUUID->"78e7ba6e-1fc3-4548-ae45-70ec5dc51509"],
 Cell[1684, 56, 122, 0, 18, "AbstractContinuation",ExpressionUUID->"c6152838-efec-4ac8-b71e-242d384b9ff3"],
 Cell[1809, 58, 88, 0, 27, "Date",ExpressionUUID->"f405c2c0-89e6-4c01-93bd-f7d50706615d"],
@@ -1796,7 +1796,7 @@ Cell[CellGroupData[{
 Cell[3803, 123, 162, 3, 50, "Section",ExpressionUUID->"90a25cc8-6e9c-49a5-b3ba-b4b276b6dc3b"],
 Cell[CellGroupData[{
 Cell[3990, 130, 261, 4, 35, "Subsection",ExpressionUUID->"1e614fbf-747c-48c3-a6f8-80183ad74111"],
-Cell[4254, 136, 6266, 204, 155, "Text",ExpressionUUID->"ff0ba135-1942-4527-adc3-804c526968c1"]
+Cell[4254, 136, 6266, 204, 81, "Text",ExpressionUUID->"ff0ba135-1942-4527-adc3-804c526968c1"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[10557, 345, 240, 4, 35, "Subsection",ExpressionUUID->"55234600-f8ad-461e-9e47-eac61736544a"],
