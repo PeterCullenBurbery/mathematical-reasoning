@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     84884,       2200]
+NotebookDataLength[     84848,       2199]
 NotebookOptionsPosition[     72078,       2002]
-NotebookOutlinePosition[     72658,       2022]
-CellTagsIndexPosition[     72615,       2019]
+NotebookOutlinePosition[     72622,       2021]
+CellTagsIndexPosition[     72579,       2018]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2000,9 +2000,8 @@ from CompanyN\[LongDash]A CompanyN Web Resource. URL.\
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1152., 585.6},
-WindowMargins->{{
-  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+WindowSize->{1141.2, 580.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 Magnification->3.,
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
