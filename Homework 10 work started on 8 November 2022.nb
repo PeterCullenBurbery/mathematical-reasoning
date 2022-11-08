@@ -1106,10 +1106,10 @@ Cell[29968, 974, 117, 0, 66, "SubsubitemParagraph",ExpressionUUID->"22a06616-ea9
 }, Open  ]],
 Cell[30124, 979, 156, 2, 105, "Text",ExpressionUUID->"99bf9bc2-e17a-4774-9fd1-db84a5d1079d"],
 Cell[30283, 983, 250, 7, 118, "DisplayFormulaNumbered",ExpressionUUID->"beb7efa4-28d4-4ded-aba3-6fab4e4155bf"],
-Cell[30536, 992, 130, 0, 105, "Text",ExpressionUUID->"dc11b698-4415-4397-bb72-64f8b6af5156"],
+Cell[30536, 992, 130, 0, 170, "Text",ExpressionUUID->"dc11b698-4415-4397-bb72-64f8b6af5156"],
 Cell[30669, 994, 137, 3, 150, "Code",ExpressionUUID->"19090c82-2326-4457-9b83-8333f8b74b6d"],
-Cell[30809, 999, 142, 2, 105, "Text",ExpressionUUID->"6c4c9820-470f-4736-982d-9e2264827a5c"],
-Cell[30954, 1003, 296, 11, 606, "Program",ExpressionUUID->"965cc861-61e0-4a96-ac61-fabc43dca1d3"]
+Cell[30809, 999, 142, 2, 170, "Text",ExpressionUUID->"6c4c9820-470f-4736-982d-9e2264827a5c"],
+Cell[30954, 1003, 296, 11, 613, "Program",ExpressionUUID->"965cc861-61e0-4a96-ac61-fabc43dca1d3"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
