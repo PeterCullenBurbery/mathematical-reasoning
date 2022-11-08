@@ -10,33 +10,885 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      8779,        233]
-NotebookOptionsPosition[      5241,        168]
-NotebookOutlinePosition[      5644,        184]
-CellTagsIndexPosition[      5601,        181]
+NotebookDataLength[     36793,       1112]
+NotebookOptionsPosition[     31302,       1020]
+NotebookOutlinePosition[     31724,       1037]
+CellTagsIndexPosition[     31681,       1034]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Enter title here", "Title",ExpressionUUID->"841cecfa-987e-49fa-ae8d-dd5b88f9d8ac"],
+Cell["Problem Set 10", "Title",
+ CellChangeTimes->{{3.876925692820216*^9, 
+  3.876925699423025*^9}},ExpressionUUID->"841cecfa-987e-49fa-ae8d-\
+dd5b88f9d8ac"],
 
-Cell["Enter subtitle here", "Subtitle",ExpressionUUID->"bcb8c238-12d0-493f-b357-434a013459e0"],
+Cell["8 November 2022", "Subtitle",
+ CellChangeTimes->{{3.8769257111344852`*^9, 
+  3.8769257139982376`*^9}},ExpressionUUID->"bcb8c238-12d0-493f-b357-\
+434a013459e0"],
 
-Cell["Enter subsubtitle here", "Subsubtitle",ExpressionUUID->"533b820b-7ae7-4265-9c5a-124b0d4e0e4d"],
+Cell["Peter Cullen Burbery", "Subsubtitle",
+ CellChangeTimes->{{3.876925705311468*^9, 
+  3.8769257081908603`*^9}},ExpressionUUID->"533b820b-7ae7-4265-9c5a-\
+124b0d4e0e4d"],
 
 Cell[CellGroupData[{
 
-Cell["Enter section title here", "Section",ExpressionUUID->"903f3e92-a536-4648-968a-499f41769983"],
+Cell["Exercise 1", "Section",
+ CellChangeTimes->{{3.876925779199396*^9, 
+  3.8769257821915874`*^9}},ExpressionUUID->"903f3e92-a536-4648-968a-\
+499f41769983"],
 
 Cell[CellGroupData[{
 
-Cell["Enter subsection title here", "Subsection",ExpressionUUID->"4fbb7bb8-9766-4251-8071-b36c00045beb"],
+Cell["Statement", "Subsection",
+ CellChangeTimes->{{3.876925806031197*^9, 
+  3.876925807056568*^9}},ExpressionUUID->"21abf2d3-880c-4673-ba38-\
+e6b69fc2944b"],
+
+Cell[TextData[{
+ "Prove Theorem 5.31. Let ",
+ Cell[BoxData[
+  FormBox["\[CapitalLambda]", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "051b2334-14b5-485d-9749-6a6d8a2d726a"],
+ " be a nonempty indexing set, let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalA]", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      SubscriptBox["A", "\[Alpha]"], "|", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}], "}"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cb178498-232b-4529-9430-51cc73038213"],
+ " be an indexed family of sets, and let ",
+ StyleBox["B",
+  FontSlant->"Italic"],
+ " be a set. Then"
+}], "Text",
+ CellChangeTimes->{{3.8769258111353087`*^9, 
+  3.8769259228634777`*^9}},ExpressionUUID->"71df7e36-9c5f-4377-9ee5-\
+4e423c6c2de3"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"B", 
+    StyleBox["\[Union]",
+     FontSlant->"Plain"], 
+    RowBox[{
+     StyleBox["(",
+      FontSlant->"Plain"], 
+     RowBox[{
+      StyleBox[
+       UnderscriptBox["\[Intersection]", 
+        RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+       FontSlant->"Plain"], 
+      SubscriptBox["A", "\[Alpha]"]}], 
+     StyleBox[")",
+      FontSlant->"Plain"]}]}], 
+   StyleBox["=",
+    FontSlant->"Plain"], 
+   RowBox[{
+    UnderscriptBox[
+     StyleBox["\[Intersection]",
+      FontSlant->"Plain"], 
+     RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+    RowBox[{"(", 
+     RowBox[{
+      StyleBox["B",
+       FontSlant->"Italic"], "\[Union]", 
+      SubscriptBox[
+       StyleBox["A",
+        FontSlant->"Italic"], "\[Alpha]"]}], ")"}]}]}], 
+  TraditionalForm]], "Input",ExpressionUUID->"a60a7025-9cc1-40a7-8f51-\
+bcd9b92c8749"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["Enter subsubsection title here", "Subsubsection",ExpressionUUID->"b5ec6b3b-633b-4fe3-a602-9044a3c73c0a"],
+Cell["Proof at 3:20 pm", "Subsection",
+ CellChangeTimes->{{3.8769276362680936`*^9, 
+  3.876927652315404*^9}},ExpressionUUID->"56fe55a1-9d36-44e8-bb53-\
+820ed8417a5a"],
+
+Cell[TextData[{
+ "Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "\[Element]", 
+    RowBox[{"B", "\[Union]", 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox[
+        UnderscriptBox["\[Intersection]", 
+         RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+        FontSlant->"Plain"], 
+       SubscriptBox["A", "\[Alpha]"]}], 
+      StyleBox[")",
+       FontSlant->"Plain"]}]}]}], TraditionalForm]],ExpressionUUID->
+  "3701a039-4872-4ecd-a403-7b17bdad29df"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.8769276547316017`*^9, 
+  3.876927667867359*^9}},ExpressionUUID->"7466ac1d-58e9-4236-9d4a-\
+88a2d667a6b3"],
+
+Cell[TextData[{
+ "Then b\[Element]B or b\[Element]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     StyleBox[
+      UnderscriptBox["\[Intersection]", 
+       RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+      FontSlant->"Plain"], 
+     SubscriptBox["A", "\[Alpha]"]}], 
+    StyleBox[")",
+     FontSlant->"Plain"]}], TraditionalForm]],ExpressionUUID->
+  "429f66fb-e290-4e12-9d24-a04a4768b9cc"],
+ ". Then b\[Element]B or ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Alpha]", ",", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+    RowBox[{"b", "\[Element]", 
+     SubscriptBox["A", "\[Alpha]"]}]}], TraditionalForm]], "Input",
+  CellChangeTimes->{{3.8769267429905453`*^9, 3.87692674900175*^9}},
+  ExpressionUUID->"c8e0f8b8-af07-4213-bc05-3e6bfedd5856"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.8769276708446383`*^9, 
+  3.876927735963937*^9}},ExpressionUUID->"da8b5ee0-a673-48ea-b0de-\
+88e086a56eec"],
+
+Cell[TextData[{
+ "We know ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     UnderscriptBox[
+      RowBox[{"b", "\[Element]", "\[Intersection]"}], 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], "B"}], 
+    "\[Union]", 
+    SubscriptBox["A", "\[Alpha]"]}], TraditionalForm]],ExpressionUUID->
+  "e0986783-ddd5-4bd9-af1f-517a8a78cd09"],
+ " if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Alpha]", ",", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+    RowBox[{"b", "\[Element]", 
+     RowBox[{"(", 
+      RowBox[{"B", "\[Union]", 
+       SubscriptBox["A", "\[Alpha]"]}], ")"}]}]}], TraditionalForm]], "Input",
+  CellChangeTimes->{{3.876926738193356*^9, 3.876926784951215*^9}},
+  ExpressionUUID->"36658de7-7323-4ca7-a63a-09e0ed921ff2"],
+ ". We know this is true if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Alpha]", ",", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+    RowBox[{"b", "\[Element]", 
+     RowBox[{"B", " ", "or", " ", "b"}], "\[Element]", 
+     SubscriptBox["A", "\[Alpha]"]}]}], TraditionalForm]], "Input",
+  CellChangeTimes->{{3.876926738193356*^9, 3.876926784951215*^9}},
+  ExpressionUUID->"ee972970-3690-47a6-8f9d-c9f5640d467a"],
+ ". We assumed that b\[Element]B or ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Alpha]", ",", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+    RowBox[{"b", "\[Element]", 
+     SubscriptBox["A", "\[Alpha]"]}]}], TraditionalForm]], "Input",
+  CellChangeTimes->{{3.8769267429905453`*^9, 3.87692674900175*^9}},
+  ExpressionUUID->"dcef49ff-02a8-44a1-9844-291b04679f34"],
+ ", so we can conclude that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     UnderscriptBox[
+      RowBox[{"b", "\[Element]", "\[Intersection]"}], 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], "B"}], 
+    "\[Union]", 
+    SubscriptBox["A", "\[Alpha]"]}], TraditionalForm]],ExpressionUUID->
+  "202c30cc-545f-43db-8354-ed75fdc0ae59"],
+ ". We have know proven that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"B", 
+     RowBox[{
+      StyleBox["\[Union]",
+       FontSlant->"Plain"], 
+      RowBox[{
+       StyleBox["(",
+        FontSlant->"Plain"], 
+       RowBox[{
+        StyleBox[
+         UnderscriptBox["\[Intersection]", 
+          RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+         FontSlant->"Plain"], 
+        SubscriptBox["A", "\[Alpha]"]}], 
+       StyleBox[")",
+        FontSlant->"Plain"]}]}]}], 
+    StyleBox["\[SubsetEqual]",
+     FontSlant->"Plain"], 
+    RowBox[{
+     UnderscriptBox[
+      StyleBox["\[Intersection]",
+       FontSlant->"Plain"], 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox["B",
+        FontSlant->"Italic"], "\[Union]", 
+       SubscriptBox[
+        StyleBox["A",
+         FontSlant->"Italic"], "\[Alpha]"]}], ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"cd2e7fdd-9d0c-4dbf-ab7c-46b14c2cb7a2"],
+ ". We will now prove ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"B", 
+     RowBox[{
+      StyleBox["\[Union]",
+       FontSlant->"Plain"], 
+      RowBox[{
+       StyleBox["(",
+        FontSlant->"Plain"], 
+       RowBox[{
+        StyleBox[
+         UnderscriptBox["\[Intersection]", 
+          RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+         FontSlant->"Plain"], 
+        SubscriptBox["A", "\[Alpha]"]}], 
+       StyleBox[")",
+        FontSlant->"Plain"]}]}]}], 
+    StyleBox["\[SupersetEqual]",
+     FontSlant->"Plain"], 
+    RowBox[{
+     UnderscriptBox[
+      StyleBox["\[Intersection]",
+       FontSlant->"Plain"], 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox["B",
+        FontSlant->"Italic"], "\[Union]", 
+       SubscriptBox[
+        StyleBox["A",
+         FontSlant->"Italic"], "\[Alpha]"]}], ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"0b5c2b03-94e2-423a-973f-eb223ed87063"],
+ ". Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    UnderscriptBox[
+     RowBox[{"b", "\[Element]", 
+      StyleBox["\[Intersection]",
+       FontSlant->"Plain"]}], 
+     RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+    RowBox[{"(", 
+     RowBox[{
+      StyleBox["B",
+       FontSlant->"Italic"], "\[Union]", 
+      SubscriptBox[
+       StyleBox["A",
+        FontSlant->"Italic"], "\[Alpha]"]}], ")"}]}], TraditionalForm]],
+  ExpressionUUID->"64e5137c-7098-41ba-b801-fd52479e7fa7"],
+ ". Then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Alpha]", ",", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+    RowBox[{"b", "\[Element]", 
+     RowBox[{"(", 
+      RowBox[{"B", "\[Union]", 
+       SubscriptBox["A", "\[Alpha]"]}], ")"}]}]}], TraditionalForm]], "Input",
+  CellChangeTimes->{{3.876926738193356*^9, 3.876926784951215*^9}},
+  ExpressionUUID->"6c427915-b33f-4db8-a1a5-d39a5c3f4588"],
+ ". Then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Alpha]", ",", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+    RowBox[{"b", "\[Element]", 
+     RowBox[{"B", " ", "or", " ", "b"}], "\[Element]", 
+     SubscriptBox["A", "\[Alpha]"]}]}], TraditionalForm]], "Input",
+  CellChangeTimes->{{3.876926738193356*^9, 3.876926784951215*^9}},
+  ExpressionUUID->"21a9aaee-aef3-4dc4-a299-6b1e0f62da7f"],
+ ". Then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "\[Element]", "B"}], TraditionalForm]],ExpressionUUID->
+  "2f6774b2-896e-4a98-a046-28f2bb755f62"],
+ " or ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "\[Element]", 
+    RowBox[{"(", 
+     RowBox[{
+      StyleBox[
+       UnderscriptBox["\[Intersection]", 
+        RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+       FontSlant->"Plain"], 
+      SubscriptBox["A", "\[Alpha]"]}], 
+     StyleBox[")",
+      FontSlant->"Plain"]}]}], TraditionalForm]],ExpressionUUID->
+  "fae6429f-be84-4739-9d92-3c6a98c65142"],
+ ". Therefore ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "\[Element]", 
+    RowBox[{"B", "\[Union]", 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox[
+        UnderscriptBox["\[Intersection]", 
+         RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+        FontSlant->"Plain"], 
+       SubscriptBox["A", "\[Alpha]"]}], 
+      StyleBox[")",
+       FontSlant->"Plain"]}]}]}], TraditionalForm]],ExpressionUUID->
+  "d7976de0-e06f-491e-936a-3e7268fb2272"],
+ ". Therefore ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"B", 
+     RowBox[{
+      StyleBox["\[Union]",
+       FontSlant->"Plain"], 
+      RowBox[{
+       StyleBox["(",
+        FontSlant->"Plain"], 
+       RowBox[{
+        StyleBox[
+         UnderscriptBox["\[Intersection]", 
+          RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+         FontSlant->"Plain"], 
+        SubscriptBox["A", "\[Alpha]"]}], 
+       StyleBox[")",
+        FontSlant->"Plain"]}]}]}], 
+    StyleBox["\[SupersetEqual]",
+     FontSlant->"Plain"], 
+    RowBox[{
+     UnderscriptBox[
+      StyleBox["\[Intersection]",
+       FontSlant->"Plain"], 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox["B",
+        FontSlant->"Italic"], "\[Union]", 
+       SubscriptBox[
+        StyleBox["A",
+         FontSlant->"Italic"], "\[Alpha]"]}], ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"bc891e56-a5de-4e6a-911d-3d89ed905bb8"],
+ ". We have proved that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"B", 
+     RowBox[{
+      StyleBox["\[Union]",
+       FontSlant->"Plain"], 
+      RowBox[{
+       StyleBox["(",
+        FontSlant->"Plain"], 
+       RowBox[{
+        StyleBox[
+         UnderscriptBox["\[Intersection]", 
+          RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+         FontSlant->"Plain"], 
+        SubscriptBox["A", "\[Alpha]"]}], 
+       StyleBox[")",
+        FontSlant->"Plain"]}]}]}], 
+    StyleBox["=",
+     FontSlant->"Plain"], 
+    RowBox[{
+     UnderscriptBox[
+      StyleBox["\[Intersection]",
+       FontSlant->"Plain"], 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox["B",
+        FontSlant->"Italic"], "\[Union]", 
+       SubscriptBox[
+        StyleBox["A",
+         FontSlant->"Italic"], "\[Alpha]"]}], ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"238c409e-364e-4d6b-b1bc-f1a2d8ec6f50"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8769277532611046`*^9, 
+  3.8769280982874813`*^9}},ExpressionUUID->"7a53b7f8-a99d-49d3-af5f-\
+0b902b36decd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Proof", "Subsection",
+ CellChangeTimes->{{3.876925785566639*^9, 3.876925787310131*^9}, {
+  3.87692611998495*^9, 
+  3.8769261205633373`*^9}},ExpressionUUID->"4fbb7bb8-9766-4251-8071-\
+b36c00045beb"],
+
+Cell[CellGroupData[{
+
+Cell["Approach", "Subsubsection",
+ CellChangeTimes->{{3.876926123969899*^9, 
+  3.876926149986191*^9}},ExpressionUUID->"b5ec6b3b-633b-4fe3-a602-\
+9044a3c73c0a"],
+
+Cell[TextData[{
+ "We will prove that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"B", 
+     StyleBox["\[Union]",
+      FontSlant->"Plain"], 
+     RowBox[{
+      StyleBox["(",
+       FontSlant->"Plain"], 
+      RowBox[{
+       StyleBox[
+        UnderscriptBox["\[Intersection]", 
+         RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+        FontSlant->"Plain"], 
+       SubscriptBox["A", "\[Alpha]"]}], 
+      StyleBox[")",
+       FontSlant->"Plain"]}]}], 
+    StyleBox["=",
+     FontSlant->"Plain"], 
+    RowBox[{
+     UnderscriptBox[
+      StyleBox["\[Intersection]",
+       FontSlant->"Plain"], 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox["B",
+        FontSlant->"Italic"], "\[Union]", 
+       SubscriptBox[
+        StyleBox["A",
+         FontSlant->"Italic"], "\[Alpha]"]}], ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"e64fcb3f-be7a-4546-9b10-d49d01da8fd8"],
+ " by first proving that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"B", 
+     RowBox[{
+      StyleBox["\[Union]",
+       FontSlant->"Plain"], 
+      RowBox[{
+       StyleBox["(",
+        FontSlant->"Plain"], 
+       RowBox[{
+        StyleBox[
+         UnderscriptBox["\[Intersection]", 
+          RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+         FontSlant->"Plain"], 
+        SubscriptBox["A", "\[Alpha]"]}], 
+       StyleBox[")",
+        FontSlant->"Plain"]}]}]}], 
+    StyleBox["\[SubsetEqual]",
+     FontSlant->"Plain"], 
+    RowBox[{
+     UnderscriptBox[
+      StyleBox["\[Intersection]",
+       FontSlant->"Plain"], 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox["B",
+        FontSlant->"Italic"], "\[Union]", 
+       SubscriptBox[
+        StyleBox["A",
+         FontSlant->"Italic"], "\[Alpha]"]}], ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"52fbd01b-3406-4e26-b6b0-3b1e95c41246"],
+ ". We will then prove that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"B", 
+     RowBox[{
+      StyleBox["\[Union]",
+       FontSlant->"Plain"], 
+      RowBox[{
+       StyleBox["(",
+        FontSlant->"Plain"], 
+       RowBox[{
+        StyleBox[
+         UnderscriptBox["\[Intersection]", 
+          RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+         FontSlant->"Plain"], 
+        SubscriptBox["A", "\[Alpha]"]}], 
+       StyleBox[")",
+        FontSlant->"Plain"]}]}]}], 
+    StyleBox["\[SupersetEqual]",
+     FontSlant->"Plain"], 
+    RowBox[{
+     UnderscriptBox[
+      StyleBox["\[Intersection]",
+       FontSlant->"Plain"], 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox["B",
+        FontSlant->"Italic"], "\[Union]", 
+       SubscriptBox[
+        StyleBox["A",
+         FontSlant->"Italic"], "\[Alpha]"]}], ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"6e7bf7b4-7ef1-45d6-aa6b-e128348e5cb3"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.876926137939309*^9, 
+  3.876926219138529*^9}},ExpressionUUID->"023f7730-9ef4-407f-ab50-\
+19ee8db2d3e8"],
+
+Cell[TextData[{
+ "Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "\[Element]", 
+    RowBox[{"B", "\[Union]", 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox[
+        UnderscriptBox["\[Intersection]", 
+         RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+        FontSlant->"Plain"], 
+       SubscriptBox["A", "\[Alpha]"]}], 
+      StyleBox[")",
+       FontSlant->"Plain"]}]}]}], TraditionalForm]],ExpressionUUID->
+  "a258cbea-19b3-4c4e-b8cb-62f293b0c698"],
+ ". We recall the definition of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"B", 
+    RowBox[{
+     StyleBox["\[Union]",
+      FontSlant->"Plain"], 
+     RowBox[{
+      StyleBox["(",
+       FontSlant->"Plain"], 
+      RowBox[{
+       StyleBox[
+        UnderscriptBox["\[Intersection]", 
+         RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+        FontSlant->"Plain"], 
+       SubscriptBox["A", "\[Alpha]"]}], 
+      StyleBox[")",
+       FontSlant->"Plain"]}]}]}], TraditionalForm]],ExpressionUUID->
+  "6ef8c74b-554a-405c-a39a-bde27ae4bb4c"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.876926228578164*^9, 
+  3.8769262847541437`*^9}},ExpressionUUID->"4a5cc088-a85c-4f3d-b78f-\
+f66be27707a3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Definition", "Subsubsection",
+ CellChangeTimes->{{3.8769262870271463`*^9, 
+  3.8769262880189486`*^9}},ExpressionUUID->"14395886-1cec-4587-b222-\
+067b251cc9e6"],
+
+Cell[TextData[{
+ "Let \[CapitalLambda] be a nonempty indexing set and let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalA]", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      SubscriptBox["A", "\[Alpha]"], "|", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}], "}"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "235021bd-7807-4dd4-b7e1-121abb58b332"],
+ " be an indexed family of sets. The intersection over \[ScriptCapitalA] is \
+the set of all elements that are in all of the sets ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["A", "\[Alpha]"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "024c848d-e56c-453e-b7ec-c8957c031642"],
+ " for each \[Alpha]\[Element]\[CapitalLambda]. That is,"
+}], "Text",
+ CellChangeTimes->{{3.87692629021089*^9, 3.8769264025639057`*^9}, 
+   3.8769267998785853`*^9},ExpressionUUID->"a7cd2546-e3bb-49f5-8f9f-\
+a5f1a3f64552"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    UnderscriptBox["\[Intersection]", 
+     RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], 
+    SubscriptBox["A", "\[Alpha]"]}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Element]", "U"}], "|", 
+     RowBox[{
+      SubscriptBox["\[ForAll]", 
+       RowBox[{"\[Alpha]", ",", 
+        RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+      RowBox[{"x", "\[Element]", 
+       SubscriptBox["A", "\[Alpha]"]}]}]}], "}"}], " "}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.8769267429905453`*^9, 
+  3.87692674900175*^9}},ExpressionUUID->"68d8e4c3-fc5e-4904-82d2-\
+acc146988a4a"],
+
+Cell["We also have ", "Text",
+ CellChangeTimes->{{3.876926729445875*^9, 
+  3.8769267312860327`*^9}},ExpressionUUID->"d8b7269d-223a-4517-846a-\
+0a7caeb47a2e"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     UnderscriptBox["\[Intersection]", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], "B"}], 
+    "\[Union]", 
+    SubscriptBox["A", "\[Alpha]"]}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Element]", "U"}], "|", 
+     RowBox[{
+      SubscriptBox["\[ForAll]", 
+       RowBox[{"\[Alpha]", ",", 
+        RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+      RowBox[{"x", "\[Element]", 
+       RowBox[{"(", 
+        RowBox[{"B", "\[Union]", 
+         SubscriptBox["A", "\[Alpha]"]}], ")"}]}]}]}], "}"}]}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.876926738193356*^9, 
+  3.876926784951215*^9}},ExpressionUUID->"1a5044a6-76c7-4fa2-97bd-\
+f0ec5bcf74a4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Using the definition", "Subsubsection",
+ CellChangeTimes->{{3.876926567540724*^9, 
+  3.8769265696369486`*^9}},ExpressionUUID->"0aeea419-36b7-4c10-9c9e-\
+9df6a80fe80d"],
+
+Cell[TextData[{
+ "Since ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "\[Element]", 
+    RowBox[{"B", "\[Union]", 
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox[
+        UnderscriptBox["\[Intersection]", 
+         RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+        FontSlant->"Plain"], 
+       SubscriptBox["A", "\[Alpha]"]}], 
+      StyleBox[")",
+       FontSlant->"Plain"]}]}]}], TraditionalForm]],ExpressionUUID->
+  "70a6f6d3-75c5-4509-885c-61b331ac5b3e"],
+ ". b\[Element]B or ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["b",
+     FontSlant->"Plain"], 
+    StyleBox["\[Element]",
+     FontSlant->"Plain"], 
+    RowBox[{
+     StyleBox[
+      UnderscriptBox["\[Intersection]", 
+       RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+      FontSlant->"Plain"], 
+     SubscriptBox["A", "\[Alpha]"]}]}], TraditionalForm]],ExpressionUUID->
+  "608e9537-1fc1-4af7-9c2b-559b2eb0c8f7"],
+ ". The statement ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["b",
+     FontSlant->"Plain"], 
+    StyleBox["\[Element]",
+     FontSlant->"Plain"], 
+    RowBox[{
+     StyleBox[
+      UnderscriptBox["\[Intersection]", 
+       RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+      FontSlant->"Plain"], 
+     SubscriptBox["A", "\[Alpha]"]}]}], TraditionalForm]],ExpressionUUID->
+  "64705999-5c87-4b94-8315-927ab0d957bc"],
+ " implies ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Alpha]", ",", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+    RowBox[{"b", "\[Element]", 
+     SubscriptBox["A", "\[Alpha]"]}]}], TraditionalForm]],ExpressionUUID->
+  "24899e43-e19a-44ce-8d47-b90eaaab39c7"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8769265363407106`*^9, 
+  3.8769266952059174`*^9}},ExpressionUUID->"71ed4e24-c52a-4db1-9134-\
+6a6657548fe9"],
+
+Cell[TextData[{
+ "We will now look at the definition of the right hand side of",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Element]", "U"}], "|", 
+     RowBox[{
+      SubscriptBox["\[ForAll]", 
+       RowBox[{"\[Alpha]", ",", 
+        RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+      RowBox[{"x", "\[Element]", 
+       RowBox[{"(", 
+        RowBox[{"B", "\[Union]", 
+         SubscriptBox["A", "\[Alpha]"]}], ")"}]}]}]}], "}"}], 
+   TraditionalForm]], "Input",
+  CellChangeTimes->{{3.876926738193356*^9, 3.876926784951215*^9}},
+  ExpressionUUID->"a85a6cab-389d-45ef-9a5a-cb00c896e6ba"],
+ ". We know ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "\[Element]", 
+    RowBox[{"(", 
+     RowBox[{"B", "\[Union]", 
+      SubscriptBox["A", "\[Alpha]"]}], ")"}]}], TraditionalForm]], "Input",
+  CellChangeTimes->{{3.876926738193356*^9, 3.876926784951215*^9}},
+  ExpressionUUID->"ea9472fb-d100-471e-9db2-6e0d3507b714"],
+ " means that x\[Element]B or ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "\[Element]", 
+    SubscriptBox["A", "\[Alpha]"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "aa9774cd-65d7-4ebe-8c2b-0e9edf8b9b34"],
+ ". Since ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Alpha]", ",", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+    RowBox[{"b", "\[Element]", 
+     SubscriptBox["A", "\[Alpha]"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "13302d45-bc33-4bbe-9f22-0a8ead9b8496"],
+ ", b is an element of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"B", "\[Union]", 
+    SubscriptBox["A", "\[Alpha]"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "be5721ca-7159-4d6e-98a4-bac9531905e7"],
+ " for all \[Alpha] such that \[Alpha]\[Element]\[CapitalLambda]. We have now \
+shown that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     StyleBox["b",
+      FontSlant->"Plain"], 
+     StyleBox["\[Element]",
+      FontSlant->"Plain"], 
+     RowBox[{
+      StyleBox[
+       UnderscriptBox["\[Intersection]", 
+        RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+       FontSlant->"Plain"], 
+      SubscriptBox["A", "\[Alpha]"]}]}], "\[Implies]", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[ForAll]", 
+       RowBox[{"\[Alpha]", ",", 
+        RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+      RowBox[{"b", "\[Element]", 
+       RowBox[{"(", 
+        RowBox[{"B", "\[Union]", 
+         SubscriptBox["A", "\[Alpha]"]}], ")"}]}]}], "\[Implies]", 
+     RowBox[{
+      RowBox[{"b", "\[Element]", 
+       RowBox[{
+        RowBox[{
+         UnderscriptBox["\[Intersection]", 
+          RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], "B"}], 
+        "\[Union]", 
+        SubscriptBox["A", "\[Alpha]"]}]}], "\[Implies]", 
+      RowBox[{
+       RowBox[{"B", "\[Union]", 
+        RowBox[{"(", 
+         RowBox[{
+          StyleBox[
+           UnderscriptBox["\[Intersection]", 
+            RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]],
+           FontSlant->"Plain"], 
+          SubscriptBox["A", "\[Alpha]"]}], ")"}]}], "\[SubsetEqual]", 
+       RowBox[{
+        RowBox[{
+         UnderscriptBox["\[Intersection]", 
+          RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]], "B"}], 
+        "\[Union]", 
+        SubscriptBox["A", "\[Alpha]"]}]}]}]}]}], TraditionalForm]],
+  ExpressionUUID->"13ed350f-bb87-42d7-8972-c3272b6c1ec4"]
+}], "Text",
+ CellChangeTimes->{{3.8769269053672333`*^9, 3.8769270308880987`*^9}, {
+  3.876927091031904*^9, 3.8769271252762656`*^9}, {3.876927155694169*^9, 
+  3.876927213693405*^9}},ExpressionUUID->"d3057192-86e1-458f-86ce-\
+c0f19d1dcdcf"],
+
+Cell[TextData[{
+ "We use the fact that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Alpha]", ",", 
+      RowBox[{"\[Alpha]", "\[Element]", "\[CapitalLambda]"}]}]], 
+    RowBox[{"b", "\[Element]", 
+     SubscriptBox["A", "\[Alpha]"]}]}], TraditionalForm]],ExpressionUUID->
+  "7d8a8006-95d2-48c8-9e82-10321ec8af9e"],
+ " to conclude that b\[Element]"
+}], "Text",
+ CellChangeTimes->{{3.876926856426098*^9, 
+  3.8769268961965375`*^9}},ExpressionUUID->"bb3e3e10-3a62-4b99-9424-\
+ea494a0407f0"],
 
 Cell["\<\
 Enter text here. Enter TraditionalForm input for evaluation in a separate \
@@ -168,6 +1020,7 @@ DLLEXPORT int fun(WolframLibraryData libData, mreal A1, mreal *Res)
 },
 WindowSize->{1440., 747.75},
 WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+Magnification->3.,
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"0d61d8fd-a517-4a48-96f6-a0b395801e56"
@@ -184,53 +1037,79 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 88, 0, 98, "Title",ExpressionUUID->"841cecfa-987e-49fa-ae8d-dd5b88f9d8ac"],
-Cell[671, 24, 94, 0, 53, "Subtitle",ExpressionUUID->"bcb8c238-12d0-493f-b357-434a013459e0"],
-Cell[768, 26, 100, 0, 31, "Subsubtitle",ExpressionUUID->"533b820b-7ae7-4265-9c5a-124b0d4e0e4d"],
+Cell[580, 22, 157, 3, 472, "Title",ExpressionUUID->"841cecfa-987e-49fa-ae8d-dd5b88f9d8ac"],
+Cell[740, 27, 165, 3, 157, "Subtitle",ExpressionUUID->"bcb8c238-12d0-493f-b357-434a013459e0"],
+Cell[908, 32, 171, 3, 92, "Subsubtitle",ExpressionUUID->"533b820b-7ae7-4265-9c5a-124b0d4e0e4d"],
 Cell[CellGroupData[{
-Cell[893, 30, 98, 0, 67, "Section",ExpressionUUID->"903f3e92-a536-4648-968a-499f41769983"],
+Cell[1104, 39, 157, 3, 199, "Section",ExpressionUUID->"903f3e92-a536-4648-968a-499f41769983"],
 Cell[CellGroupData[{
-Cell[1016, 34, 104, 0, 54, "Subsection",ExpressionUUID->"4fbb7bb8-9766-4251-8071-b36c00045beb"],
-Cell[CellGroupData[{
-Cell[1145, 38, 110, 0, 45, "Subsubsection",ExpressionUUID->"b5ec6b3b-633b-4fe3-a602-9044a3c73c0a"],
-Cell[1258, 40, 166, 3, 35, "Text",ExpressionUUID->"7f1879da-f07f-4032-8c57-e13140332274"],
-Cell[CellGroupData[{
-Cell[1449, 47, 200, 6, 43, "Input",ExpressionUUID->"32448bdb-d86d-4013-ae2d-3b94f7b4c0f3"],
-Cell[1652, 55, 165, 5, 50, "Output",ExpressionUUID->"751665a8-a540-4881-9a62-7233acc69a2e"]
+Cell[1286, 46, 157, 3, 161, "Subsection",ExpressionUUID->"21abf2d3-880c-4673-ba38-e6b69fc2944b"],
+Cell[1446, 51, 805, 24, 237, "Text",ExpressionUUID->"71df7e36-9c5f-4377-9ee5-4e423c6c2de3"],
+Cell[2254, 77, 898, 32, 152, "Input",ExpressionUUID->"a60a7025-9cc1-40a7-8f51-bcd9b92c8749"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1854, 65, 101, 0, 32, "Item",ExpressionUUID->"12766277-0c77-457b-b57e-c7384cb4464e"],
-Cell[1958, 67, 111, 0, 25, "ItemParagraph",ExpressionUUID->"8c3ed39c-6ecb-48a6-9a68-2bfba783150b"],
+Cell[3189, 114, 166, 3, 161, "Subsection",ExpressionUUID->"56fe55a1-9d36-44e8-bb53-820ed8417a5a"],
+Cell[3358, 119, 620, 20, 103, "Text",ExpressionUUID->"7466ac1d-58e9-4236-9d4a-88a2d667a6b3"],
+Cell[3981, 141, 986, 29, 103, "Text",ExpressionUUID->"da8b5ee0-a673-48ea-b0de-88e086a56eec"],
+Cell[4970, 172, 8641, 275, 706, "Text",ExpressionUUID->"7a53b7f8-a99d-49d3-af5f-0b902b36decd"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[2094, 71, 98, 0, 26, "Subitem",ExpressionUUID->"794366be-5652-439b-a407-d7f0d3353096"],
-Cell[2195, 73, 114, 0, 23, "SubitemParagraph",ExpressionUUID->"fa715cec-8fb9-4ef4-a081-32e4761c6aa5"],
+Cell[13648, 452, 203, 4, 161, "Subsection",ExpressionUUID->"4fbb7bb8-9766-4251-8071-b36c00045beb"],
 Cell[CellGroupData[{
-Cell[2334, 77, 101, 0, 25, "Subsubitem",ExpressionUUID->"6092e6e5-9ce0-4138-9f0a-25903c3c4253"],
-Cell[2438, 79, 117, 0, 22, "SubsubitemParagraph",ExpressionUUID->"f800fc65-0792-46e6-a87f-331db492a443"]
+Cell[13876, 460, 159, 3, 133, "Subsubsection",ExpressionUUID->"b5ec6b3b-633b-4fe3-a602-9044a3c73c0a"],
+Cell[14038, 465, 3087, 106, 237, "Text",ExpressionUUID->"023f7730-9ef4-407f-ab50-19ee8db2d3e8"],
+Cell[17128, 573, 1171, 39, 103, "Text",ExpressionUUID->"4a5cc088-a85c-4f3d-b78f-f66be27707a3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18336, 617, 165, 3, 133, "Subsubsection",ExpressionUUID->"14395886-1cec-4587-b222-067b251cc9e6"],
+Cell[18504, 622, 925, 23, 639, "Text",ExpressionUUID->"a7cd2546-e3bb-49f5-8f9f-a5f1a3f64552"],
+Cell[19432, 647, 664, 19, 189, "Input",ExpressionUUID->"68d8e4c3-fc5e-4904-82d2-acc146988a4a"],
+Cell[20099, 668, 157, 3, 103, "Text",ExpressionUUID->"d8b7269d-223a-4517-846a-0a7caeb47a2e"],
+Cell[20259, 673, 763, 23, 246, "Input",ExpressionUUID->"1a5044a6-76c7-4fa2-97bd-f0ec5bcf74a4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21059, 701, 173, 3, 209, "Subsubsection",ExpressionUUID->"0aeea419-36b7-4c10-9c9e-9df6a80fe80d"],
+Cell[21235, 706, 1829, 60, 305, "Text",ExpressionUUID->"71ed4e24-c52a-4db1-9134-6a6657548fe9"],
+Cell[23067, 768, 3716, 105, 1251, "Text",ExpressionUUID->"d3057192-86e1-458f-86ce-c0f19d1dcdcf"],
+Cell[26786, 875, 530, 15, 238, "Text",ExpressionUUID->"bb3e3e10-3a62-4b99-9424-ea494a0407f0"],
+Cell[27319, 892, 166, 3, 304, "Text",ExpressionUUID->"7f1879da-f07f-4032-8c57-e13140332274"],
+Cell[CellGroupData[{
+Cell[27510, 899, 200, 6, 127, "Input",ExpressionUUID->"32448bdb-d86d-4013-ae2d-3b94f7b4c0f3"],
+Cell[27713, 907, 165, 5, 135, "Output",ExpressionUUID->"751665a8-a540-4881-9a62-7233acc69a2e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27915, 917, 101, 0, 155, "Item",ExpressionUUID->"12766277-0c77-457b-b57e-c7384cb4464e"],
+Cell[28019, 919, 111, 0, 134, "ItemParagraph",ExpressionUUID->"8c3ed39c-6ecb-48a6-9a68-2bfba783150b"],
+Cell[CellGroupData[{
+Cell[28155, 923, 98, 0, 135, "Subitem",ExpressionUUID->"794366be-5652-439b-a407-d7f0d3353096"],
+Cell[28256, 925, 114, 0, 69, "SubitemParagraph",ExpressionUUID->"fa715cec-8fb9-4ef4-a081-32e4761c6aa5"],
+Cell[CellGroupData[{
+Cell[28395, 929, 101, 0, 75, "Subsubitem",ExpressionUUID->"6092e6e5-9ce0-4138-9f0a-25903c3c4253"],
+Cell[28499, 931, 117, 0, 66, "SubsubitemParagraph",ExpressionUUID->"f800fc65-0792-46e6-a87f-331db492a443"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[2594, 84, 147, 2, 35, "Text",ExpressionUUID->"5fc61829-e552-4929-a22f-53e5a613e8da"],
-Cell[2744, 88, 242, 7, 39, "DisplayFormula",ExpressionUUID->"5fb16f04-5936-4146-b1f4-6ed7a753fdfe"],
-Cell[2989, 97, 276, 7, 35, "Text",ExpressionUUID->"7d60b88b-c129-40cf-b2cd-9cda909bd91a"],
+Cell[28655, 936, 147, 2, 105, "Text",ExpressionUUID->"5fc61829-e552-4929-a22f-53e5a613e8da"],
+Cell[28805, 940, 242, 7, 118, "DisplayFormula",ExpressionUUID->"5fb16f04-5936-4146-b1f4-6ed7a753fdfe"],
+Cell[29050, 949, 276, 7, 105, "Text",ExpressionUUID->"7d60b88b-c129-40cf-b2cd-9cda909bd91a"],
 Cell[CellGroupData[{
-Cell[3290, 108, 109, 0, 32, "ItemNumbered",ExpressionUUID->"4b62fd24-8b0e-4e0f-9130-f179c0249f1c"],
-Cell[3402, 110, 111, 0, 25, "ItemParagraph",ExpressionUUID->"86e4ef70-50ab-4bcc-8431-68de7ff54a78"],
+Cell[29351, 960, 109, 0, 96, "ItemNumbered",ExpressionUUID->"4b62fd24-8b0e-4e0f-9130-f179c0249f1c"],
+Cell[29463, 962, 111, 0, 75, "ItemParagraph",ExpressionUUID->"86e4ef70-50ab-4bcc-8431-68de7ff54a78"],
 Cell[CellGroupData[{
-Cell[3538, 114, 115, 0, 26, "SubitemNumbered",ExpressionUUID->"729f3277-c3f2-4d9b-8c9e-5769d8636424"],
-Cell[3656, 116, 114, 0, 70, "SubitemParagraph",ExpressionUUID->"229356a2-161f-4f9c-a96a-5ea48280e905"],
+Cell[29599, 966, 115, 0, 78, "SubitemNumbered",ExpressionUUID->"729f3277-c3f2-4d9b-8c9e-5769d8636424"],
+Cell[29717, 968, 114, 0, 69, "SubitemParagraph",ExpressionUUID->"229356a2-161f-4f9c-a96a-5ea48280e905"],
 Cell[CellGroupData[{
-Cell[3795, 120, 109, 0, 70, "SubsubitemNumbered",ExpressionUUID->"b749576d-bd66-4a14-a076-345e6f5b4038"],
-Cell[3907, 122, 117, 0, 70, "SubsubitemParagraph",ExpressionUUID->"22a06616-ea9e-48f1-aac1-cf3f324cd046"]
+Cell[29856, 972, 109, 0, 75, "SubsubitemNumbered",ExpressionUUID->"b749576d-bd66-4a14-a076-345e6f5b4038"],
+Cell[29968, 974, 117, 0, 66, "SubsubitemParagraph",ExpressionUUID->"22a06616-ea9e-48f1-aac1-cf3f324cd046"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[4063, 127, 156, 2, 70, "Text",ExpressionUUID->"99bf9bc2-e17a-4774-9fd1-db84a5d1079d"],
-Cell[4222, 131, 250, 7, 70, "DisplayFormulaNumbered",ExpressionUUID->"beb7efa4-28d4-4ded-aba3-6fab4e4155bf"],
-Cell[4475, 140, 130, 0, 70, "Text",ExpressionUUID->"dc11b698-4415-4397-bb72-64f8b6af5156"],
-Cell[4608, 142, 137, 3, 70, "Code",ExpressionUUID->"19090c82-2326-4457-9b83-8333f8b74b6d"],
-Cell[4748, 147, 142, 2, 70, "Text",ExpressionUUID->"6c4c9820-470f-4736-982d-9e2264827a5c"],
-Cell[4893, 151, 296, 11, 70, "Program",ExpressionUUID->"965cc861-61e0-4a96-ac61-fabc43dca1d3"]
+Cell[30124, 979, 156, 2, 105, "Text",ExpressionUUID->"99bf9bc2-e17a-4774-9fd1-db84a5d1079d"],
+Cell[30283, 983, 250, 7, 118, "DisplayFormulaNumbered",ExpressionUUID->"beb7efa4-28d4-4ded-aba3-6fab4e4155bf"],
+Cell[30536, 992, 130, 0, 105, "Text",ExpressionUUID->"dc11b698-4415-4397-bb72-64f8b6af5156"],
+Cell[30669, 994, 137, 3, 150, "Code",ExpressionUUID->"19090c82-2326-4457-9b83-8333f8b74b6d"],
+Cell[30809, 999, 142, 2, 105, "Text",ExpressionUUID->"6c4c9820-470f-4736-982d-9e2264827a5c"],
+Cell[30954, 1003, 296, 11, 606, "Program",ExpressionUUID->"965cc861-61e0-4a96-ac61-fabc43dca1d3"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -238,6 +1117,4 @@ Cell[4893, 151, 296, 11, 70, "Program",ExpressionUUID->"965cc861-61e0-4a96-ac61-
 }
 ]
 *)
-
-(* End of internal cache information *)
 
