@@ -1,0 +1,567 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17875,        559]
+NotebookOptionsPosition[     14639,        503]
+NotebookOutlinePosition[     15062,        519]
+CellTagsIndexPosition[     15019,        516]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Proposition", "Title",
+ CellChangeTimes->{{3.8787396823800616`*^9, 
+  3.8787396871854563`*^9}},ExpressionUUID->"248e9b9a-3777-4ae4-aead-\
+4fe0582c692c"],
+
+Cell[TextData[{
+ "Proposition: For each ",
+ Cell[BoxData[
+  RowBox[{"a", ",", 
+   RowBox[{"b", "\[Element]", 
+    TemplateBox[{},
+     "Reals"]}]}]],ExpressionUUID->"21d10cfb-5dd5-4a43-9441-3cb495a3d0b7"],
+ " and for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{"a", " ", "x"}], "+", "b"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "eb46f9cc-054b-41e6-8331-10808c64dd2c"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", 
+     TemplateBox[{},
+      "Reals"]}], "->", 
+    TemplateBox[{},
+     "Reals"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d507cca5-e425-4512-b297-432dc18411d6"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "=", 
+    RowBox[{"f", "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "53c844ec-13f3-48e9-95b6-3af9b1ccdc2b"],
+ " is one-to-one and onto."
+}], "Text",
+ CellChangeTimes->{{3.8787396901664143`*^9, 
+  3.878739786835064*^9}},ExpressionUUID->"a610499d-7296-49f0-ab6e-\
+9cfd24cce4c5"],
+
+Cell[CellGroupData[{
+
+Cell["Proof", "Section",
+ CellChangeTimes->{{3.8787398061763625`*^9, 
+  3.8787398070426645`*^9}},ExpressionUUID->"1d6bdba8-94c6-4b02-9db9-\
+3677ba2f67a1"],
+
+Cell["We will use the definition.", "Text",
+ CellChangeTimes->{{3.8787398084793367`*^9, 
+  3.8787398124997377`*^9}},ExpressionUUID->"71c63383-b4c0-4a1d-9111-\
+ad434182a8e7"],
+
+Cell[CellGroupData[{
+
+Cell["Injective function definition", "Subsection",
+ CellChangeTimes->{{3.878740106975127*^9, 
+  3.878740110960625*^9}},ExpressionUUID->"d2968e40-f61e-401a-848c-\
+1120bb544da7"],
+
+Cell[TextData[{
+ "Definition:  Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", "A"}], "->", "B"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "54b41a2a-ccb5-4ecd-8f52-5345b4d468b0"],
+ " be a function from the set A to the set B. The function f is called an \
+injection provided that"
+}], "Text",
+ CellChangeTimes->{{3.878739813921733*^9, 
+  3.8787398515030375`*^9}},ExpressionUUID->"1e6dfd22-eaac-485a-b5ab-\
+a9290b2b96c1"],
+
+Cell[TextData[{
+ "for all ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "1"], ",", 
+    RowBox[{
+     SubscriptBox["x", "2"], "\[Element]", "A"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8bf432de-7d8a-4393-a8eb-a1ba7098a709"],
+ ", if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "1"], "!=", 
+    SubscriptBox["x", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "42d49d41-6923-4eb2-8fc4-e379336dbd8e"],
+ ", then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", 
+     SubscriptBox["x", "1"], ")"}], "!=", 
+    RowBox[{"f", "(", 
+     SubscriptBox["x", "2"], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2acd1a08-73f8-412c-9218-9046f7b3fbb7"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.878739853857629*^9, 
+  3.878739918083185*^9}},ExpressionUUID->"2ccf57de-b016-49f2-b16f-\
+762db172ebd8"],
+
+Cell[TextData[{
+ "When ",
+ StyleBox["f",
+  FontSlant->"Italic"],
+ " is an injection, we also say that ",
+ StyleBox["f",
+  FontSlant->"Italic"],
+ " is a one-to-one function, or that ",
+ StyleBox["f",
+  FontSlant->"Italic"],
+ " is an injective function."
+}], "Text",
+ CellChangeTimes->{{3.878739919394966*^9, 
+  3.878739942945224*^9}},ExpressionUUID->"92b8e926-0efc-4660-b829-\
+d9f61097ddd4"],
+
+Cell["We will also use the following material from the book.", "Text",
+ CellChangeTimes->{{3.8787399620361567`*^9, 
+  3.878739979119213*^9}},ExpressionUUID->"b4b1844d-2a96-4a7d-94d4-\
+8000cfa568ae"],
+
+Cell[TextData[{
+ "Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", "A"}], "->", "B"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "fb39e485-ece2-4c9c-a55c-292594156491"]
+}], "Text",
+ CellChangeTimes->{{3.878739981231967*^9, 
+  3.8787399887684093`*^9}},ExpressionUUID->"b87efbd8-e9a7-4719-959f-\
+d6c3dc58123b"],
+
+Cell["\"The function f is an injection\" means that", "Text",
+ CellChangeTimes->{{3.8787399922689962`*^9, 
+  3.878740002338332*^9}},ExpressionUUID->"46302c27-161b-4cdf-8ead-\
+353b632c1c9d"],
+
+Cell[TextData[{
+ "For all ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "1"], ",", 
+    RowBox[{
+     SubscriptBox["x", "2"], "\[Element]", "A"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f812a607-4f30-4a6a-85f8-a136e60c822a"],
+ ", if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "1"], "!=", 
+    SubscriptBox["x", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6b4b96e3-36d3-4c31-8ebe-4023c5e7e309"],
+ ", then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", 
+     SubscriptBox["x", "1"], ")"}], "!=", 
+    RowBox[{"f", "(", 
+     SubscriptBox["x", "2"], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "bba441d9-3d05-4d77-b853-00b8687c8cc9"],
+ "; or"
+}], "Text",
+ CellFrame->{{0, 0}, {0, 0}},
+ CellDingbat->"\[FilledSquare]",
+ CellChangeTimes->{{3.8787400059229364`*^9, 
+  3.8787400260487146`*^9}},ExpressionUUID->"f9d04a1f-e219-445a-bf38-\
+824554653028"],
+
+Cell[TextData[{
+ "For all ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "1"], ",", 
+    RowBox[{
+     SubscriptBox["x", "2"], "\[Element]", "A"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4bb2f6b4-2959-4162-bef4-301301e9d700"],
+ ", if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", 
+     SubscriptBox["x", "1"], ")"}], "=", 
+    RowBox[{"f", "(", 
+     SubscriptBox["x", "2"], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "abc31381-6fdd-42eb-9de7-cecb12a0faf1"],
+ ", then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "1"], "=", 
+    SubscriptBox["x", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5416899f-28a8-4cbd-a734-756fa392103b"],
+ "; or"
+}], "Text",
+ CellChangeTimes->{{3.8787400525597115`*^9, 
+  3.878740085631035*^9}},ExpressionUUID->"6deb12c5-3b7a-4486-b05c-\
+55ade4513cc5"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Surjective function definition", "Subsection",
+ CellChangeTimes->{{3.878740118795083*^9, 
+  3.8787401233462667`*^9}},ExpressionUUID->"41a9c5c5-041a-4a76-8092-\
+44edf06db331"],
+
+Cell[TextData[{
+ "Definition: Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", "A"}], "->", "B"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "fe9c8711-f897-4f70-8240-e5d92344cc2a"],
+ " be a function from the set A to the set B. The function f is called a \
+surjection provided that the range of ",
+ StyleBox["f",
+  FontSlant->"Italic"],
+ " equals the codomain of ",
+ StyleBox["f",
+  FontSlant->"Italic"],
+ ". This means that:"
+}], "Text",
+ CellChangeTimes->{{3.878740129233853*^9, 
+  3.878740182342224*^9}},ExpressionUUID->"79e90965-83a4-42fb-a1dc-\
+2694a34d2100"],
+
+Cell[TextData[{
+ "for every (\[ForAll]) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"y", "\[Element]", "B"}], ",", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"there", " ", "exists", " ", "x"}], " ", "\[Element]", 
+      RowBox[{"A", " ", "such", " ", "that", " ", 
+       RowBox[{"f", "(", "x", ")"}]}]}], "=", 
+     RowBox[{"y", "."}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0d8f84d1-6863-4607-b442-13302eb73991"],
+ "  When f is a surjection, we also say that f is an onto function or that f \
+maps A onto B. We also say that f is a surjective function."
+}], "Text",
+ CellChangeTimes->{{3.8787401867434483`*^9, 3.8787402328117714`*^9}, {
+  3.878740285344831*^9, 3.8787403343781586`*^9}, {3.8787403781851053`*^9, 
+  3.878740406402766*^9}},ExpressionUUID->"b06fcb2c-57df-4435-a733-\
+e86cf6cfc348"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["proof the function is one-to-one", "Subsection",
+ CellChangeTimes->{{3.8787404862551427`*^9, 
+  3.878740491342143*^9}},ExpressionUUID->"d3fd06ec-3762-406b-87d5-\
+24d8159d3e19"],
+
+Cell[TextData[{
+ "Proof: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[ForAll]", 
+     SubscriptBox["x", "1"]}], ",", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["x", "2"], 
+      RowBox[{"f", "(", 
+       SubscriptBox["x", "1"], ")"}]}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"f", "(", 
+        SubscriptBox["x", "2"], ")"}], "\[Implies]", 
+       SubscriptBox["x", "1"]}], "=", 
+      SubscriptBox["x", "2"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "524d6a8d-48d8-4db7-8a26-25a175961671"]
+}], "Text",
+ CellChangeTimes->{{3.8787404958751454`*^9, 
+  3.878740548388563*^9}},ExpressionUUID->"6da8b94f-9925-4672-8e5d-\
+706be6987580"],
+
+Cell[TextData[{
+ "Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "1"], ",", 
+    RowBox[{
+     SubscriptBox["x", "2"], "\[Element]", "X"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ec098b18-da78-47ec-8a2c-bf6a631106c5"],
+ " and suppose ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", 
+     SubscriptBox["x", "1"], ")"}], "=", 
+    RowBox[{"f", "(", 
+     SubscriptBox["x", "2"], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2dc607f1-ef4f-4d62-9b69-dba4f27592c6"],
+ ". Our function is defined by"
+}], "Text",
+ CellChangeTimes->{{3.878740553268067*^9, 
+  3.8787405887510633`*^9}},ExpressionUUID->"b67d55d8-acd6-4d3d-9363-\
+ec88db4237eb"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"f", "(", "x", ")"}], "=", 
+   RowBox[{
+    RowBox[{"a", " ", 
+     SubscriptBox["x", "1"]}], "+", "b"}]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.878740672004082*^9, 
+  3.8787406750767007`*^9}},ExpressionUUID->"cdb91a74-69e7-4d72-b532-\
+f7ca35808925"],
+
+Cell[TextData[{
+ "On the left hand side we have the expression ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", " ", 
+     SubscriptBox["x", "1"]}], "+", "b"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "67bb79ba-d59a-4821-9901-41debed502b6"],
+ " where a and b are elements of the set of real numbers ",
+ Cell[BoxData[
+  TemplateBox[{},
+   "Reals"]],ExpressionUUID->"b5759deb-4b00-4175-b1de-aa9795317eca"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.87874061152433*^9, 3.878740638834089*^9}, {
+  3.8787406987658653`*^9, 
+  3.878740735743029*^9}},ExpressionUUID->"09ea259b-ed7b-460d-a5c8-\
+7d7d3a812674"],
+
+Cell["On the right hand side we have the expression ", "Text",
+ CellChangeTimes->{{3.8787407384200087`*^9, 
+  3.8787407484487233`*^9}},ExpressionUUID->"9716631c-1f42-4a1d-81e3-\
+0e555461fecb"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"f", "(", "x", ")"}], "=", 
+   RowBox[{
+    RowBox[{"a", " ", 
+     SubscriptBox["x", "2"]}], "+", "b"}]}], TraditionalForm]], "Input",
+ CellChangeTimes->{
+  3.8787407580321846`*^9},ExpressionUUID->"c7ccccd7-20b9-4251-8a5d-\
+7548cccfe079"],
+
+Cell[TextData[{
+ "We compare the equations with our assumption that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "1"], "=", 
+    SubscriptBox["x", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "bdbb7d30-4fba-441c-be3d-d6170d04cd27"],
+ " to get "
+}], "Text",
+ CellChangeTimes->{{3.878740760978101*^9, 
+  3.878740814662531*^9}},ExpressionUUID->"86a3c9f3-407d-402f-9393-\
+1afe5a64a231"],
+
+Cell[TextData[{
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"a", " ", 
+      SubscriptBox["x", "1"]}], "+", "b"}], "=", 
+    RowBox[{
+     RowBox[{"a", " ", 
+      SubscriptBox["x", "2"]}], "+", "b"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ed752f90-1bb0-419f-a347-e800f4eb1c31"],
+ "  becomes  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"a", " ", 
+      SubscriptBox["x", "1"]}], "+", "b"}], "=", 
+    RowBox[{
+     RowBox[{"a", " ", 
+      SubscriptBox["x", "1"]}], "+", "b"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "110eff18-5537-4dd3-b021-aa724f458578"],
+ " because ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "1"], "=", 
+    SubscriptBox["x", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "303b2d6d-4517-4d86-a0f3-d7e05e8ba6fe"],
+ " which is true."
+}], "Text",
+ CellChangeTimes->{{3.878740817742695*^9, 
+  3.8787408679014053`*^9}},ExpressionUUID->"481aab6b-1df5-4b5b-995e-\
+26ab0113923c"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["proof the function is onto", "Subsection",
+ CellChangeTimes->{{3.8787409982100353`*^9, 
+  3.8787410046711683`*^9}},ExpressionUUID->"bad31ebb-6165-44ac-9ee4-\
+8e4c1c09af13"],
+
+Cell[TextData[{
+ "The range of the function is the real numbers ",
+ Cell[BoxData[
+  TemplateBox[{},
+   "Reals"]],ExpressionUUID->"61a59575-2cfe-4109-8000-97567e3988c6"],
+ ". We have the codomain(f)=",
+ Cell[BoxData[
+  TemplateBox[{},
+   "Reals"]],ExpressionUUID->"0cfb3219-6a18-481d-b4af-2783a8914e5f"],
+ ". We have the range equals the ",
+ Cell[BoxData[
+  TemplateBox[{},
+   "Reals"]],ExpressionUUID->"1a074c20-895d-41b9-9cbd-b8f93ff17696"],
+ ". We have the range equals the codomain so the function is surjective."
+}], "Text",
+ CellChangeTimes->{{3.878741025630109*^9, 3.878741034763709*^9}, {
+  3.878741078557761*^9, 3.8787411221893673`*^9}, {3.878741165182682*^9, 
+  3.8787411958147717`*^9}, {3.8787414464660325`*^9, 
+  3.8787414564553084`*^9}},ExpressionUUID->"f01f84b2-b5b8-48e4-8eec-\
+1559df042647"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Conclusion", "Subsection",
+ CellChangeTimes->{{3.8787414737450447`*^9, 
+  3.8787414747110367`*^9}},ExpressionUUID->"2cd5f72d-cb02-4d33-8ec7-\
+5a2081ecd061"],
+
+Cell["\<\
+The function is surjective and injective. Therefore the function is \
+one-to-one and onto and bijective and invertible.\
+\>", "Text",
+ CellChangeTimes->{{3.8787414757522135`*^9, 
+  3.878741501646883*^9}},ExpressionUUID->"2672715b-dc5a-4308-8a7d-\
+f4e3a1789283"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ec169cd1-7bd1-4945-b7bf-85142b3e0f1a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 158, 3, 98, "Title",ExpressionUUID->"248e9b9a-3777-4ae4-aead-4fe0582c692c"],
+Cell[741, 27, 1091, 38, 58, "Text",ExpressionUUID->"a610499d-7296-49f0-ab6e-9cfd24cce4c5"],
+Cell[CellGroupData[{
+Cell[1857, 69, 154, 3, 67, "Section",ExpressionUUID->"1d6bdba8-94c6-4b02-9db9-3677ba2f67a1"],
+Cell[2014, 74, 173, 3, 35, "Text",ExpressionUUID->"71c63383-b4c0-4a1d-9111-ad434182a8e7"],
+Cell[CellGroupData[{
+Cell[2212, 81, 177, 3, 54, "Subsection",ExpressionUUID->"d2968e40-f61e-401a-848c-1120bb544da7"],
+Cell[2392, 86, 467, 13, 58, "Text",ExpressionUUID->"1e6dfd22-eaac-485a-b5ab-a9290b2b96c1"],
+Cell[2862, 101, 925, 32, 35, "Text",ExpressionUUID->"2ccf57de-b016-49f2-b16f-762db172ebd8"],
+Cell[3790, 135, 390, 14, 58, "Text",ExpressionUUID->"92b8e926-0efc-4660-b829-d9f61097ddd4"],
+Cell[4183, 151, 198, 3, 35, "Text",ExpressionUUID->"b4b1844d-2a96-4a7d-94d4-8000cfa568ae"],
+Cell[4384, 156, 352, 11, 35, "Text",ExpressionUUID->"b87efbd8-e9a7-4719-959f-d6c3dc58123b"],
+Cell[4739, 169, 189, 3, 35, "Text",ExpressionUUID->"46302c27-161b-4cdf-8ead-353b632c1c9d"],
+Cell[4931, 174, 995, 34, 35, "Text",ExpressionUUID->"f9d04a1f-e219-445a-bf38-824554653028"],
+Cell[5929, 210, 928, 32, 35, "Text",ExpressionUUID->"6deb12c5-3b7a-4486-b05c-55ade4513cc5"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[6894, 247, 180, 3, 38, "Subsection",ExpressionUUID->"41a9c5c5-041a-4a76-8092-44edf06db331"],
+Cell[7077, 252, 608, 19, 81, "Text",ExpressionUUID->"79e90965-83a4-42fb-a1dc-2694a34d2100"],
+Cell[7688, 273, 843, 20, 81, "Text",ExpressionUUID->"b06fcb2c-57df-4435-a733-e86cf6cfc348"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[8568, 298, 182, 3, 38, "Subsection",ExpressionUUID->"d3fd06ec-3762-406b-87d5-24d8159d3e19"],
+Cell[8753, 303, 689, 23, 35, "Text",ExpressionUUID->"6da8b94f-9925-4672-8e5d-706be6987580"],
+Cell[9445, 328, 733, 24, 35, "Text",ExpressionUUID->"b67d55d8-acd6-4d3d-9363-ec88db4237eb"],
+Cell[10181, 354, 309, 9, 28, "Input",ExpressionUUID->"cdb91a74-69e7-4d72-b532-f7ca35808925"],
+Cell[10493, 365, 634, 18, 58, "Text",ExpressionUUID->"09ea259b-ed7b-460d-a5c8-7d7d3a812674"],
+Cell[11130, 385, 192, 3, 35, "Text",ExpressionUUID->"9716631c-1f42-4a1d-81e3-0e555461fecb"],
+Cell[11325, 390, 285, 9, 28, "Input",ExpressionUUID->"c7ccccd7-20b9-4251-8a5d-7548cccfe079"],
+Cell[11613, 401, 431, 13, 35, "Text",ExpressionUUID->"86a3c9f3-407d-402f-9393-1afe5a64a231"],
+Cell[12047, 416, 1055, 37, 58, "Text",ExpressionUUID->"481aab6b-1df5-4b5b-995e-26ab0113923c"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[13139, 458, 178, 3, 38, "Subsection",ExpressionUUID->"bad31ebb-6165-44ac-9ee4-8e4c1c09af13"],
+Cell[13320, 463, 806, 19, 81, "Text",ExpressionUUID->"f01f84b2-b5b8-48e4-8eec-1559df042647"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[14163, 487, 162, 3, 38, "Subsection",ExpressionUUID->"2cd5f72d-cb02-4d33-8ec7-5a2081ecd061"],
+Cell[14328, 492, 271, 6, 58, "Text",ExpressionUUID->"2672715b-dc5a-4308-8a7d-f4e3a1789283"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
