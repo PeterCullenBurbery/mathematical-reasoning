@@ -1,0 +1,322 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11632,        314]
+NotebookOptionsPosition[      8117,        246]
+NotebookOutlinePosition[      8618,        264]
+CellTagsIndexPosition[      8575,        261]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Portfolio", "Title",
+ CellChangeTimes->{{3.8791833171352425`*^9, 
+  3.879183319364249*^9}},ExpressionUUID->"07144fb1-ffc7-4803-8d3f-\
+72bdb8b14610"],
+
+Cell[CellGroupData[{
+
+Cell["Proposition", "Outline1",
+ CellChangeTimes->{{3.87918333916362*^9, 
+  3.879183346260672*^9}},ExpressionUUID->"e8183614-c1d5-45d8-9715-\
+6275b3569616"],
+
+Cell[CellGroupData[{
+
+Cell["For A, B\[SubsetEqual]U, (A-B)\[Union](B-A)=(A\[Union]B)-(A\
+\[Intersection]B).", "Outline2",
+ CellChangeTimes->{{3.879183349478692*^9, 
+  3.8791833878049498`*^9}},ExpressionUUID->"bf157191-1b4f-456d-9ce5-\
+6cc5dda8b9ea"],
+
+Cell[CellGroupData[{
+
+Cell["Proof.", "Outline3",
+ CellChangeTimes->{{3.879183464295419*^9, 
+  3.8791834804065237`*^9}},ExpressionUUID->"543e4654-e236-423d-bcaf-\
+fe3d7f748322"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "I will prove the following proposition. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[ForAll]", 
+      RowBox[{"A", ",", 
+       RowBox[{"A", "\[Element]", "U"}]}]], 
+     RowBox[{
+      SubscriptBox["\[ForAll]", 
+       RowBox[{"B", ",", 
+        RowBox[{"B", "\[Element]", "U"}]}]], 
+      RowBox[{"A", "\[Intersection]", 
+       SuperscriptBox["B", "c"]}]}]}], "=", 
+    RowBox[{
+     RowBox[{"\[CapitalPhi]", "\[DoubleLeftRightArrow]", "A"}], 
+     "\[SubsetEqual]", "B"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c3f038c9-ec11-412e-8394-09f3103e66fe"]
+}], "Outline4",
+ CellChangeTimes->{{3.8791834815175333`*^9, 
+  3.879183553534191*^9}},ExpressionUUID->"285d957c-691d-40b0-8921-\
+d4aad59c02b5"],
+
+Cell["\<\
+Here \[DoubleLeftRightArrow] is used to denote \[OpenCurlyDoubleQuote]is \
+logically equivalent to\[CloseCurlyDoubleQuote] or \[OpenCurlyDoubleQuote]if \
+and only if\[CloseCurlyDoubleQuote], or \[OpenCurlyDoubleQuote]iff\
+\[CloseCurlyDoubleQuote]. The letter \[CapitalPhi] is used to denote the \
+empty set {}. The letter U is used to denote the universal set and the \
+superscript C is used to denote the set complement.\
+\>", "Outline5",
+ CellChangeTimes->{{3.879183557303213*^9, 
+  3.8791836238423853`*^9}},ExpressionUUID->"22580c78-bef4-4559-a1ac-\
+75ecb63098d8"]
+}, Open  ]],
+
+Cell["Let A and B be subsets of some universal set U.", "Outline4",
+ CellChangeTimes->{{3.879183628354395*^9, 
+  3.879183651686551*^9}},ExpressionUUID->"c6ed6bf5-9db6-4cfa-ada6-\
+a854867e121e"],
+
+Cell["(A\[SubsetEqual]U)\[And](B\[SubsetEqual]U).", "Outline4",
+ CellChangeTimes->{{3.87918363963547*^9, 
+  3.8791836770297346`*^9}},ExpressionUUID->"b8824c38-6c30-4f44-a1ea-\
+e9b14517a40f"],
+
+Cell[CellGroupData[{
+
+Cell["We will prove the propositions contrapositive.", "Outline4",
+ CellChangeTimes->{{3.879183680658743*^9, 
+  3.879183704715914*^9}},ExpressionUUID->"cee644d3-c090-4219-9d50-\
+ddfb46bedf92"],
+
+Cell[TextData[{
+ "The contrapositive is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"A", "\[Intersection]", 
+      SuperscriptBox["B", "c"]}], "!=", "\[CapitalPhi]"}], "\[Implies]", 
+    RowBox[{"A", "\[NotSubsetEqual]", "B"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d3642d89-cf10-435d-811f-57123b192efd"],
+ "."
+}], "Outline5",
+ CellChangeTimes->{{3.879183705379917*^9, 
+  3.8791837400917997`*^9}},ExpressionUUID->"9f20a040-1ab7-4af0-b61a-\
+960a2416e0d9"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Assume ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"A", "\[Intersection]", 
+     SuperscriptBox["B", "c"]}], "!=", "\[CapitalPhi]"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c9543553-946a-43cc-ad76-26fe9bb481d9"],
+ ". We will prove there must an exist an element p | (p\[Element]A) \[And] (p\
+\[NotSubsetEqual]B). "
+}], "Outline4",
+ CellChangeTimes->{{3.8791837428408117`*^9, 
+  3.8791838033902206`*^9}},ExpressionUUID->"8675296c-297c-40a5-b0a9-\
+0b89c52608e5"],
+
+Cell[TextData[{
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"A", "\[Intersection]", 
+       SuperscriptBox["B", "c"]}], "\[NotEqual]", "\[CapitalPhi]"}], 
+     "\[Therefore]", 
+     RowBox[{
+      RowBox[{"(", 
+       SubscriptBox["\[Exists]", 
+        RowBox[{"p", ",", 
+         RowBox[{"p", "\[Element]", 
+          RowBox[{"A", "\[Intersection]", 
+           SuperscriptBox["B", "c"]}]}]}]], ")"}], "\[Therefore]", 
+      RowBox[{
+       RowBox[{"(", 
+        SubscriptBox["\[Exists]", 
+         RowBox[{"p", ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"p", "\[Element]", "A"}], ")"}], "\[And]", 
+           RowBox[{"(", 
+            RowBox[{"p", "\[Element]", 
+             SuperscriptBox["B", "c"]}], ")"}]}]}]], ")"}], "\[Therefore]", 
+       RowBox[{
+        RowBox[{"(", 
+         SubscriptBox["\[Exists]", 
+          RowBox[{"p", ",", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"p", "\[Element]", "A"}], ")"}], "\[And]", 
+            RowBox[{"(", 
+             RowBox[{"p", "\[NotElement]", "B"}], ")"}]}]}]], ")"}], 
+        "\[Therefore]", 
+        RowBox[{"A", "\[NotSubsetEqual]", "B", " "}]}]}]}]}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d1bff251-1163-4550-b6b5-160864cd4c2c"],
+ "."
+}], "Outline4",
+ CellChangeTimes->{{3.8791838089342537`*^9, 3.8791838982188673`*^9}, {
+  3.8791839856442184`*^9, 3.8791840814740324`*^9}, {3.8791841157432537`*^9, 
+  3.8791842097968817`*^9}, {3.879184251753806*^9, 3.8791842524638157`*^9}, {
+  3.8791842856910343`*^9, 3.8791843319918833`*^9}, {3.879184371304141*^9, 
+  3.8791844177264676`*^9}},ExpressionUUID->"a93be80c-f764-492c-ac7b-\
+781026b27f11"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter level 2 text here.", "Outline2",ExpressionUUID->"9ff63052-9564-41f5-96f0-7995a6ece427"],
+
+Cell["Enter level 3 text here.", "Outline3",ExpressionUUID->"836d21ad-a221-4a7f-a3ec-75d2fa7abc93"],
+
+Cell["Enter level 3 text here.", "Outline3",ExpressionUUID->"99ef828e-62d7-4d4a-a0f0-9e2bb71d0804"],
+
+Cell["Enter level 3 text here.", "Outline3",ExpressionUUID->"fba532a9-9365-4460-a26c-960fcdfb3b3f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter level 2 text here.", "Outline2",ExpressionUUID->"4b5cdb73-340f-42a3-bcf6-186b5a5ab265"],
+
+Cell["Enter level 3 text here.", "Outline3",ExpressionUUID->"c61dbaf0-8246-48aa-83ea-876b27b24097"],
+
+Cell[CellGroupData[{
+
+Cell["Enter level 3 text here.", "Outline3",ExpressionUUID->"4513adf2-2d37-428f-82dc-1d60ac964e5c"],
+
+Cell["Enter level 4 text here.", "Outline4",ExpressionUUID->"64d2b6bf-c757-46bf-b9ee-4cc4ad79290c"],
+
+Cell[CellGroupData[{
+
+Cell["Enter level 4 text here.", "Outline4",ExpressionUUID->"e13fdaf6-e584-42fe-87e3-2b4491d970c3"],
+
+Cell["Enter level 5 text here.", "Outline5",ExpressionUUID->"e46a86cf-7bf1-4bab-9f61-70462521a421"],
+
+Cell["Enter level 5 text here.", "Outline5",ExpressionUUID->"adbce4bb-79f6-42f3-8769-4936e68e1eba"],
+
+Cell["Enter level 5 text here.", "Outline5",ExpressionUUID->"aa5c9239-07e2-40a9-a1cb-be28d9b0d18c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter level 4 text here.", "Outline4",ExpressionUUID->"d9c24368-be3a-4087-b53d-6330d72063d5"],
+
+Cell["Enter level 5 text here.", "Outline5",ExpressionUUID->"3018da89-caf4-4aea-ab3f-b1c90e453045"],
+
+Cell[CellGroupData[{
+
+Cell["Enter level 5 text here.", "Outline5",ExpressionUUID->"2eeb02c1-40d0-4a1d-9b69-125f6c1c9682"],
+
+Cell["Enter level 6 text here.", "Outline6",ExpressionUUID->"a36ca00a-650e-4d12-8757-3b6a23502601"],
+
+Cell["Enter level 6 text here.", "Outline6",ExpressionUUID->"c79871a6-1a5d-4d76-a151-df941357105f"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{576., 615.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->FrontEnd`FileName[{"Utility"}, "Outline.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"7c4276ec-5076-4da5-a313-e27de367fd41"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 154, 3, 98, "Title",ExpressionUUID->"07144fb1-ffc7-4803-8d3f-72bdb8b14610"],
+Cell[CellGroupData[{
+Cell[759, 29, 156, 3, 37, "Outline1",ExpressionUUID->"e8183614-c1d5-45d8-9715-6275b3569616"],
+Cell[CellGroupData[{
+Cell[940, 36, 227, 4, 34, "Outline2",ExpressionUUID->"bf157191-1b4f-456d-9ce5-6cc5dda8b9ea"],
+Cell[CellGroupData[{
+Cell[1192, 44, 154, 3, 30, "Outline3",ExpressionUUID->"543e4654-e236-423d-bcaf-fe3d7f748322"],
+Cell[CellGroupData[{
+Cell[1371, 51, 778, 23, 43, "Outline4",ExpressionUUID->"285d957c-691d-40b0-8921-d4aad59c02b5"],
+Cell[2152, 76, 577, 10, 88, "Outline5",ExpressionUUID->"22580c78-bef4-4559-a1ac-75ecb63098d8"]
+}, Open  ]],
+Cell[2744, 89, 193, 3, 28, "Outline4",ExpressionUUID->"c6ed6bf5-9db6-4cfa-ada6-a854867e121e"],
+Cell[2940, 94, 190, 3, 25, "Outline4",ExpressionUUID->"b8824c38-6c30-4f44-a1ea-e9b14517a40f"],
+Cell[CellGroupData[{
+Cell[3155, 101, 192, 3, 25, "Outline4",ExpressionUUID->"cee644d3-c090-4219-9d50-ddfb46bedf92"],
+Cell[3350, 106, 510, 15, 28, "Outline5",ExpressionUUID->"9f20a040-1ab7-4af0-b61a-960a2416e0d9"]
+}, Open  ]],
+Cell[3875, 124, 517, 14, 43, "Outline4",ExpressionUUID->"8675296c-297c-40a5-b0a9-0b89c52608e5"],
+Cell[4395, 140, 1732, 48, 54, "Outline4",ExpressionUUID->"a93be80c-f764-492c-ac7b-781026b27f11"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6176, 194, 99, 0, 34, "Outline2",ExpressionUUID->"9ff63052-9564-41f5-96f0-7995a6ece427"],
+Cell[6278, 196, 99, 0, 30, "Outline3",ExpressionUUID->"836d21ad-a221-4a7f-a3ec-75d2fa7abc93"],
+Cell[6380, 198, 99, 0, 27, "Outline3",ExpressionUUID->"99ef828e-62d7-4d4a-a0f0-9e2bb71d0804"],
+Cell[6482, 200, 99, 0, 27, "Outline3",ExpressionUUID->"fba532a9-9365-4460-a26c-960fcdfb3b3f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6618, 205, 99, 0, 34, "Outline2",ExpressionUUID->"4b5cdb73-340f-42a3-bcf6-186b5a5ab265"],
+Cell[6720, 207, 99, 0, 30, "Outline3",ExpressionUUID->"c61dbaf0-8246-48aa-83ea-876b27b24097"],
+Cell[CellGroupData[{
+Cell[6844, 211, 99, 0, 27, "Outline3",ExpressionUUID->"4513adf2-2d37-428f-82dc-1d60ac964e5c"],
+Cell[6946, 213, 99, 0, 28, "Outline4",ExpressionUUID->"64d2b6bf-c757-46bf-b9ee-4cc4ad79290c"],
+Cell[CellGroupData[{
+Cell[7070, 217, 99, 0, 25, "Outline4",ExpressionUUID->"e13fdaf6-e584-42fe-87e3-2b4491d970c3"],
+Cell[7172, 219, 99, 0, 28, "Outline5",ExpressionUUID->"e46a86cf-7bf1-4bab-9f61-70462521a421"],
+Cell[7274, 221, 99, 0, 25, "Outline5",ExpressionUUID->"adbce4bb-79f6-42f3-8769-4936e68e1eba"],
+Cell[7376, 223, 99, 0, 25, "Outline5",ExpressionUUID->"aa5c9239-07e2-40a9-a1cb-be28d9b0d18c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7512, 228, 99, 0, 28, "Outline4",ExpressionUUID->"d9c24368-be3a-4087-b53d-6330d72063d5"],
+Cell[7614, 230, 99, 0, 28, "Outline5",ExpressionUUID->"3018da89-caf4-4aea-ab3f-b1c90e453045"],
+Cell[CellGroupData[{
+Cell[7738, 234, 99, 0, 25, "Outline5",ExpressionUUID->"2eeb02c1-40d0-4a1d-9b69-125f6c1c9682"],
+Cell[7840, 236, 99, 0, 28, "Outline6",ExpressionUUID->"a36ca00a-650e-4d12-8757-3b6a23502601"],
+Cell[7942, 238, 99, 0, 25, "Outline6",ExpressionUUID->"c79871a6-1a5d-4d76-a151-df941357105f"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
